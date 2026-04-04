@@ -1,0 +1,104 @@
+﻿
+> @workspace/maison@0.0.0 build C:\Users\mayan\OneDrive\Desktop\Mayank\Project\Maison\Maison-4c9b3d01ad86c471015e2e6dbc0fc574cd884bb8\artifacts\maison
+> prisma generate && next build
+
+node.exe : warn The 
+configuration property 
+`package.json#prisma` is 
+deprecated and will be 
+removed in Prisma 7. 
+Please migrate to a 
+Prisma config file (e.g., 
+`prisma.config.ts`).
+At C:\Users\mayan\AppData\
+Roaming\npm\pnpm.ps1:24 
+char:5
++     & "node$exe"  "$base
+dir/node_modules/pnpm/bin/
+pnpm.cjs" $args
++     ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (w  
+  arn The config...ma.c   
+ onfig.ts`).:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+For more information, 
+see: https://pris.ly/prism
+a-config
+
+Environment variables 
+loaded from .env
+Prisma schema loaded from prisma\schema.prisma
+
+Γ£ö Generated Prisma Client (v6.19.2) to .\..\..\node_modules\.pnpm\@prisma+client@6.19.2_prism_6b2b1af085fe6797f5a5ea830937a8e3\node_modules\@prisma\client in 145ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Interested in query caching in just a few lines of code? Try Accelerate today! https://pris.ly/tip-3-accelerate
+
+   Γû▓ Next.js 15.1.7
+   - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ Γ£ô Compiled successfully
+   Skipping validation of types
+   Skipping linting
+   Collecting page data ...
+   Generating static pages (0/31) ...
+   Generating static pages (7/31) 
+   Generating static pages (15/31) 
+   Generating static pages (23/31) 
+ Γ£ô Generating static pages (31/31)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                              Size     First Load JS
+Γöî Γùï /                                    1.09 kB         161 kB
+Γö£ Γùï /_not-found                          174 B           106 kB
+Γö£ Γùï /about                               195 B           160 kB
+Γö£ ╞Æ /account                             1.71 kB         114 kB
+Γö£ ╞Æ /account/addresses                   719 B           106 kB
+Γö£ ╞Æ /account/orders                      192 B           109 kB
+Γö£ ╞Æ /account/orders/[id]                 192 B           109 kB
+Γö£ ╞Æ /account/profile                     945 B           110 kB
+Γö£ ╞Æ /account/wishlist                    1.36 kB         113 kB
+Γö£ ╞Æ /admin                               192 B           109 kB
+Γö£ ╞Æ /admin/customers                     174 B           106 kB
+Γö£ ╞Æ /admin/orders                        192 B           109 kB
+Γö£ ╞Æ /admin/products                      2.34 kB         111 kB
+Γö£ ╞Æ /admin/products/[id]/edit            2.18 kB         108 kB
+Γö£ ╞Æ /admin/products/new                  2.18 kB         108 kB
+Γö£ ╞Æ /api/admin/products                  174 B           106 kB
+Γö£ ╞Æ /api/admin/products/[id]             174 B           106 kB
+Γö£ ╞Æ /api/auth/[...nextauth]              174 B           106 kB
+Γö£ ╞Æ /api/auth/register                   174 B           106 kB
+Γö£ ╞Æ /api/payment/create-order            174 B           106 kB
+Γö£ ╞Æ /api/payment/verify                  174 B           106 kB
+Γö£ ╞Æ /api/products                        174 B           106 kB
+Γö£ ╞Æ /api/stripe/create-session           174 B           106 kB
+Γö£ ╞Æ /api/stripe/webhook                  174 B           106 kB
+Γö£ ╞Æ /api/upload                          174 B           106 kB
+Γö£ Γùï /cart                                1.27 kB         161 kB
+Γö£ Γùï /checkout                            2.96 kB         163 kB
+Γö£ ╞Æ /checkout/success                    192 B           109 kB
+Γö£ Γùï /contact                             1.58 kB         161 kB
+Γö£ ╞Æ /login                               1.63 kB         161 kB
+Γö£ Γùï /lookbook                            1.1 kB          161 kB
+Γö£ ╞Æ /product/[slug]                      2.68 kB         162 kB
+Γö£ ╞Æ /register                            1.85 kB         162 kB
+Γöö ╞Æ /shop                                3.58 kB         163 kB
++ First Load JS shared by all            105 kB
+  Γö£ chunks/44b0d13d-f80b752d40181896.js  52.9 kB
+  Γö£ chunks/687-3ae804fed1b186b9.js       50.5 kB
+  Γöö other shared chunks (total)          1.98 kB
+
+
+Γùï  (Static)   prerendered as static content
+╞Æ  (Dynamic)  server-rendered on demand
+

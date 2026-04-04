@@ -1,0 +1,54 @@
+﻿   Γû▓ Next.js 15.1.7
+   - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+node.exe : Failed to 
+compile.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" "C:
+\Users\mayan\AppData\Roami
+ng\ ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (F  
+  ailed to compile.:Str   
+ ing) [], RemoteExcept    
+ion
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+
+../../node_modules/.pnpm/@
+prisma+client@6.19.2_prism
+_6b2b1af085fe6797f5a5ea830
+937a8e3/node_modules/@pris
+ma/client/index-browser.js
+Module not found: Can't 
+resolve '.prisma/client/in
+dex-browser'
+
+https://nextjs.org/docs/me
+ssages/module-not-found
+
+Import trace for 
+requested module:
+./src/lib/prisma.ts
+./src/pages/Home.tsx
+
+
+> Build failed because of 
+webpack errors
+npm notice
+npm notice New minor 
+version of npm available! 
+11.5.2 -> 11.12.1
+npm notice Changelog: http
+s://github.com/npm/cli/rel
+eases/tag/v11.12.1
+npm notice To update run: 
+npm install -g npm@11.12.1
+npm notice

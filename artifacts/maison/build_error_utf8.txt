@@ -1,0 +1,320 @@
+﻿
+> @workspace/maison@0.0.0 build C:\Users\mayan\Downloads\project\artifacts\maison
+> next build
+
+   Γû▓ Next.js 15.1.7
+   - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+node.exe : Failed to compile.
+At C:\Users\mayan\AppData\Roa
+ming\npm\pnpm.ps1:24 char:5
++     & "node$exe"  "$basedir
+/node_modules/pnpm/bin/pnpm.c
+js" $args
++     ~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~
+    + CategoryInfo           
+   : NotSpecified: (Failed   
+  to compile.:String) [],    
+ RemoteException
+    + FullyQualifiedErrorId  
+   : NativeCommandError
+ 
+
+src\app\layout.tsx
+An error occurred in 
+`next/font`.
+
+Error: Cannot find module '..
+/lightningcss.win32-x64-msvc.
+node'
+Require stack:
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\ligh
+tningcss@1.32.0\node_modules\
+lightningcss\node\index.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\@tai
+lwindcss+node@4.2.2\node_modu
+les\@tailwindcss\node\dist\in
+dex.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\@tai
+lwindcss+postcss@4.2.2\node_m
+odules\@tailwindcss\postcss\d
+ist\index.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k\config\blocks\css\plugins.j
+s
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k\config\blocks\css\index.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k\config\index.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k-config.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k-build\impl.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\compiled\jes
+t-worker\processChild.js
+    at Function.<anonymous> (
+node:internal/modules/cjs/loa
+der:1383:15)
+    at C:\Users\mayan\Downloa
+ds\project\node_modules\.pnpm
+\next@15.1.7_react-dom@19.2.3
+_react@19.2.3__react@19.2.3\n
+ode_modules\next\dist\server\
+require-hook.js:55:36
+    at defaultResolveImpl (no
+de:internal/modules/cjs/loade
+r:1025:19)
+    at 
+resolveForCJSWithHooks (node:
+internal/modules/cjs/loader:1
+030:22)
+    at Function._load (node:i
+nternal/modules/cjs/loader:11
+92:37)
+    at 
+TracingChannel.traceSync (nod
+e:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:i
+nternal/modules/cjs/loader:23
+7:24)
+    at Module.<anonymous> (no
+de:internal/modules/cjs/loade
+r:1463:12)
+    at mod.require (C:\Users\
+mayan\Downloads\project\node_
+modules\.pnpm\next@15.1.7_rea
+ct-dom@19.2.3_react@19.2.3__r
+eact@19.2.3\node_modules\next
+\dist\server\require-hook.js:
+65:28)
+    at require (node:internal
+/modules/helpers:147:16)
+
+src\app\layout.tsx
+An error occurred in 
+`next/font`.
+
+Error: Cannot find module '..
+/lightningcss.win32-x64-msvc.
+node'
+Require stack:
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\ligh
+tningcss@1.32.0\node_modules\
+lightningcss\node\index.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\@tai
+lwindcss+node@4.2.2\node_modu
+les\@tailwindcss\node\dist\in
+dex.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\@tai
+lwindcss+postcss@4.2.2\node_m
+odules\@tailwindcss\postcss\d
+ist\index.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k\config\blocks\css\plugins.j
+s
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k\config\blocks\css\index.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k\config\index.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k-config.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k-build\impl.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\compiled\jes
+t-worker\processChild.js
+    at Function.<anonymous> (
+node:internal/modules/cjs/loa
+der:1383:15)
+    at C:\Users\mayan\Downloa
+ds\project\node_modules\.pnpm
+\next@15.1.7_react-dom@19.2.3
+_react@19.2.3__react@19.2.3\n
+ode_modules\next\dist\server\
+require-hook.js:55:36
+    at defaultResolveImpl (no
+de:internal/modules/cjs/loade
+r:1025:19)
+    at 
+resolveForCJSWithHooks (node:
+internal/modules/cjs/loader:1
+030:22)
+    at Function._load (node:i
+nternal/modules/cjs/loader:11
+92:37)
+    at 
+TracingChannel.traceSync (nod
+e:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:i
+nternal/modules/cjs/loader:23
+7:24)
+    at Module.<anonymous> (no
+de:internal/modules/cjs/loade
+r:1463:12)
+    at mod.require (C:\Users\
+mayan\Downloads\project\node_
+modules\.pnpm\next@15.1.7_rea
+ct-dom@19.2.3_react@19.2.3__r
+eact@19.2.3\node_modules\next
+\dist\server\require-hook.js:
+65:28)
+    at require (node:internal
+/modules/helpers:147:16)
+
+src\app\layout.tsx
+An error occurred in 
+`next/font`.
+
+Error: Cannot find module '..
+/lightningcss.win32-x64-msvc.
+node'
+Require stack:
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\ligh
+tningcss@1.32.0\node_modules\
+lightningcss\node\index.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\@tai
+lwindcss+node@4.2.2\node_modu
+les\@tailwindcss\node\dist\in
+dex.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\@tai
+lwindcss+postcss@4.2.2\node_m
+odules\@tailwindcss\postcss\d
+ist\index.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k\config\blocks\css\plugins.j
+s
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k\config\blocks\css\index.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k\config\index.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k-config.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\build\webpac
+k-build\impl.js
+- C:\Users\mayan\Downloads\pr
+oject\node_modules\.pnpm\next
+@15.1.7_react-dom@19.2.3_reac
+t@19.2.3__react@19.2.3\node_m
+odules\next\dist\compiled\jes
+t-worker\processChild.js
+    at Function.<anonymous> (
+node:internal/modules/cjs/loa
+der:1383:15)
+    at C:\Users\mayan\Downloa
+ds\project\node_modules\.pnpm
+\next@15.1.7_react-dom@19.2.3
+_react@19.2.3__react@19.2.3\n
+ode_modules\next\dist\server\
+require-hook.js:55:36
+    at defaultResolveImpl (no
+de:internal/modules/cjs/loade
+r:1025:19)
+    at 
+resolveForCJSWithHooks (node:
+internal/modules/cjs/loader:1
+030:22)
+    at Function._load (node:i
+nternal/modules/cjs/loader:11
+92:37)
+    at 
+TracingChannel.traceSync (nod
+e:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:i
+nternal/modules/cjs/loader:23
+7:24)
+    at Module.<anonymous> (no
+de:internal/modules/cjs/loade
+r:1463:12)
+    at mod.require (C:\Users\
+mayan\Downloads\project\node_
+modules\.pnpm\next@15.1.7_rea
+ct-dom@19.2.3_react@19.2.3__r
+eact@19.2.3\node_modules\next
+\dist\server\require-hook.js:
+65:28)
+    at require (node:internal
+/modules/helpers:147:16)
+
+
+> Build failed because of 
+webpack errors
+ΓÇëELIFECYCLEΓÇë Command failed with exit code 1.
