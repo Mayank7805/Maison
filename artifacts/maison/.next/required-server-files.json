@@ -165,7 +165,6 @@
       "appNavFailHandling": false,
       "prerenderEarlyExit": true,
       "serverMinification": true,
-      "enablePrerenderSourceMaps": false,
       "serverSourceMaps": false,
       "linkNoTouchStart": false,
       "caseSensitiveRoutes": false,
@@ -206,10 +205,10 @@
       "authInterrupts": false,
       "webpackMemoryOptimizations": false,
       "optimizeServerReact": true,
-      "useEarlyImport": false,
       "viewTransition": false,
       "routerBFCache": false,
       "removeUncaughtErrorAndRejectionListeners": false,
+      "validateRSCRequestHeaders": false,
       "staleTimes": {
         "dynamic": 0,
         "static": 300
@@ -221,7 +220,12 @@
       "inlineCss": false,
       "useCache": false,
       "globalNotFound": false,
+      "devtoolNewPanelUI": false,
       "devtoolSegmentExplorer": false,
+      "browserDebugInfoInTerminal": false,
+      "optimizeRouterScrolling": false,
+      "strictNextHead": true,
+      "middlewareClientMaxBodySize": 10485760,
       "optimizePackageImports": [
         "lucide-react",
         "date-fns",
@@ -253,10 +257,10 @@
         "@effect/sql-mssql",
         "@effect/sql-mysql2",
         "@effect/sql-pg",
-        "@effect/sql-squlite-node",
-        "@effect/sql-squlite-bun",
-        "@effect/sql-squlite-wasm",
-        "@effect/sql-squlite-react-native",
+        "@effect/sql-sqlite-node",
+        "@effect/sql-sqlite-bun",
+        "@effect/sql-sqlite-wasm",
+        "@effect/sql-sqlite-react-native",
         "@effect/rpc",
         "@effect/rpc-http",
         "@effect/typeclass",
@@ -302,7 +306,7 @@
       "trustHostHeader": false,
       "isExperimentalCompile": false
     },
-    "htmlLimitedBots": "Mediapartners-Google|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti",
+    "htmlLimitedBots": "Mediapartners-Google|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti",
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
@@ -332,6 +336,6 @@
     ".next\\required-server-files.json"
   ],
   "ignore": [
-    "..\\..\\node_modules\\.pnpm\\next@15.4.0_react-dom@19.2.3_react@19.2.3__react@19.2.3\\node_modules\\next\\dist\\compiled\\@ampproject\\toolbox-optimizer\\**\\*"
+    "..\\..\\node_modules\\.pnpm\\next@15.4.10_react-dom@19.2.3_react@19.2.3__react@19.2.3\\node_modules\\next\\dist\\compiled\\@ampproject\\toolbox-optimizer\\**\\*"
   ]
 }

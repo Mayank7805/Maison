@@ -6,8 +6,8 @@
 /**
  * Generate a list of every possible transform key.
  */ __turbopack_context__.s({
-    "transformPropOrder": (()=>transformPropOrder),
-    "transformProps": (()=>transformProps)
+    "transformPropOrder": ()=>transformPropOrder,
+    "transformProps": ()=>transformProps
 });
 const transformPropOrder = [
     "transformPerspective",
@@ -38,9 +38,9 @@ const transformPropOrder = [
 "use strict";
 
 __turbopack_context__.s({
-    "alpha": (()=>alpha),
-    "number": (()=>number),
-    "scale": (()=>scale)
+    "alpha": ()=>alpha,
+    "number": ()=>number,
+    "scale": ()=>scale
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/clamp.mjs [app-client] (ecmascript)");
 ;
@@ -66,7 +66,7 @@ const scale = {
 // If this number is a decimal, make it just five decimal places
 // to avoid exponents
 __turbopack_context__.s({
-    "sanitize": (()=>sanitize)
+    "sanitize": ()=>sanitize
 });
 const sanitize = (v)=>Math.round(v * 100000) / 100000;
 ;
@@ -76,7 +76,7 @@ const sanitize = (v)=>Math.round(v * 100000) / 100000;
 "use strict";
 
 __turbopack_context__.s({
-    "floatRegex": (()=>floatRegex)
+    "floatRegex": ()=>floatRegex
 });
 const floatRegex = /-?(?:\d+(?:\.\d+)?|\.\d+)/gu;
 ;
@@ -86,7 +86,7 @@ const floatRegex = /-?(?:\d+(?:\.\d+)?|\.\d+)/gu;
 "use strict";
 
 __turbopack_context__.s({
-    "isNullish": (()=>isNullish)
+    "isNullish": ()=>isNullish
 });
 function isNullish(v) {
     return v == null;
@@ -98,7 +98,7 @@ function isNullish(v) {
 "use strict";
 
 __turbopack_context__.s({
-    "singleColorRegex": (()=>singleColorRegex)
+    "singleColorRegex": ()=>singleColorRegex
 });
 const singleColorRegex = /^(?:#[\da-f]{3,8}|(?:rgb|hsl)a?\((?:-?[\d.]+%?[,\s]+){2}-?[\d.]+%?\s*(?:[,/]\s*)?(?:\b\d+(?:\.\d+)?|\.\d+)?%?\))$/iu;
 ;
@@ -108,8 +108,8 @@ const singleColorRegex = /^(?:#[\da-f]{3,8}|(?:rgb|hsl)a?\((?:-?[\d.]+%?[,\s]+){
 "use strict";
 
 __turbopack_context__.s({
-    "isColorString": (()=>isColorString),
-    "splitColor": (()=>splitColor)
+    "isColorString": ()=>isColorString,
+    "splitColor": ()=>splitColor
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$float$2d$regex$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/utils/float-regex.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$is$2d$nullish$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/utils/is-nullish.mjs [app-client] (ecmascript)");
@@ -140,8 +140,8 @@ const splitColor = (aName, bName, cName)=>(v)=>{
 "use strict";
 
 __turbopack_context__.s({
-    "rgbUnit": (()=>rgbUnit),
-    "rgba": (()=>rgba)
+    "rgbUnit": ()=>rgbUnit,
+    "rgba": ()=>rgba
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/clamp.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-client] (ecmascript)");
@@ -159,7 +159,10 @@ const rgbUnit = {
 const rgba = {
     test: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isColorString"])("rgb", "red"),
     parse: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["splitColor"])("red", "green", "blue"),
-    transform: ({ red, green, blue, alpha: alpha$1 = 1 })=>"rgba(" + rgbUnit.transform(red) + ", " + rgbUnit.transform(green) + ", " + rgbUnit.transform(blue) + ", " + (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["sanitize"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"].transform(alpha$1)) + ")"
+    transform: (param)=>{
+        let { red, green, blue, alpha: alpha$1 = 1 } = param;
+        return "rgba(" + rgbUnit.transform(red) + ", " + rgbUnit.transform(green) + ", " + rgbUnit.transform(blue) + ", " + (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["sanitize"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"].transform(alpha$1)) + ")";
+    }
 };
 ;
  //# sourceMappingURL=rgba.mjs.map
@@ -168,7 +171,7 @@ const rgba = {
 "use strict";
 
 __turbopack_context__.s({
-    "hex": (()=>hex)
+    "hex": ()=>hex
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$rgba$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/color/rgba.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/color/utils.mjs [app-client] (ecmascript)");
@@ -215,17 +218,17 @@ const hex = {
 "use strict";
 
 /*#__NO_SIDE_EFFECTS__*/ __turbopack_context__.s({
-    "degrees": (()=>degrees),
-    "percent": (()=>percent),
-    "progressPercentage": (()=>progressPercentage),
-    "px": (()=>px),
-    "vh": (()=>vh),
-    "vw": (()=>vw)
+    "degrees": ()=>degrees,
+    "percent": ()=>percent,
+    "progressPercentage": ()=>progressPercentage,
+    "px": ()=>px,
+    "vh": ()=>vh,
+    "vw": ()=>vw
 });
 const createUnitType = (unit)=>({
         test: (v)=>typeof v === "string" && v.endsWith(unit) && v.split(" ").length === 1,
         parse: parseFloat,
-        transform: (v)=>`${v}${unit}`
+        transform: (v)=>"".concat(v).concat(unit)
     });
 const degrees = /*@__PURE__*/ createUnitType("deg");
 const percent = /*@__PURE__*/ createUnitType("%");
@@ -244,7 +247,7 @@ const progressPercentage = /*@__PURE__*/ (()=>({
 "use strict";
 
 __turbopack_context__.s({
-    "hsla": (()=>hsla)
+    "hsla": ()=>hsla
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/numbers/units.mjs [app-client] (ecmascript)");
@@ -257,7 +260,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 const hsla = {
     test: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isColorString"])("hsl", "hue"),
     parse: /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$utils$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["splitColor"])("hue", "saturation", "lightness"),
-    transform: ({ hue, saturation, lightness, alpha: alpha$1 = 1 })=>{
+    transform: (param)=>{
+        let { hue, saturation, lightness, alpha: alpha$1 = 1 } = param;
         return "hsla(" + Math.round(hue) + ", " + __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["percent"].transform((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["sanitize"])(saturation)) + ", " + __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["percent"].transform((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["sanitize"])(lightness)) + ", " + (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$sanitize$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["sanitize"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["alpha"].transform(alpha$1)) + ")";
     }
 };
@@ -268,7 +272,7 @@ const hsla = {
 "use strict";
 
 __turbopack_context__.s({
-    "color": (()=>color)
+    "color": ()=>color
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hex$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/color/hex.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hsla$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/color/hsla.mjs [app-client] (ecmascript)");
@@ -303,7 +307,7 @@ const color = {
 "use strict";
 
 __turbopack_context__.s({
-    "colorRegex": (()=>colorRegex)
+    "colorRegex": ()=>colorRegex
 });
 const colorRegex = /(?:#[\da-f]{3,8}|(?:rgb|hsl)a?\((?:-?[\d.]+%?[,\s]+){2}-?[\d.]+%?\s*(?:[,/]\s*)?(?:\b\d+(?:\.\d+)?|\.\d+)?%?\))/giu;
 ;
@@ -313,8 +317,8 @@ const colorRegex = /(?:#[\da-f]{3,8}|(?:rgb|hsl)a?\((?:-?[\d.]+%?[,\s]+){2}-?[\d
 "use strict";
 
 __turbopack_context__.s({
-    "analyseComplexValue": (()=>analyseComplexValue),
-    "complex": (()=>complex)
+    "analyseComplexValue": ()=>analyseComplexValue,
+    "complex": ()=>complex
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/color/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$color$2d$regex$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/utils/color-regex.mjs [app-client] (ecmascript)");
@@ -325,7 +329,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 ;
 function test(v) {
-    return isNaN(v) && typeof v === "string" && (v.match(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$float$2d$regex$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["floatRegex"])?.length || 0) + (v.match(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$color$2d$regex$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["colorRegex"])?.length || 0) > 0;
+    var _v_match, _v_match1;
+    return isNaN(v) && typeof v === "string" && (((_v_match = v.match(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$float$2d$regex$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["floatRegex"])) === null || _v_match === void 0 ? void 0 : _v_match.length) || 0) + (((_v_match1 = v.match(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$color$2d$regex$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["colorRegex"])) === null || _v_match1 === void 0 ? void 0 : _v_match1.length) || 0) > 0;
 }
 const NUMBER_TOKEN = "number";
 const COLOR_TOKEN = "color";
@@ -412,7 +417,7 @@ const complex = {
 "use strict";
 
 __turbopack_context__.s({
-    "filter": (()=>filter)
+    "filter": ()=>filter
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$float$2d$regex$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/utils/float-regex.mjs [app-client] (ecmascript)");
@@ -451,7 +456,7 @@ const filter = {
 "use strict";
 
 __turbopack_context__.s({
-    "mask": (()=>mask)
+    "mask": ()=>mask
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-client] (ecmascript)");
 ;
@@ -473,7 +478,7 @@ const mask = {
 "use strict";
 
 __turbopack_context__.s({
-    "int": (()=>int)
+    "int": ()=>int
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-client] (ecmascript)");
 ;
@@ -488,7 +493,7 @@ const int = {
 "use strict";
 
 __turbopack_context__.s({
-    "transformValueTypes": (()=>transformValueTypes)
+    "transformValueTypes": ()=>transformValueTypes
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/numbers/units.mjs [app-client] (ecmascript)");
@@ -527,7 +532,7 @@ const transformValueTypes = {
 "use strict";
 
 __turbopack_context__.s({
-    "numberValueTypes": (()=>numberValueTypes)
+    "numberValueTypes": ()=>numberValueTypes
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$int$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/int.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-client] (ecmascript)");
@@ -607,8 +612,8 @@ const numberValueTypes = {
 "use strict";
 
 __turbopack_context__.s({
-    "defaultValueTypes": (()=>defaultValueTypes),
-    "getDefaultValueType": (()=>getDefaultValueType)
+    "defaultValueTypes": ()=>defaultValueTypes,
+    "getDefaultValueType": ()=>getDefaultValueType
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/color/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$filter$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/complex/filter.mjs [app-client] (ecmascript)");
@@ -649,10 +654,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 "use strict";
 
 __turbopack_context__.s({
-    "createAxis": (()=>createAxis),
-    "createAxisDelta": (()=>createAxisDelta),
-    "createBox": (()=>createBox),
-    "createDelta": (()=>createDelta)
+    "createAxis": ()=>createAxis,
+    "createAxisDelta": ()=>createAxisDelta,
+    "createBox": ()=>createBox,
+    "createDelta": ()=>createDelta
 });
 const createAxisDelta = ()=>({
         translate: 0,
@@ -679,7 +684,7 @@ const createBox = ()=>({
 "use strict";
 
 __turbopack_context__.s({
-    "isMotionValue": (()=>isMotionValue)
+    "isMotionValue": ()=>isMotionValue
 });
 const isMotionValue = (value)=>Boolean(value && value.getVelocity);
 ;
@@ -689,7 +694,7 @@ const isMotionValue = (value)=>Boolean(value && value.getVelocity);
 "use strict";
 
 __turbopack_context__.s({
-    "positionalKeys": (()=>positionalKeys)
+    "positionalKeys": ()=>positionalKeys
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-client] (ecmascript)");
 ;
@@ -711,7 +716,7 @@ const positionalKeys = new Set([
 /**
  * ValueType for "auto"
  */ __turbopack_context__.s({
-    "auto": (()=>auto)
+    "auto": ()=>auto
 });
 const auto = {
     test: (v)=>v === "auto",
@@ -726,7 +731,7 @@ const auto = {
 /**
  * Tests a provided value against a ValueType
  */ __turbopack_context__.s({
-    "testValueType": (()=>testValueType)
+    "testValueType": ()=>testValueType
 });
 const testValueType = (v)=>(type)=>type.test(v);
 ;
@@ -736,8 +741,8 @@ const testValueType = (v)=>(type)=>type.test(v);
 "use strict";
 
 __turbopack_context__.s({
-    "dimensionValueTypes": (()=>dimensionValueTypes),
-    "findDimensionValueType": (()=>findDimensionValueType)
+    "dimensionValueTypes": ()=>dimensionValueTypes,
+    "findDimensionValueType": ()=>findDimensionValueType
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$auto$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/auto.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/numbers/index.mjs [app-client] (ecmascript)");
@@ -768,9 +773,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 "use strict";
 
 __turbopack_context__.s({
-    "containsCSSVariable": (()=>containsCSSVariable),
-    "isCSSVariableName": (()=>isCSSVariableName),
-    "isCSSVariableToken": (()=>isCSSVariableToken)
+    "containsCSSVariable": ()=>containsCSSVariable,
+    "isCSSVariableName": ()=>isCSSVariableName,
+    "isCSSVariableToken": ()=>isCSSVariableToken
 });
 const checkStringStartsWith = (token)=>(key)=>typeof key === "string" && key.startsWith(token);
 const isCSSVariableName = /*@__PURE__*/ checkStringStartsWith("--");
@@ -798,8 +803,8 @@ const singleCssVariableRegex = /var\(--(?:[\w-]+\s*|[\w-]+\s*,(?:\s*[^)(\s]|\s*\
 "use strict";
 
 __turbopack_context__.s({
-    "getVariableValue": (()=>getVariableValue),
-    "parseCSSVariable": (()=>parseCSSVariable)
+    "getVariableValue": ()=>getVariableValue,
+    "parseCSSVariable": ()=>parseCSSVariable
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/errors.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$numerical$2d$string$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/is-numerical-string.mjs [app-client] (ecmascript)");
@@ -823,13 +828,14 @@ function parseCSSVariable(current) {
     ];
     const [, token1, token2, fallback] = match;
     return [
-        `--${token1 ?? token2}`,
+        "--".concat(token1 !== null && token1 !== void 0 ? token1 : token2),
         fallback
     ];
 }
 const maxDepth = 4;
-function getVariableValue(current, element, depth = 1) {
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["invariant"])(depth <= maxDepth, `Max CSS variable fallback depth detected in property "${current}". This may indicate a circular fallback dependency.`, "max-css-var-depth");
+function getVariableValue(current, element) {
+    let depth = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : 1;
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["invariant"])(depth <= maxDepth, 'Max CSS variable fallback depth detected in property "'.concat(current, '". This may indicate a circular fallback dependency.'), "max-css-var-depth");
     const [token, fallback] = parseCSSVariable(current);
     // No CSS variable detected
     if (!token) return;
@@ -848,11 +854,12 @@ function getVariableValue(current, element, depth = 1) {
 "use strict";
 
 __turbopack_context__.s({
-    "fillWildcards": (()=>fillWildcards)
+    "fillWildcards": ()=>fillWildcards
 });
 function fillWildcards(keyframes) {
     for(let i = 1; i < keyframes.length; i++){
-        keyframes[i] ?? (keyframes[i] = keyframes[i - 1]);
+        var _keyframes_i;
+        (_keyframes_i = keyframes[i]) !== null && _keyframes_i !== void 0 ? _keyframes_i : keyframes[i] = keyframes[i - 1];
     }
 }
 ;
@@ -862,9 +869,9 @@ function fillWildcards(keyframes) {
 "use strict";
 
 __turbopack_context__.s({
-    "defaultTransformValue": (()=>defaultTransformValue),
-    "parseValueFromTransform": (()=>parseValueFromTransform),
-    "readTransformValue": (()=>readTransformValue)
+    "defaultTransformValue": ()=>defaultTransformValue,
+    "parseValueFromTransform": ()=>parseValueFromTransform,
+    "readTransformValue": ()=>readTransformValue
 });
 const radToDeg = (rad)=>rad * 180 / Math.PI;
 const rotate = (v)=>{
@@ -950,9 +957,9 @@ function convertTransformToNumber(value) {
 "use strict";
 
 __turbopack_context__.s({
-    "isNumOrPxType": (()=>isNumOrPxType),
-    "positionalValues": (()=>positionalValues),
-    "removeNonTranslationalTransform": (()=>removeNonTranslationalTransform)
+    "isNumOrPxType": ()=>isNumOrPxType,
+    "positionalValues": ()=>positionalValues,
+    "removeNonTranslationalTransform": ()=>removeNonTranslationalTransform
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/dom/parse-transform.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-client] (ecmascript)");
@@ -985,15 +992,39 @@ function removeNonTranslationalTransform(visualElement) {
 }
 const positionalValues = {
     // Dimensions
-    width: ({ x }, { paddingLeft = "0", paddingRight = "0" })=>x.max - x.min - parseFloat(paddingLeft) - parseFloat(paddingRight),
-    height: ({ y }, { paddingTop = "0", paddingBottom = "0" })=>y.max - y.min - parseFloat(paddingTop) - parseFloat(paddingBottom),
-    top: (_bbox, { top })=>parseFloat(top),
-    left: (_bbox, { left })=>parseFloat(left),
-    bottom: ({ y }, { top })=>parseFloat(top) + (y.max - y.min),
-    right: ({ x }, { left })=>parseFloat(left) + (x.max - x.min),
+    width: (param, param1)=>{
+        let { x } = param, { paddingLeft = "0", paddingRight = "0" } = param1;
+        return x.max - x.min - parseFloat(paddingLeft) - parseFloat(paddingRight);
+    },
+    height: (param, param1)=>{
+        let { y } = param, { paddingTop = "0", paddingBottom = "0" } = param1;
+        return y.max - y.min - parseFloat(paddingTop) - parseFloat(paddingBottom);
+    },
+    top: (_bbox, param)=>{
+        let { top } = param;
+        return parseFloat(top);
+    },
+    left: (_bbox, param)=>{
+        let { left } = param;
+        return parseFloat(left);
+    },
+    bottom: (param, param1)=>{
+        let { y } = param, { top } = param1;
+        return parseFloat(top) + (y.max - y.min);
+    },
+    right: (param, param1)=>{
+        let { x } = param, { left } = param1;
+        return parseFloat(left) + (x.max - x.min);
+    },
     // Transform
-    x: (_bbox, { transform })=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["parseValueFromTransform"])(transform, "x"),
-    y: (_bbox, { transform })=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["parseValueFromTransform"])(transform, "y")
+    x: (_bbox, param)=>{
+        let { transform } = param;
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["parseValueFromTransform"])(transform, "x");
+    },
+    y: (_bbox, param)=>{
+        let { transform } = param;
+        return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["parseValueFromTransform"])(transform, "y");
+    }
 };
 // Alias translate longform names
 positionalValues.translateX = positionalValues.x;
@@ -1005,7 +1036,7 @@ positionalValues.translateY = positionalValues.y;
 "use strict";
 
 __turbopack_context__.s({
-    "stepsOrder": (()=>stepsOrder)
+    "stepsOrder": ()=>stepsOrder
 });
 const stepsOrder = [
     "setup",
@@ -1024,7 +1055,7 @@ const stepsOrder = [
 "use strict";
 
 __turbopack_context__.s({
-    "statsBuffer": (()=>statsBuffer)
+    "statsBuffer": ()=>statsBuffer
 });
 const statsBuffer = {
     value: null,
@@ -1037,7 +1068,7 @@ const statsBuffer = {
 "use strict";
 
 __turbopack_context__.s({
-    "createRenderStep": (()=>createRenderStep)
+    "createRenderStep": ()=>createRenderStep
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/stats/buffer.mjs [app-client] (ecmascript)");
 ;
@@ -1072,7 +1103,8 @@ function createRenderStep(runNextFrame, stepName) {
     const step = {
         /**
          * Schedule a process to run on the next frame.
-         */ schedule: (callback, keepAlive = false, immediate = false)=>{
+         */ schedule: function(callback) {
+            let keepAlive = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : false, immediate = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : false;
             const addToCurrentFrame = immediate && isProcessing;
             const queue = addToCurrentFrame ? thisFrame : nextFrame;
             if (keepAlive) toKeepAlive.add(callback);
@@ -1129,7 +1161,7 @@ function createRenderStep(runNextFrame, stepName) {
 "use strict";
 
 __turbopack_context__.s({
-    "createRenderBatcher": (()=>createRenderBatcher)
+    "createRenderBatcher": ()=>createRenderBatcher
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/global-config.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$order$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/frameloop/order.mjs [app-client] (ecmascript)");
@@ -1184,7 +1216,8 @@ function createRenderBatcher(scheduleNextBatch, allowKeepAlive) {
     };
     const schedule = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$order$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["stepsOrder"].reduce((acc, key)=>{
         const step = steps[key];
-        acc[key] = (process, keepAlive = false, immediate = false)=>{
+        acc[key] = function(process) {
+            let keepAlive = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : false, immediate = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : false;
             if (!runNextFrame) wake();
             return step.schedule(process, keepAlive, immediate);
         };
@@ -1209,10 +1242,10 @@ function createRenderBatcher(scheduleNextBatch, allowKeepAlive) {
 "use strict";
 
 __turbopack_context__.s({
-    "cancelFrame": (()=>cancelFrame),
-    "frame": (()=>frame),
-    "frameData": (()=>frameData),
-    "frameSteps": (()=>frameSteps)
+    "cancelFrame": ()=>cancelFrame,
+    "frame": ()=>frame,
+    "frameData": ()=>frameData,
+    "frameSteps": ()=>frameSteps
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/noop.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$batcher$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/frameloop/batcher.mjs [app-client] (ecmascript)");
@@ -1226,8 +1259,8 @@ const { schedule: frame, cancel: cancelFrame, state: frameData, steps: frameStep
 "use strict";
 
 __turbopack_context__.s({
-    "KeyframeResolver": (()=>KeyframeResolver),
-    "flushKeyframeResolvers": (()=>flushKeyframeResolvers)
+    "KeyframeResolver": ()=>KeyframeResolver,
+    "flushKeyframeResolvers": ()=>flushKeyframeResolvers
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$fill$2d$wildcards$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/keyframes/utils/fill-wildcards.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$utils$2f$unit$2d$conversion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/keyframes/utils/unit-conversion.mjs [app-client] (ecmascript)");
@@ -1260,8 +1293,10 @@ function measureAllKeyframes() {
             element.render();
             const restore = transformsToRestore.get(element);
             if (restore) {
-                restore.forEach(([key, value])=>{
-                    element.getValue(key)?.set(value);
+                restore.forEach((param)=>{
+                    let [key, value] = param;
+                    var _element_getValue;
+                    (_element_getValue = element.getValue(key)) === null || _element_getValue === void 0 ? void 0 : _element_getValue.set(value);
                 });
             }
         });
@@ -1294,26 +1329,6 @@ function flushKeyframeResolvers() {
     isForced = false;
 }
 class KeyframeResolver {
-    constructor(unresolvedKeyframes, onComplete, name, motionValue, element, isAsync = false){
-        this.state = "pending";
-        /**
-         * Track whether this resolver is async. If it is, it'll be added to the
-         * resolver queue and flushed in the next frame. Resolvers that aren't going
-         * to trigger read/write thrashing don't need to be async.
-         */ this.isAsync = false;
-        /**
-         * Track whether this resolver needs to perform a measurement
-         * to resolve its keyframes.
-         */ this.needsMeasurement = false;
-        this.unresolvedKeyframes = [
-            ...unresolvedKeyframes
-        ];
-        this.onComplete = onComplete;
-        this.name = name;
-        this.motionValue = motionValue;
-        this.element = element;
-        this.isAsync = isAsync;
-    }
     scheduleResolve() {
         this.state = "scheduled";
         if (this.isAsync) {
@@ -1332,7 +1347,7 @@ class KeyframeResolver {
         const { unresolvedKeyframes, name, element, motionValue } = this;
         // If initial keyframe is null we need to read it from the DOM
         if (unresolvedKeyframes[0] === null) {
-            const currentValue = motionValue?.get();
+            const currentValue = motionValue === null || motionValue === void 0 ? void 0 : motionValue.get();
             // TODO: This doesn't work if the final keyframe is a wildcard
             const finalKeyframe = unresolvedKeyframes[unresolvedKeyframes.length - 1];
             if (currentValue !== undefined) {
@@ -1356,7 +1371,8 @@ class KeyframeResolver {
     measureInitialState() {}
     renderEndStyles() {}
     measureEndState() {}
-    complete(isForcedComplete = false) {
+    complete() {
+        let isForcedComplete = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : false;
         this.state = "complete";
         this.onComplete(this.unresolvedKeyframes, this.finalKeyframe, isForcedComplete);
         toResolve.delete(this);
@@ -1370,6 +1386,26 @@ class KeyframeResolver {
     resume() {
         if (this.state === "pending") this.scheduleResolve();
     }
+    constructor(unresolvedKeyframes, onComplete, name, motionValue, element, isAsync = false){
+        this.state = "pending";
+        /**
+         * Track whether this resolver is async. If it is, it'll be added to the
+         * resolver queue and flushed in the next frame. Resolvers that aren't going
+         * to trigger read/write thrashing don't need to be async.
+         */ this.isAsync = false;
+        /**
+         * Track whether this resolver needs to perform a measurement
+         * to resolve its keyframes.
+         */ this.needsMeasurement = false;
+        this.unresolvedKeyframes = [
+            ...unresolvedKeyframes
+        ];
+        this.onComplete = onComplete;
+        this.name = name;
+        this.motionValue = motionValue;
+        this.element = element;
+        this.isAsync = isAsync;
+    }
 }
 ;
  //# sourceMappingURL=KeyframesResolver.mjs.map
@@ -1378,7 +1414,7 @@ class KeyframeResolver {
 "use strict";
 
 __turbopack_context__.s({
-    "isNone": (()=>isNone)
+    "isNone": ()=>isNone
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$zero$2d$value$2d$string$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/is-zero-value-string.mjs [app-client] (ecmascript)");
 ;
@@ -1398,7 +1434,7 @@ function isNone(value) {
 "use strict";
 
 __turbopack_context__.s({
-    "getAnimatableNone": (()=>getAnimatableNone)
+    "getAnimatableNone": ()=>getAnimatableNone
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$filter$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/complex/filter.mjs [app-client] (ecmascript)");
@@ -1425,7 +1461,7 @@ function getAnimatableNone(key, value) {
 "use strict";
 
 __turbopack_context__.s({
-    "makeNoneKeyframesAnimatable": (()=>makeNoneKeyframesAnimatable)
+    "makeNoneKeyframesAnimatable": ()=>makeNoneKeyframesAnimatable
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$animatable$2d$none$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/utils/animatable-none.mjs [app-client] (ecmascript)");
@@ -1464,7 +1500,7 @@ function makeNoneKeyframesAnimatable(unresolvedKeyframes, noneKeyframeIndexes, n
 "use strict";
 
 __turbopack_context__.s({
-    "DOMKeyframesResolver": (()=>DOMKeyframesResolver)
+    "DOMKeyframesResolver": ()=>DOMKeyframesResolver
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$position$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/keys-position.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$dimensions$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/dimensions.mjs [app-client] (ecmascript)");
@@ -1483,9 +1519,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 ;
 class DOMKeyframesResolver extends __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KeyframeResolver"] {
-    constructor(unresolvedKeyframes, onComplete, name, motionValue, element){
-        super(unresolvedKeyframes, onComplete, name, motionValue, element, true);
-    }
     readKeyframes() {
         const { unresolvedKeyframes, element, name } = this;
         if (!element || !element.current) return;
@@ -1578,6 +1611,7 @@ class DOMKeyframesResolver extends __TURBOPACK__imported__module__$5b$project$5d
         }
     }
     measureEndState() {
+        var _this_removedTransforms;
         const { element, name, unresolvedKeyframes } = this;
         if (!element || !element.current) return;
         const value = element.getValue(name);
@@ -1589,12 +1623,16 @@ class DOMKeyframesResolver extends __TURBOPACK__imported__module__$5b$project$5d
             this.finalKeyframe = finalKeyframe;
         }
         // If we removed transform values, reapply them before the next render
-        if (this.removedTransforms?.length) {
-            this.removedTransforms.forEach(([unsetTransformName, unsetTransformValue])=>{
+        if ((_this_removedTransforms = this.removedTransforms) === null || _this_removedTransforms === void 0 ? void 0 : _this_removedTransforms.length) {
+            this.removedTransforms.forEach((param)=>{
+                let [unsetTransformName, unsetTransformValue] = param;
                 element.getValue(unsetTransformName).set(unsetTransformValue);
             });
         }
         this.resolveNoneKeyframes();
+    }
+    constructor(unresolvedKeyframes, onComplete, name, motionValue, element){
+        super(unresolvedKeyframes, onComplete, name, motionValue, element, true);
     }
 }
 ;
@@ -1604,7 +1642,7 @@ class DOMKeyframesResolver extends __TURBOPACK__imported__module__$5b$project$5d
 "use strict";
 
 __turbopack_context__.s({
-    "isCSSVar": (()=>isCSSVar)
+    "isCSSVar": ()=>isCSSVar
 });
 const isCSSVar = (name)=>name.startsWith("--");
 ;
@@ -1614,7 +1652,7 @@ const isCSSVar = (name)=>name.startsWith("--");
 "use strict";
 
 __turbopack_context__.s({
-    "setStyle": (()=>setStyle)
+    "setStyle": ()=>setStyle
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$is$2d$css$2d$var$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/dom/is-css-var.mjs [app-client] (ecmascript)");
 ;
@@ -1631,7 +1669,7 @@ function setStyle(element, name, value) {
  * Add the ability for test suites to manually set support flags
  * to better test more environments.
  */ __turbopack_context__.s({
-    "supportsFlags": (()=>supportsFlags)
+    "supportsFlags": ()=>supportsFlags
 });
 const supportsFlags = {};
 ;
@@ -1641,7 +1679,7 @@ const supportsFlags = {};
 "use strict";
 
 __turbopack_context__.s({
-    "memoSupports": (()=>memoSupports)
+    "memoSupports": ()=>memoSupports
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$memo$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/memo.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$flags$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/supports/flags.mjs [app-client] (ecmascript)");
@@ -1649,7 +1687,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 function memoSupports(callback, supportsFlag) {
     const memoized = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$memo$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(callback);
-    return ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$flags$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supportsFlags"][supportsFlag] ?? memoized();
+    return ()=>{
+        var _supportsFlags_supportsFlag;
+        return (_supportsFlags_supportsFlag = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$flags$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supportsFlags"][supportsFlag]) !== null && _supportsFlags_supportsFlag !== void 0 ? _supportsFlags_supportsFlag : memoized();
+    };
 }
 ;
  //# sourceMappingURL=memo.mjs.map
@@ -1658,8 +1699,8 @@ function memoSupports(callback, supportsFlag) {
 "use strict";
 
 __turbopack_context__.s({
-    "supportsScrollTimeline": (()=>supportsScrollTimeline),
-    "supportsViewTimeline": (()=>supportsViewTimeline)
+    "supportsScrollTimeline": ()=>supportsScrollTimeline,
+    "supportsViewTimeline": ()=>supportsViewTimeline
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$memo$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/supports/memo.mjs [app-client] (ecmascript)");
 ;
@@ -1672,10 +1713,11 @@ const supportsViewTimeline = /* @__PURE__ */ (0, __TURBOPACK__imported__module__
 "use strict";
 
 __turbopack_context__.s({
-    "getFinalKeyframe": (()=>getFinalKeyframe)
+    "getFinalKeyframe": ()=>getFinalKeyframe
 });
 const isNotNull = (value)=>value !== null;
-function getFinalKeyframe(keyframes, { repeat, repeatType = "loop" }, finalKeyframe, speed = 1) {
+function getFinalKeyframe(keyframes, param, finalKeyframe) {
+    let { repeat, repeatType = "loop" } = param, speed = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : 1;
     const resolvedKeyframes = keyframes.filter(isNotNull);
     const useFirstKeyframe = speed < 0 || repeat && repeatType !== "loop" && repeat % 2 === 1;
     const index = useFirstKeyframe ? 0 : resolvedKeyframes.length - 1;
@@ -1688,12 +1730,9 @@ function getFinalKeyframe(keyframes, { repeat, repeatType = "loop" }, finalKeyfr
 "use strict";
 
 __turbopack_context__.s({
-    "WithPromise": (()=>WithPromise)
+    "WithPromise": ()=>WithPromise
 });
 class WithPromise {
-    constructor(){
-        this.updateFinished();
-    }
     get finished() {
         return this._finished;
     }
@@ -1712,6 +1751,9 @@ class WithPromise {
      */ then(onResolve, onReject) {
         return this.finished.then(onResolve, onReject);
     }
+    constructor(){
+        this.updateFinished();
+    }
 }
 ;
  //# sourceMappingURL=WithPromise.mjs.map
@@ -1720,7 +1762,7 @@ class WithPromise {
 "use strict";
 
 __turbopack_context__.s({
-    "activeAnimations": (()=>activeAnimations)
+    "activeAnimations": ()=>activeAnimations
 });
 const activeAnimations = {
     layout: 0,
@@ -1734,7 +1776,7 @@ const activeAnimations = {
 "use strict";
 
 __turbopack_context__.s({
-    "supportsLinearEasing": (()=>supportsLinearEasing)
+    "supportsLinearEasing": ()=>supportsLinearEasing
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$memo$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/supports/memo.mjs [app-client] (ecmascript)");
 ;
@@ -1757,16 +1799,17 @@ const supportsLinearEasing = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5
 "use strict";
 
 __turbopack_context__.s({
-    "generateLinearEasing": (()=>generateLinearEasing)
+    "generateLinearEasing": ()=>generateLinearEasing
 });
-const generateLinearEasing = (easing, duration, resolution = 10 // as milliseconds
-)=>{
+const generateLinearEasing = function(easing, duration) {
+    let resolution = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : 10 // as milliseconds
+    ;
     let points = "";
     const numPoints = Math.max(Math.round(duration / resolution), 2);
     for(let i = 0; i < numPoints; i++){
         points += Math.round(easing(i / (numPoints - 1)) * 10000) / 10000 + ", ";
     }
-    return `linear(${points.substring(0, points.length - 2)})`;
+    return "linear(".concat(points.substring(0, points.length - 2), ")");
 };
 ;
  //# sourceMappingURL=linear.mjs.map
@@ -1775,9 +1818,12 @@ const generateLinearEasing = (easing, duration, resolution = 10 // as millisecon
 "use strict";
 
 __turbopack_context__.s({
-    "cubicBezierAsString": (()=>cubicBezierAsString)
+    "cubicBezierAsString": ()=>cubicBezierAsString
 });
-const cubicBezierAsString = ([a, b, c, d])=>`cubic-bezier(${a}, ${b}, ${c}, ${d})`;
+const cubicBezierAsString = (param)=>{
+    let [a, b, c, d] = param;
+    return "cubic-bezier(".concat(a, ", ").concat(b, ", ").concat(c, ", ").concat(d, ")");
+};
 ;
  //# sourceMappingURL=cubic-bezier.mjs.map
 }),
@@ -1785,7 +1831,7 @@ const cubicBezierAsString = ([a, b, c, d])=>`cubic-bezier(${a}, ${b}, ${c}, ${d}
 "use strict";
 
 __turbopack_context__.s({
-    "supportedWaapiEasing": (()=>supportedWaapiEasing)
+    "supportedWaapiEasing": ()=>supportedWaapiEasing
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$easing$2f$cubic$2d$bezier$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/waapi/easing/cubic-bezier.mjs [app-client] (ecmascript)");
 ;
@@ -1827,7 +1873,7 @@ const supportedWaapiEasing = {
 "use strict";
 
 __turbopack_context__.s({
-    "mapEasingToNativeEasing": (()=>mapEasingToNativeEasing)
+    "mapEasingToNativeEasing": ()=>mapEasingToNativeEasing
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$is$2d$bezier$2d$definition$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/easing/utils/is-bezier-definition.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$linear$2d$easing$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/supports/linear-easing.mjs [app-client] (ecmascript)");
@@ -1859,7 +1905,7 @@ function mapEasingToNativeEasing(easing, duration) {
 "use strict";
 
 __turbopack_context__.s({
-    "startWaapiAnimation": (()=>startWaapiAnimation)
+    "startWaapiAnimation": ()=>startWaapiAnimation
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$animation$2d$count$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/stats/animation-count.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/stats/buffer.mjs [app-client] (ecmascript)");
@@ -1867,7 +1913,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 ;
 ;
-function startWaapiAnimation(element, valueName, keyframes, { delay = 0, duration = 300, repeat = 0, repeatType = "loop", ease = "easeOut", times } = {}, pseudoElement = undefined) {
+function startWaapiAnimation(element, valueName, keyframes) {
+    let { delay = 0, duration = 300, repeat = 0, repeatType = "loop", ease = "easeOut", times } = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : {}, pseudoElement = arguments.length > 4 && arguments[4] !== void 0 ? arguments[4] : undefined;
     const keyframeOptions = {
         [valueName]: keyframes
     };
@@ -1903,7 +1950,7 @@ function startWaapiAnimation(element, valueName, keyframes, { delay = 0, duratio
 "use strict";
 
 __turbopack_context__.s({
-    "isGenerator": (()=>isGenerator)
+    "isGenerator": ()=>isGenerator
 });
 function isGenerator(type) {
     return typeof type === "function" && "applyToOptions" in type;
@@ -1915,18 +1962,21 @@ function isGenerator(type) {
 "use strict";
 
 __turbopack_context__.s({
-    "applyGeneratorOptions": (()=>applyGeneratorOptions)
+    "applyGeneratorOptions": ()=>applyGeneratorOptions
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$linear$2d$easing$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/supports/linear-easing.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$is$2d$generator$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/generators/utils/is-generator.mjs [app-client] (ecmascript)");
 ;
 ;
-function applyGeneratorOptions({ type, ...options }) {
+function applyGeneratorOptions(param) {
+    let { type, ...options } = param;
     if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$is$2d$generator$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isGenerator"])(type) && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$supports$2f$linear$2d$easing$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supportsLinearEasing"])()) {
         return type.applyToOptions(options);
     } else {
-        options.duration ?? (options.duration = 300);
-        options.ease ?? (options.ease = "easeOut");
+        var _options_duration;
+        (_options_duration = options.duration) !== null && _options_duration !== void 0 ? _options_duration : options.duration = 300;
+        var _options_ease;
+        (_options_ease = options.ease) !== null && _options_ease !== void 0 ? _options_ease : options.ease = "easeOut";
     }
     return options;
 }
@@ -1937,7 +1987,7 @@ function applyGeneratorOptions({ type, ...options }) {
 "use strict";
 
 __turbopack_context__.s({
-    "NativeAnimation": (()=>NativeAnimation)
+    "NativeAnimation": ()=>NativeAnimation
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/errors.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/time-conversion.mjs [app-client] (ecmascript)");
@@ -1958,46 +2008,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 /**
  * NativeAnimation implements AnimationPlaybackControls for the browser's Web Animations API.
  */ class NativeAnimation extends __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$WithPromise$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WithPromise"] {
-    constructor(options){
-        super();
-        this.finishedTime = null;
-        this.isStopped = false;
-        /**
-         * Tracks a manually-set start time that takes precedence over WAAPI's
-         * dynamic startTime. This is cleared when play() or time setter is called,
-         * allowing WAAPI to take over timing.
-         */ this.manualStartTime = null;
-        if (!options) return;
-        const { element, name, keyframes, pseudoElement, allowFlatten = false, finalKeyframe, onComplete } = options;
-        this.isPseudoElement = Boolean(pseudoElement);
-        this.allowFlatten = allowFlatten;
-        this.options = options;
-        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["invariant"])(typeof options.type !== "string", `Mini animate() doesn't support "type" as a string.`, "mini-spring");
-        const transition = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$utils$2f$apply$2d$generator$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["applyGeneratorOptions"])(options);
-        this.animation = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$start$2d$waapi$2d$animation$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["startWaapiAnimation"])(element, name, keyframes, transition, pseudoElement);
-        if (transition.autoplay === false) {
-            this.animation.pause();
-        }
-        this.animation.onfinish = ()=>{
-            this.finishedTime = this.time;
-            if (!pseudoElement) {
-                const keyframe = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$get$2d$final$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFinalKeyframe"])(keyframes, this.options, finalKeyframe, this.speed);
-                if (this.updateMotionValue) {
-                    this.updateMotionValue(keyframe);
-                }
-                /**
-                 * If we can, we want to commit the final style as set by the user,
-                 * rather than the computed keyframe value supplied by the animation.
-                 * We always do this, even when a motion value is present, to prevent
-                 * a visual flash in Firefox where the WAAPI animation's fill is removed
-                 * during cancel() before the scheduled render can apply the correct value.
-                 */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$style$2d$set$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["setStyle"])(element, name, keyframe);
-                this.animation.cancel();
-            }
-            onComplete?.();
-            this.notifyFinished();
-        };
-    }
     play() {
         if (this.isStopped) return;
         this.manualStartTime = null;
@@ -2010,7 +2020,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
         this.animation.pause();
     }
     complete() {
-        this.animation.finish?.();
+        var _this_animation_finish, _this_animation;
+        (_this_animation_finish = (_this_animation = this.animation).finish) === null || _this_animation_finish === void 0 ? void 0 : _this_animation_finish.call(_this_animation);
     }
     cancel() {
         try {
@@ -2043,13 +2054,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
      * Motion to also correctly calculate velocity for any subsequent animation
      * while deferring the commit until the next animation frame.
      */ commitStyles() {
-        const element = this.options?.element;
-        if (!this.isPseudoElement && element?.isConnected) {
-            this.animation.commitStyles?.();
+        var _this_options;
+        const element = (_this_options = this.options) === null || _this_options === void 0 ? void 0 : _this_options.element;
+        if (!this.isPseudoElement && (element === null || element === void 0 ? void 0 : element.isConnected)) {
+            var _this_animation_commitStyles, _this_animation;
+            (_this_animation_commitStyles = (_this_animation = this.animation).commitStyles) === null || _this_animation_commitStyles === void 0 ? void 0 : _this_animation_commitStyles.call(_this_animation);
         }
     }
     get duration() {
-        const duration = this.animation.effect?.getComputedTiming?.().duration || 0;
+        var _this_animation_effect_getComputedTiming, _this_animation_effect;
+        const duration = ((_this_animation_effect = this.animation.effect) === null || _this_animation_effect === void 0 ? void 0 : (_this_animation_effect_getComputedTiming = _this_animation_effect.getComputedTiming) === null || _this_animation_effect_getComputedTiming === void 0 ? void 0 : _this_animation_effect_getComputedTiming.call(_this_animation_effect).duration) || 0;
         return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["millisecondsToSeconds"])(Number(duration));
     }
     get iterationDuration() {
@@ -2083,16 +2097,19 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
         return this.finishedTime !== null ? "finished" : this.animation.playState;
     }
     get startTime() {
-        return this.manualStartTime ?? Number(this.animation.startTime);
+        var _this_manualStartTime;
+        return (_this_manualStartTime = this.manualStartTime) !== null && _this_manualStartTime !== void 0 ? _this_manualStartTime : Number(this.animation.startTime);
     }
     set startTime(newStartTime) {
         this.manualStartTime = this.animation.startTime = newStartTime;
     }
     /**
      * Attaches a timeline to the animation, for instance the `ScrollTimeline`.
-     */ attachTimeline({ timeline, rangeStart, rangeEnd, observe }) {
+     */ attachTimeline(param) {
+        let { timeline, rangeStart, rangeEnd, observe } = param;
         if (this.allowFlatten) {
-            this.animation.effect?.updateTiming({
+            var _this_animation_effect;
+            (_this_animation_effect = this.animation.effect) === null || _this_animation_effect === void 0 ? void 0 : _this_animation_effect.updateTiming({
                 easing: "linear"
             });
         }
@@ -2106,6 +2123,46 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
             return observe(this);
         }
     }
+    constructor(options){
+        super();
+        this.finishedTime = null;
+        this.isStopped = false;
+        /**
+         * Tracks a manually-set start time that takes precedence over WAAPI's
+         * dynamic startTime. This is cleared when play() or time setter is called,
+         * allowing WAAPI to take over timing.
+         */ this.manualStartTime = null;
+        if (!options) return;
+        const { element, name, keyframes, pseudoElement, allowFlatten = false, finalKeyframe, onComplete } = options;
+        this.isPseudoElement = Boolean(pseudoElement);
+        this.allowFlatten = allowFlatten;
+        this.options = options;
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["invariant"])(typeof options.type !== "string", 'Mini animate() doesn\'t support "type" as a string.', "mini-spring");
+        const transition = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$utils$2f$apply$2d$generator$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["applyGeneratorOptions"])(options);
+        this.animation = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$start$2d$waapi$2d$animation$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["startWaapiAnimation"])(element, name, keyframes, transition, pseudoElement);
+        if (transition.autoplay === false) {
+            this.animation.pause();
+        }
+        this.animation.onfinish = ()=>{
+            this.finishedTime = this.time;
+            if (!pseudoElement) {
+                const keyframe = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$get$2d$final$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFinalKeyframe"])(keyframes, this.options, finalKeyframe, this.speed);
+                if (this.updateMotionValue) {
+                    this.updateMotionValue(keyframe);
+                }
+                /**
+                 * If we can, we want to commit the final style as set by the user,
+                 * rather than the computed keyframe value supplied by the animation.
+                 * We always do this, even when a motion value is present, to prevent
+                 * a visual flash in Firefox where the WAAPI animation's fill is removed
+                 * during cancel() before the scheduled render can apply the correct value.
+                 */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$style$2d$set$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["setStyle"])(element, name, keyframe);
+                this.animation.cancel();
+            }
+            onComplete === null || onComplete === void 0 ? void 0 : onComplete();
+            this.notifyFinished();
+        };
+    }
 }
 ;
  //# sourceMappingURL=NativeAnimation.mjs.map
@@ -2116,7 +2173,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 /**
  * A list of values that can be hardware-accelerated.
  */ __turbopack_context__.s({
-    "acceleratedValues": (()=>acceleratedValues)
+    "acceleratedValues": ()=>acceleratedValues
 });
 const acceleratedValues = new Set([
     "opacity",
@@ -2131,8 +2188,8 @@ const acceleratedValues = new Set([
 "use strict";
 
 __turbopack_context__.s({
-    "cancelMicrotask": (()=>cancelMicrotask),
-    "microtask": (()=>microtask)
+    "cancelMicrotask": ()=>cancelMicrotask,
+    "microtask": ()=>microtask
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$batcher$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/frameloop/batcher.mjs [app-client] (ecmascript)");
 ;
@@ -2144,7 +2201,7 @@ const { schedule: microtask, cancel: cancelMicrotask } = /* @__PURE__ */ (0, __T
 "use strict";
 
 __turbopack_context__.s({
-    "time": (()=>time)
+    "time": ()=>time
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/global-config.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-client] (ecmascript)");
@@ -2180,11 +2237,11 @@ function clearTime() {
 "use strict";
 
 __turbopack_context__.s({
-    "MotionValue": (()=>MotionValue),
-    "collectMotionValues": (()=>collectMotionValues),
-    "motionValue": (()=>motionValue)
+    "MotionValue": ()=>MotionValue,
+    "collectMotionValues": ()=>collectMotionValues,
+    "motionValue": ()=>motionValue
 });
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$4$2e$0_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.4.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$4$2e$10_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.4.10_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/warn-once.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$subscription$2d$manager$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/subscription-manager.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$velocity$2d$per$2d$second$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/velocity-per-second.mjs [app-client] (ecmascript)");
@@ -2208,47 +2265,6 @@ const collectMotionValues = {
  *
  * @public
  */ class MotionValue {
-    /**
-     * @param init - The initiating value
-     * @param config - Optional configuration options
-     *
-     * -  `transformer`: A function to transform incoming values with.
-     */ constructor(init, options = {}){
-        /**
-         * Tracks whether this value can output a velocity. Currently this is only true
-         * if the value is numerical, but we might be able to widen the scope here and support
-         * other value types.
-         *
-         * @internal
-         */ this.canTrackVelocity = null;
-        /**
-         * An object containing a SubscriptionManager for each active event.
-         */ this.events = {};
-        this.updateAndNotify = (v)=>{
-            const currentTime = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now();
-            /**
-             * If we're updating the value during another frame or eventloop
-             * than the previous frame, then the we set the previous frame value
-             * to current.
-             */ if (this.updatedAt !== currentTime) {
-                this.setPrevFrameValue();
-            }
-            this.prev = this.current;
-            this.setCurrent(v);
-            // Update update subscribers
-            if (this.current !== this.prev) {
-                this.events.change?.notify(this.current);
-                if (this.dependents) {
-                    for (const dependent of this.dependents){
-                        dependent.dirty();
-                    }
-                }
-            }
-        };
-        this.hasAnimated = false;
-        this.setCurrent(init);
-        this.owner = options.owner;
-    }
     setCurrent(current) {
         this.current = current;
         this.updatedAt = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now();
@@ -2256,7 +2272,8 @@ const collectMotionValues = {
             this.canTrackVelocity = isFloat(this.current);
         }
     }
-    setPrevFrameValue(prevFrameValue = this.current) {
+    setPrevFrameValue() {
+        let prevFrameValue = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : this.current;
         this.prevFrameValue = prevFrameValue;
         this.prevUpdatedAt = this.updatedAt;
     }
@@ -2301,7 +2318,7 @@ const collectMotionValues = {
      * @deprecated
      */ onChange(subscription) {
         if ("TURBOPACK compile-time truthy", 1) {
-            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["warnOnce"])(false, `value.onChange(callback) is deprecated. Switch to value.on("change", callback).`);
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["warnOnce"])(false, 'value.onChange(callback) is deprecated. Switch to value.on("change", callback).');
         }
         return this.on("change", subscription);
     }
@@ -2366,7 +2383,8 @@ const collectMotionValues = {
     /**
      * Set the state of the `MotionValue`, stopping any active animations,
      * effects, and resets velocity to `0`.
-     */ jump(v, endAnimation = true) {
+     */ jump(v) {
+        let endAnimation = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : true;
         this.updateAndNotify(v);
         this.prev = v;
         this.prevUpdatedAt = this.prevFrameValue = undefined;
@@ -2374,7 +2392,8 @@ const collectMotionValues = {
         if (this.stopPassiveEffect) this.stopPassiveEffect();
     }
     dirty() {
-        this.events.change?.notify(this.current);
+        var _this_events_change;
+        (_this_events_change = this.events.change) === null || _this_events_change === void 0 ? void 0 : _this_events_change.notify(this.current);
     }
     addDependent(dependent) {
         if (!this.dependents) {
@@ -2475,13 +2494,56 @@ const collectMotionValues = {
      *
      * @public
      */ destroy() {
-        this.dependents?.clear();
-        this.events.destroy?.notify();
+        var _this_dependents, _this_events_destroy;
+        (_this_dependents = this.dependents) === null || _this_dependents === void 0 ? void 0 : _this_dependents.clear();
+        (_this_events_destroy = this.events.destroy) === null || _this_events_destroy === void 0 ? void 0 : _this_events_destroy.notify();
         this.clearListeners();
         this.stop();
         if (this.stopPassiveEffect) {
             this.stopPassiveEffect();
         }
+    }
+    /**
+     * @param init - The initiating value
+     * @param config - Optional configuration options
+     *
+     * -  `transformer`: A function to transform incoming values with.
+     */ constructor(init, options = {}){
+        /**
+         * Tracks whether this value can output a velocity. Currently this is only true
+         * if the value is numerical, but we might be able to widen the scope here and support
+         * other value types.
+         *
+         * @internal
+         */ this.canTrackVelocity = null;
+        /**
+         * An object containing a SubscriptionManager for each active event.
+         */ this.events = {};
+        this.updateAndNotify = (v)=>{
+            const currentTime = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now();
+            /**
+             * If we're updating the value during another frame or eventloop
+             * than the previous frame, then the we set the previous frame value
+             * to current.
+             */ if (this.updatedAt !== currentTime) {
+                this.setPrevFrameValue();
+            }
+            this.prev = this.current;
+            this.setCurrent(v);
+            // Update update subscribers
+            if (this.current !== this.prev) {
+                var _this_events_change;
+                (_this_events_change = this.events.change) === null || _this_events_change === void 0 ? void 0 : _this_events_change.notify(this.current);
+                if (this.dependents) {
+                    for (const dependent of this.dependents){
+                        dependent.dirty();
+                    }
+                }
+            }
+        };
+        this.hasAnimated = false;
+        this.setCurrent(init);
+        this.owner = options.owner;
     }
 }
 function motionValue(init, options) {
@@ -2494,7 +2556,7 @@ function motionValue(init, options) {
 "use strict";
 
 __turbopack_context__.s({
-    "findValueType": (()=>findValueType)
+    "findValueType": ()=>findValueType
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/color/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-client] (ecmascript)");
@@ -2521,7 +2583,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 "use strict";
 
 __turbopack_context__.s({
-    "visualElementStore": (()=>visualElementStore)
+    "visualElementStore": ()=>visualElementStore
 });
 const visualElementStore = new WeakMap();
 ;
@@ -2531,7 +2593,7 @@ const visualElementStore = new WeakMap();
 "use strict";
 
 __turbopack_context__.s({
-    "isAnimationControls": (()=>isAnimationControls)
+    "isAnimationControls": ()=>isAnimationControls
 });
 function isAnimationControls(v) {
     return v !== null && typeof v === "object" && typeof v.start === "function";
@@ -2545,7 +2607,7 @@ function isAnimationControls(v) {
 /**
  * Decides if the supplied variable is variant label
  */ __turbopack_context__.s({
-    "isVariantLabel": (()=>isVariantLabel)
+    "isVariantLabel": ()=>isVariantLabel
 });
 function isVariantLabel(v) {
     return typeof v === "string" || Array.isArray(v);
@@ -2557,8 +2619,8 @@ function isVariantLabel(v) {
 "use strict";
 
 __turbopack_context__.s({
-    "variantPriorityOrder": (()=>variantPriorityOrder),
-    "variantProps": (()=>variantProps)
+    "variantPriorityOrder": ()=>variantPriorityOrder,
+    "variantProps": ()=>variantProps
 });
 const variantPriorityOrder = [
     "animate",
@@ -2580,8 +2642,8 @@ const variantProps = [
 "use strict";
 
 __turbopack_context__.s({
-    "isControllingVariants": (()=>isControllingVariants),
-    "isVariantNode": (()=>isVariantNode)
+    "isControllingVariants": ()=>isControllingVariants,
+    "isVariantNode": ()=>isVariantNode
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$animation$2d$controls$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/is-animation-controls.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$variant$2d$label$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/is-variant-label.mjs [app-client] (ecmascript)");
@@ -2602,7 +2664,7 @@ function isVariantNode(props) {
 "use strict";
 
 __turbopack_context__.s({
-    "updateMotionValuesFromProps": (()=>updateMotionValuesFromProps)
+    "updateMotionValuesFromProps": ()=>updateMotionValuesFromProps
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-client] (ecmascript)");
@@ -2661,8 +2723,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 
 // Does this device prefer reduced motion? Returns `null` server-side.
 __turbopack_context__.s({
-    "hasReducedMotionListener": (()=>hasReducedMotionListener),
-    "prefersReducedMotion": (()=>prefersReducedMotion)
+    "hasReducedMotionListener": ()=>hasReducedMotionListener,
+    "prefersReducedMotion": ()=>prefersReducedMotion
 });
 const prefersReducedMotion = {
     current: null
@@ -2677,7 +2739,7 @@ const hasReducedMotionListener = {
 "use strict";
 
 __turbopack_context__.s({
-    "initPrefersReducedMotion": (()=>initPrefersReducedMotion)
+    "initPrefersReducedMotion": ()=>initPrefersReducedMotion
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$reduced$2d$motion$2f$state$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/reduced-motion/state.mjs [app-client] (ecmascript)");
 ;
@@ -2701,14 +2763,14 @@ function initPrefersReducedMotion() {
 "use strict";
 
 __turbopack_context__.s({
-    "resolveVariantFromProps": (()=>resolveVariantFromProps)
+    "resolveVariantFromProps": ()=>resolveVariantFromProps
 });
 function getValueState(visualElement) {
     const state = [
         {},
         {}
     ];
-    visualElement?.values.forEach((value, key)=>{
+    visualElement === null || visualElement === void 0 ? void 0 : visualElement.values.forEach((value, key)=>{
         state[0][key] = value.get();
         state[1][key] = value.getVelocity();
     });
@@ -2744,11 +2806,11 @@ function resolveVariantFromProps(props, definition, custom, visualElement) {
 "use strict";
 
 __turbopack_context__.s({
-    "VisualElement": (()=>VisualElement),
-    "getFeatureDefinitions": (()=>getFeatureDefinitions),
-    "setFeatureDefinitions": (()=>setFeatureDefinitions)
+    "VisualElement": ()=>VisualElement,
+    "getFeatureDefinitions": ()=>getFeatureDefinitions,
+    "setFeatureDefinitions": ()=>setFeatureDefinitions
 });
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$4$2e$0_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.4.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$4$2e$10_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.4.10_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/warn-once.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/time-conversion.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$numerical$2d$string$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/is-numerical-string.mjs [app-client] (ecmascript)");
@@ -2829,121 +2891,16 @@ const propEventHandlers = [
      */ scrapeMotionValuesFromProps(_props, _prevProps, _visualElement) {
         return {};
     }
-    constructor({ parent, props, presenceContext, reducedMotionConfig, skipAnimations, blockInitialAnimation, visualState }, options = {}){
-        /**
-         * A reference to the current underlying Instance, e.g. a HTMLElement
-         * or Three.Mesh etc.
-         */ this.current = null;
-        /**
-         * A set containing references to this VisualElement's children.
-         */ this.children = new Set();
-        /**
-         * Determine what role this visual element should take in the variant tree.
-         */ this.isVariantNode = false;
-        this.isControllingVariants = false;
-        /**
-         * Decides whether this VisualElement should animate in reduced motion
-         * mode.
-         *
-         * TODO: This is currently set on every individual VisualElement but feels
-         * like it could be set globally.
-         */ this.shouldReduceMotion = null;
-        /**
-         * Decides whether animations should be skipped for this VisualElement.
-         * Useful for E2E tests and visual regression testing.
-         */ this.shouldSkipAnimations = false;
-        /**
-         * A map of all motion values attached to this visual element. Motion
-         * values are source of truth for any given animated value. A motion
-         * value might be provided externally by the component via props.
-         */ this.values = new Map();
-        this.KeyframeResolver = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KeyframeResolver"];
-        /**
-         * Cleanup functions for active features (hover/tap/exit etc)
-         */ this.features = {};
-        /**
-         * A map of every subscription that binds the provided or generated
-         * motion values onChange listeners to this visual element.
-         */ this.valueSubscriptions = new Map();
-        /**
-         * A reference to the previously-provided motion values as returned
-         * from scrapeMotionValuesFromProps. We use the keys in here to determine
-         * if any motion values need to be removed after props are updated.
-         */ this.prevMotionValues = {};
-        /**
-         * Track whether this element has been mounted before, to detect
-         * remounts after Suspense unmount/remount cycles.
-         */ this.hasBeenMounted = false;
-        /**
-         * An object containing a SubscriptionManager for each active event.
-         */ this.events = {};
-        /**
-         * An object containing an unsubscribe function for each prop event subscription.
-         * For example, every "Update" event can have multiple subscribers via
-         * VisualElement.on(), but only one of those can be defined via the onUpdate prop.
-         */ this.propEventSubscriptions = {};
-        this.notifyUpdate = ()=>this.notify("Update", this.latestValues);
-        this.render = ()=>{
-            if (!this.current) return;
-            this.triggerBuild();
-            this.renderInstance(this.current, this.renderState, this.props.style, this.projection);
-        };
-        this.renderScheduledAt = 0.0;
-        this.scheduleRender = ()=>{
-            const now = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now();
-            if (this.renderScheduledAt < now) {
-                this.renderScheduledAt = now;
-                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["frame"].render(this.render, false, true);
-            }
-        };
-        const { latestValues, renderState } = visualState;
-        this.latestValues = latestValues;
-        this.baseTarget = {
-            ...latestValues
-        };
-        this.initialValues = props.initial ? {
-            ...latestValues
-        } : {};
-        this.renderState = renderState;
-        this.parent = parent;
-        this.props = props;
-        this.presenceContext = presenceContext;
-        this.depth = parent ? parent.depth + 1 : 0;
-        this.reducedMotionConfig = reducedMotionConfig;
-        this.skipAnimationsConfig = skipAnimations;
-        this.options = options;
-        this.blockInitialAnimation = Boolean(blockInitialAnimation);
-        this.isControllingVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$controlling$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isControllingVariants"])(props);
-        this.isVariantNode = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$controlling$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isVariantNode"])(props);
-        if (this.isVariantNode) {
-            this.variantChildren = new Set();
-        }
-        this.manuallyAnimateOnMount = Boolean(parent && parent.current);
-        /**
-         * Any motion values that are provided to the element when created
-         * aren't yet bound to the element, as this would technically be impure.
-         * However, we iterate through the motion values and set them to the
-         * initial values for this component.
-         *
-         * TODO: This is impure and we should look at changing this to run on mount.
-         * Doing so will break some tests but this isn't necessarily a breaking change,
-         * more a reflection of the test.
-         */ const { willChange, ...initialMotionValues } = this.scrapeMotionValuesFromProps(props, {}, this);
-        for(const key in initialMotionValues){
-            const value = initialMotionValues[key];
-            if (latestValues[key] !== undefined && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isMotionValue"])(value)) {
-                value.set(latestValues[key]);
-            }
-        }
-    }
     mount(instance) {
+        var _this_parent;
         /**
          * If this element has been mounted before (e.g. after a Suspense
          * unmount/remount), reset motion values to their initial state
          * so animations replay correctly from initial → animate.
          */ if (this.hasBeenMounted) {
             for(const key in this.initialValues){
-                this.values.get(key)?.jump(this.initialValues[key]);
+                var _this_values_get;
+                (_this_values_get = this.values.get(key)) === null || _this_values_get === void 0 ? void 0 : _this_values_get.jump(this.initialValues[key]);
                 this.latestValues[key] = this.initialValues[key];
             }
         }
@@ -2973,21 +2930,23 @@ const propEventHandlers = [
         if ("TURBOPACK compile-time truthy", 1) {
             (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$warn$2d$once$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["warnOnce"])(this.shouldReduceMotion !== true, "You have Reduced Motion enabled on your device. Animations may not appear as expected.", "reduced-motion-disabled");
         }
+        var _this_skipAnimationsConfig;
         /**
          * Set whether animations should be skipped based on the config.
-         */ this.shouldSkipAnimations = this.skipAnimationsConfig ?? false;
-        this.parent?.addChild(this);
+         */ this.shouldSkipAnimations = (_this_skipAnimationsConfig = this.skipAnimationsConfig) !== null && _this_skipAnimationsConfig !== void 0 ? _this_skipAnimationsConfig : false;
+        (_this_parent = this.parent) === null || _this_parent === void 0 ? void 0 : _this_parent.addChild(this);
         this.update(this.props, this.presenceContext);
         this.hasBeenMounted = true;
     }
     unmount() {
+        var _this_parent;
         this.projection && this.projection.unmount();
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cancelFrame"])(this.notifyUpdate);
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cancelFrame"])(this.render);
         this.valueSubscriptions.forEach((remove)=>remove());
         this.valueSubscriptions.clear();
         this.removeFromVariantTree && this.removeFromVariantTree();
-        this.parent?.removeChild(this);
+        (_this_parent = this.parent) === null || _this_parent === void 0 ? void 0 : _this_parent.removeChild(this);
         for(const key in this.events){
             this.events[key].clear();
         }
@@ -3002,7 +2961,8 @@ const propEventHandlers = [
     }
     addChild(child) {
         this.children.add(child);
-        this.enteringChildren ?? (this.enteringChildren = new Set());
+        var _this_enteringChildren;
+        (_this_enteringChildren = this.enteringChildren) !== null && _this_enteringChildren !== void 0 ? _this_enteringChildren : this.enteringChildren = new Set();
         this.enteringChildren.add(child);
     }
     removeChild(child) {
@@ -3205,7 +3165,8 @@ const propEventHandlers = [
      * we need to check for it in our state and as a last resort read it
      * directly from the instance (which might have performance implications).
      */ readValue(key, target) {
-        let value = this.latestValues[key] !== undefined || !this.current ? this.latestValues[key] : this.getBaseTargetFromProps(this.props, key) ?? this.readValueFromInstance(this.current, key, this.options);
+        var _this_getBaseTargetFromProps;
+        let value = this.latestValues[key] !== undefined || !this.current ? this.latestValues[key] : (_this_getBaseTargetFromProps = this.getBaseTargetFromProps(this.props, key)) !== null && _this_getBaseTargetFromProps !== void 0 ? _this_getBaseTargetFromProps : this.readValueFromInstance(this.current, key, this.options);
         if (value !== undefined && value !== null) {
             if (typeof value === "string" && ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$numerical$2d$string$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isNumericalString"])(value) || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$zero$2d$value$2d$string$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isZeroValueString"])(value))) {
                 // If this is a number read as a string, ie "0" or "200", convert it to a number
@@ -3230,7 +3191,8 @@ const propEventHandlers = [
         const { initial } = this.props;
         let valueFromInitial;
         if (typeof initial === "string" || typeof initial === "object") {
-            const variant = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveVariantFromProps"])(this.props, initial, this.presenceContext?.custom);
+            var _this_presenceContext;
+            const variant = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveVariantFromProps"])(this.props, initial, (_this_presenceContext = this.presenceContext) === null || _this_presenceContext === void 0 ? void 0 : _this_presenceContext.custom);
             if (variant) {
                 valueFromInitial = variant[key];
             }
@@ -3256,13 +3218,123 @@ const propEventHandlers = [
         }
         return this.events[eventName].add(callback);
     }
-    notify(eventName, ...args) {
+    notify(eventName) {
+        for(var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++){
+            args[_key - 1] = arguments[_key];
+        }
         if (this.events[eventName]) {
             this.events[eventName].notify(...args);
         }
     }
     scheduleRenderMicrotask() {
         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$microtask$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["microtask"].render(this.render);
+    }
+    constructor({ parent, props, presenceContext, reducedMotionConfig, skipAnimations, blockInitialAnimation, visualState }, options = {}){
+        /**
+         * A reference to the current underlying Instance, e.g. a HTMLElement
+         * or Three.Mesh etc.
+         */ this.current = null;
+        /**
+         * A set containing references to this VisualElement's children.
+         */ this.children = new Set();
+        /**
+         * Determine what role this visual element should take in the variant tree.
+         */ this.isVariantNode = false;
+        this.isControllingVariants = false;
+        /**
+         * Decides whether this VisualElement should animate in reduced motion
+         * mode.
+         *
+         * TODO: This is currently set on every individual VisualElement but feels
+         * like it could be set globally.
+         */ this.shouldReduceMotion = null;
+        /**
+         * Decides whether animations should be skipped for this VisualElement.
+         * Useful for E2E tests and visual regression testing.
+         */ this.shouldSkipAnimations = false;
+        /**
+         * A map of all motion values attached to this visual element. Motion
+         * values are source of truth for any given animated value. A motion
+         * value might be provided externally by the component via props.
+         */ this.values = new Map();
+        this.KeyframeResolver = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KeyframeResolver"];
+        /**
+         * Cleanup functions for active features (hover/tap/exit etc)
+         */ this.features = {};
+        /**
+         * A map of every subscription that binds the provided or generated
+         * motion values onChange listeners to this visual element.
+         */ this.valueSubscriptions = new Map();
+        /**
+         * A reference to the previously-provided motion values as returned
+         * from scrapeMotionValuesFromProps. We use the keys in here to determine
+         * if any motion values need to be removed after props are updated.
+         */ this.prevMotionValues = {};
+        /**
+         * Track whether this element has been mounted before, to detect
+         * remounts after Suspense unmount/remount cycles.
+         */ this.hasBeenMounted = false;
+        /**
+         * An object containing a SubscriptionManager for each active event.
+         */ this.events = {};
+        /**
+         * An object containing an unsubscribe function for each prop event subscription.
+         * For example, every "Update" event can have multiple subscribers via
+         * VisualElement.on(), but only one of those can be defined via the onUpdate prop.
+         */ this.propEventSubscriptions = {};
+        this.notifyUpdate = ()=>this.notify("Update", this.latestValues);
+        this.render = ()=>{
+            if (!this.current) return;
+            this.triggerBuild();
+            this.renderInstance(this.current, this.renderState, this.props.style, this.projection);
+        };
+        this.renderScheduledAt = 0.0;
+        this.scheduleRender = ()=>{
+            const now = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now();
+            if (this.renderScheduledAt < now) {
+                this.renderScheduledAt = now;
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["frame"].render(this.render, false, true);
+            }
+        };
+        const { latestValues, renderState } = visualState;
+        this.latestValues = latestValues;
+        this.baseTarget = {
+            ...latestValues
+        };
+        this.initialValues = props.initial ? {
+            ...latestValues
+        } : {};
+        this.renderState = renderState;
+        this.parent = parent;
+        this.props = props;
+        this.presenceContext = presenceContext;
+        this.depth = parent ? parent.depth + 1 : 0;
+        this.reducedMotionConfig = reducedMotionConfig;
+        this.skipAnimationsConfig = skipAnimations;
+        this.options = options;
+        this.blockInitialAnimation = Boolean(blockInitialAnimation);
+        this.isControllingVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$controlling$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isControllingVariants"])(props);
+        this.isVariantNode = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$controlling$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isVariantNode"])(props);
+        if (this.isVariantNode) {
+            this.variantChildren = new Set();
+        }
+        this.manuallyAnimateOnMount = Boolean(parent && parent.current);
+        /**
+         * Any motion values that are provided to the element when created
+         * aren't yet bound to the element, as this would technically be impure.
+         * However, we iterate through the motion values and set them to the
+         * initial values for this component.
+         *
+         * TODO: This is impure and we should look at changing this to run on mount.
+         * Doing so will break some tests but this isn't necessarily a breaking change,
+         * more a reflection of the test.
+         */ const { willChange, ...initialMotionValues } = this.scrapeMotionValuesFromProps(props, {}, this);
+        for(const key in initialMotionValues){
+            const value = initialMotionValues[key];
+            if (latestValues[key] !== undefined && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isMotionValue"])(value)) {
+                value.set(latestValues[key]);
+            }
+        }
     }
 }
 ;
@@ -3272,7 +3344,7 @@ const propEventHandlers = [
 "use strict";
 
 __turbopack_context__.s({
-    "DOMVisualElement": (()=>DOMVisualElement)
+    "DOMVisualElement": ()=>DOMVisualElement
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$DOMKeyframesResolver$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/keyframes/DOMKeyframesResolver.mjs [app-client] (ecmascript)");
@@ -3281,10 +3353,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 ;
 class DOMVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$VisualElement$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["VisualElement"] {
-    constructor(){
-        super(...arguments);
-        this.KeyframeResolver = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$DOMKeyframesResolver$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DOMKeyframesResolver"];
-    }
     sortInstanceNodePosition(a, b) {
         /**
          * compareDocumentPosition returns a bitmask, by using the bitwise &
@@ -3296,7 +3364,8 @@ class DOMVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$n
         const style = props.style;
         return style ? style[key] : undefined;
     }
-    removeValueFromRenderState(key, { vars, style }) {
+    removeValueFromRenderState(key, param) {
+        let { vars, style } = param;
         delete vars[key];
         delete style[key];
     }
@@ -3309,10 +3378,14 @@ class DOMVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$n
         if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isMotionValue"])(children)) {
             this.childSubscription = children.on("change", (latest)=>{
                 if (this.current) {
-                    this.current.textContent = `${latest}`;
+                    this.current.textContent = "".concat(latest);
                 }
             });
         }
+    }
+    constructor(){
+        super(...arguments);
+        this.KeyframeResolver = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$DOMKeyframesResolver$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DOMKeyframesResolver"];
     }
 }
 ;
@@ -3322,10 +3395,10 @@ class DOMVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$n
 "use strict";
 
 __turbopack_context__.s({
-    "camelToDash": (()=>camelToDash)
+    "camelToDash": ()=>camelToDash
 });
 function camelToDash(str) {
-    return str.replace(/([A-Z])/g, (match)=>`-${match.toLowerCase()}`);
+    return str.replace(/([A-Z])/g, (match)=>"-".concat(match.toLowerCase()));
 }
 ;
  //# sourceMappingURL=camel-to-dash.mjs.map
@@ -3336,7 +3409,7 @@ function camelToDash(str) {
 /**
  * Provided a value and a ValueType, returns the value as that value type.
  */ __turbopack_context__.s({
-    "getValueAsType": (()=>getValueAsType)
+    "getValueAsType": ()=>getValueAsType
 });
 const getValueAsType = (value, type)=>{
     return type && typeof value === "number" ? type.transform(value) : value;
@@ -3348,7 +3421,7 @@ const getValueAsType = (value, type)=>{
 "use strict";
 
 __turbopack_context__.s({
-    "buildTransform": (()=>buildTransform)
+    "buildTransform": ()=>buildTransform
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$get$2d$as$2d$type$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/utils/get-as-type.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/maps/number.mjs [app-client] (ecmascript)");
@@ -3391,7 +3464,7 @@ const numTransforms = __TURBOPACK__imported__module__$5b$project$5d2f$node_modul
             if (!valueIsDefault) {
                 transformIsDefault = false;
                 const transformName = translateAlias[key] || key;
-                transformString += `${transformName}(${valueAsType}) `;
+                transformString += "".concat(transformName, "(").concat(valueAsType, ") ");
             }
             if (transformTemplate) {
                 transform[key] = valueAsType;
@@ -3415,7 +3488,7 @@ const numTransforms = __TURBOPACK__imported__module__$5b$project$5d2f$node_modul
 "use strict";
 
 __turbopack_context__.s({
-    "buildHTMLStyles": (()=>buildHTMLStyles)
+    "buildHTMLStyles": ()=>buildHTMLStyles
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$utils$2f$get$2d$as$2d$type$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/utils/get-as-type.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/maps/number.mjs [app-client] (ecmascript)");
@@ -3473,7 +3546,7 @@ function buildHTMLStyles(state, latestValues, transformTemplate) {
      * undefined origins.
      */ if (hasTransformOrigin) {
         const { originX = "50%", originY = "50%", originZ = 0 } = transformOrigin;
-        style.transformOrigin = `${originX} ${originY} ${originZ}`;
+        style.transformOrigin = "".concat(originX, " ").concat(originY, " ").concat(originZ);
     }
 }
 ;
@@ -3483,7 +3556,7 @@ function buildHTMLStyles(state, latestValues, transformTemplate) {
 "use strict";
 
 __turbopack_context__.s({
-    "buildSVGPath": (()=>buildSVGPath)
+    "buildSVGPath": ()=>buildSVGPath
 });
 const dashKeys = {
     offset: "stroke-dashoffset",
@@ -3502,16 +3575,17 @@ const camelKeys = {
  *
  * Note: We use unitless values for stroke-dasharray and stroke-dashoffset
  * because Safari incorrectly scales px values when the page is zoomed.
- */ function buildSVGPath(attrs, length, spacing = 1, offset = 0, useDashCase = true) {
+ */ function buildSVGPath(attrs, length) {
+    let spacing = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : 1, offset = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : 0, useDashCase = arguments.length > 4 && arguments[4] !== void 0 ? arguments[4] : true;
     // Normalise path length by setting SVG attribute pathLength to 1
     attrs.pathLength = 1;
     // We use dash case when setting attributes directly to the DOM node and camel case
     // when defining props on a React component.
     const keys = useDashCase ? dashKeys : camelKeys;
     // Build the dash offset (unitless to avoid Safari zoom bug)
-    attrs[keys.offset] = `${-offset}`;
+    attrs[keys.offset] = "".concat(-offset);
     // Build the dash array (unitless to avoid Safari zoom bug)
-    attrs[keys.array] = `${length} ${spacing}`;
+    attrs[keys.array] = "".concat(length, " ").concat(spacing);
 }
 ;
  //# sourceMappingURL=path.mjs.map
@@ -3520,7 +3594,7 @@ const camelKeys = {
 "use strict";
 
 __turbopack_context__.s({
-    "buildSVGAttrs": (()=>buildSVGAttrs)
+    "buildSVGAttrs": ()=>buildSVGAttrs
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$build$2d$styles$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/html/utils/build-styles.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$path$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/svg/utils/path.mjs [app-client] (ecmascript)");
@@ -3536,8 +3610,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ];
 /**
  * Build SVG visual attributes, like cx and style.transform
- */ function buildSVGAttrs(state, { attrX, attrY, attrScale, pathLength, pathSpacing = 1, pathOffset = 0, // This is object creation, which we try to avoid per-frame.
-...latest }, isSVGTag, transformTemplate, styleProp) {
+ */ function buildSVGAttrs(state, param, isSVGTag, transformTemplate, styleProp) {
+    let { attrX, attrY, attrScale, pathLength, pathSpacing = 1, pathOffset = 0, // This is object creation, which we try to avoid per-frame.
+    ...latest } = param;
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$build$2d$styles$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["buildHTMLStyles"])(state, latest, transformTemplate);
     /**
      * For svg tags we just want to make sure viewBox is animatable and treat all the styles
@@ -3559,14 +3634,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
         delete attrs.transform;
     }
     if (style.transform || attrs.transformOrigin) {
-        style.transformOrigin = attrs.transformOrigin ?? "50% 50%";
+        var _attrs_transformOrigin;
+        style.transformOrigin = (_attrs_transformOrigin = attrs.transformOrigin) !== null && _attrs_transformOrigin !== void 0 ? _attrs_transformOrigin : "50% 50%";
         delete attrs.transformOrigin;
     }
     if (style.transform) {
+        var _styleProp_transformBox;
         /**
          * SVG's element transform-origin uses its own median as a reference.
          * Therefore, transformBox becomes a fill-box
-         */ style.transformBox = styleProp?.transformBox ?? "fill-box";
+         */ style.transformBox = (_styleProp_transformBox = styleProp === null || styleProp === void 0 ? void 0 : styleProp.transformBox) !== null && _styleProp_transformBox !== void 0 ? _styleProp_transformBox : "fill-box";
         delete attrs.transformBox;
     }
     for (const key of cssMotionPathProperties){
@@ -3593,7 +3670,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 /**
  * A set of attribute names that are always read/written as camel case.
  */ __turbopack_context__.s({
-    "camelCaseAttributes": (()=>camelCaseAttributes)
+    "camelCaseAttributes": ()=>camelCaseAttributes
 });
 const camelCaseAttributes = new Set([
     "baseFrequency",
@@ -3627,7 +3704,7 @@ const camelCaseAttributes = new Set([
 "use strict";
 
 __turbopack_context__.s({
-    "isSVGTag": (()=>isSVGTag)
+    "isSVGTag": ()=>isSVGTag
 });
 const isSVGTag = (tag)=>typeof tag === "string" && tag.toLowerCase() === "svg";
 ;
@@ -3637,9 +3714,10 @@ const isSVGTag = (tag)=>typeof tag === "string" && tag.toLowerCase() === "svg";
 "use strict";
 
 __turbopack_context__.s({
-    "renderHTML": (()=>renderHTML)
+    "renderHTML": ()=>renderHTML
 });
-function renderHTML(element, { style, vars }, styleProp, projection) {
+function renderHTML(element, param, styleProp, projection) {
+    let { style, vars } = param;
     const elementStyle = element.style;
     let key;
     for(key in style){
@@ -3647,7 +3725,7 @@ function renderHTML(element, { style, vars }, styleProp, projection) {
         elementStyle[key] = style[key];
     }
     // Write projection styles directly to element style
-    projection?.applyProjectionStyles(elementStyle, styleProp);
+    projection === null || projection === void 0 ? void 0 : projection.applyProjectionStyles(elementStyle, styleProp);
     for(key in vars){
         // Loop over any CSS variables and assign those.
         // They can only be assigned using `setProperty`.
@@ -3661,7 +3739,7 @@ function renderHTML(element, { style, vars }, styleProp, projection) {
 "use strict";
 
 __turbopack_context__.s({
-    "renderSVG": (()=>renderSVG)
+    "renderSVG": ()=>renderSVG
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$utils$2f$camel$2d$to$2d$dash$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/dom/utils/camel-to-dash.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$render$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/html/utils/render.mjs [app-client] (ecmascript)");
@@ -3682,8 +3760,8 @@ function renderSVG(element, renderState, _styleProp, projection) {
 "use strict";
 
 __turbopack_context__.s({
-    "correctBorderRadius": (()=>correctBorderRadius),
-    "pixelsToPercent": (()=>pixelsToPercent)
+    "correctBorderRadius": ()=>correctBorderRadius,
+    "pixelsToPercent": ()=>pixelsToPercent
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/numbers/units.mjs [app-client] (ecmascript)");
 ;
@@ -3715,7 +3793,7 @@ function pixelsToPercent(pixels, axis) {
          * pixel value as a percentage of each axis
          */ const x = pixelsToPercent(latest, node.target.x);
         const y = pixelsToPercent(latest, node.target.y);
-        return `${x}% ${y}%`;
+        return "".concat(x, "% ").concat(y, "%");
     }
 };
 ;
@@ -3745,7 +3823,7 @@ function pixelsToPercent(pixels, axis) {
   @param [number]: The progress between lower and upper limits expressed 0-1
   @return [number]: Value as calculated from progress within range (not limited within range)
 */ __turbopack_context__.s({
-    "mixNumber": (()=>mixNumber)
+    "mixNumber": ()=>mixNumber
 });
 const mixNumber = (from, to, progress)=>{
     return from + (to - from) * progress;
@@ -3757,14 +3835,15 @@ const mixNumber = (from, to, progress)=>{
 "use strict";
 
 __turbopack_context__.s({
-    "correctBoxShadow": (()=>correctBoxShadow)
+    "correctBoxShadow": ()=>correctBoxShadow
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-client] (ecmascript)");
 ;
 ;
 const correctBoxShadow = {
-    correct: (latest, { treeScale, projectionDelta })=>{
+    correct: (latest, param)=>{
+        let { treeScale, projectionDelta } = param;
         const original = latest;
         const shadow = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["complex"].parse(latest);
         // TODO: Doesn't support multiple shadows
@@ -3796,8 +3875,8 @@ const correctBoxShadow = {
 "use strict";
 
 __turbopack_context__.s({
-    "addScaleCorrector": (()=>addScaleCorrector),
-    "scaleCorrectors": (()=>scaleCorrectors)
+    "addScaleCorrector": ()=>addScaleCorrector,
+    "scaleCorrectors": ()=>scaleCorrectors
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/utils/is-css-variable.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$styles$2f$scale$2d$border$2d$radius$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/projection/styles/scale-border-radius.mjs [app-client] (ecmascript)");
@@ -3836,14 +3915,15 @@ function addScaleCorrector(correctors) {
 "use strict";
 
 __turbopack_context__.s({
-    "isForcedMotionValue": (()=>isForcedMotionValue)
+    "isForcedMotionValue": ()=>isForcedMotionValue
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$styles$2f$scale$2d$correction$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/projection/styles/scale-correction.mjs [app-client] (ecmascript)");
 ;
 ;
 ;
-function isForcedMotionValue(key, { layout, layoutId }) {
+function isForcedMotionValue(key, param) {
+    let { layout, layoutId } = param;
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["transformProps"].has(key) || key.startsWith("origin") || (layout || layoutId !== undefined) && (!!__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$styles$2f$scale$2d$correction$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["scaleCorrectors"][key] || key === "opacity");
 }
 ;
@@ -3853,7 +3933,7 @@ function isForcedMotionValue(key, { layout, layoutId }) {
 "use strict";
 
 __turbopack_context__.s({
-    "scrapeMotionValuesFromProps": (()=>scrapeMotionValuesFromProps)
+    "scrapeMotionValuesFromProps": ()=>scrapeMotionValuesFromProps
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$forced$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/is-forced-motion-value.mjs [app-client] (ecmascript) <locals>");
@@ -3861,11 +3941,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 function scrapeMotionValuesFromProps(props, prevProps, visualElement) {
     const style = props.style;
-    const prevStyle = prevProps?.style;
+    const prevStyle = prevProps === null || prevProps === void 0 ? void 0 : prevProps.style;
     const newValues = {};
     if (!style) return newValues;
     for(const key in style){
-        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isMotionValue"])(style[key]) || prevStyle && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isMotionValue"])(prevStyle[key]) || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$forced$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isForcedMotionValue"])(key, props) || visualElement?.getValue(key)?.liveStyle !== undefined) {
+        var _visualElement_getValue;
+        if ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isMotionValue"])(style[key]) || prevStyle && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isMotionValue"])(prevStyle[key]) || (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$forced$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["isForcedMotionValue"])(key, props) || (visualElement === null || visualElement === void 0 ? void 0 : (_visualElement_getValue = visualElement.getValue(key)) === null || _visualElement_getValue === void 0 ? void 0 : _visualElement_getValue.liveStyle) !== undefined) {
             newValues[key] = style[key];
         }
     }
@@ -3878,7 +3959,7 @@ function scrapeMotionValuesFromProps(props, prevProps, visualElement) {
 "use strict";
 
 __turbopack_context__.s({
-    "scrapeMotionValuesFromProps": (()=>scrapeMotionValuesFromProps)
+    "scrapeMotionValuesFromProps": ()=>scrapeMotionValuesFromProps
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-client] (ecmascript)");
@@ -3903,7 +3984,7 @@ function scrapeMotionValuesFromProps(props, prevProps, visualElement) {
 "use strict";
 
 __turbopack_context__.s({
-    "SVGVisualElement": (()=>SVGVisualElement)
+    "SVGVisualElement": ()=>SVGVisualElement
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$maps$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/maps/defaults.mjs [app-client] (ecmascript)");
@@ -3926,12 +4007,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 ;
 class SVGVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$DOMVisualElement$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DOMVisualElement"] {
-    constructor(){
-        super(...arguments);
-        this.type = "svg";
-        this.isSVGTag = false;
-        this.measureInstanceViewportBox = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$models$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createBox"];
-    }
     getBaseTargetFromProps(props, key) {
         return props[key];
     }
@@ -3956,6 +4031,12 @@ class SVGVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$n
         this.isSVGTag = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$is$2d$svg$2d$tag$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isSVGTag"])(instance.tagName);
         super.mount(instance);
     }
+    constructor(){
+        super(...arguments);
+        this.type = "svg";
+        this.isSVGTag = false;
+        this.measureInstanceViewportBox = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$models$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createBox"];
+    }
 }
 ;
  //# sourceMappingURL=SVGVisualElement.mjs.map
@@ -3968,11 +4049,12 @@ class SVGVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$n
  * it's easier to consider each axis individually. This function returns a bounding box
  * as a map of single-axis min/max values.
  */ __turbopack_context__.s({
-    "convertBoundingBoxToBox": (()=>convertBoundingBoxToBox),
-    "convertBoxToBoundingBox": (()=>convertBoxToBoundingBox),
-    "transformBoxPoints": (()=>transformBoxPoints)
+    "convertBoundingBoxToBox": ()=>convertBoundingBoxToBox,
+    "convertBoxToBoundingBox": ()=>convertBoxToBoundingBox,
+    "transformBoxPoints": ()=>transformBoxPoints
 });
-function convertBoundingBoxToBox({ top, left, right, bottom }) {
+function convertBoundingBoxToBox(param) {
+    let { top, left, right, bottom } = param;
     return {
         x: {
             min: left,
@@ -3984,7 +4066,8 @@ function convertBoundingBoxToBox({ top, left, right, bottom }) {
         }
     };
 }
-function convertBoxToBoundingBox({ x, y }) {
+function convertBoxToBoundingBox(param) {
+    let { x, y } = param;
     return {
         top: y.min,
         right: x.max,
@@ -4020,14 +4103,15 @@ function convertBoxToBoundingBox({ x, y }) {
 "use strict";
 
 __turbopack_context__.s({
-    "has2DTranslate": (()=>has2DTranslate),
-    "hasScale": (()=>hasScale),
-    "hasTransform": (()=>hasTransform)
+    "has2DTranslate": ()=>has2DTranslate,
+    "hasScale": ()=>hasScale,
+    "hasTransform": ()=>hasTransform
 });
 function isIdentityScale(scale) {
     return scale === undefined || scale === 1;
 }
-function hasScale({ scale, scaleX, scaleY }) {
+function hasScale(param) {
+    let { scale, scaleX, scaleY } = param;
     return !isIdentityScale(scale) || !isIdentityScale(scaleX) || !isIdentityScale(scaleY);
 }
 function hasTransform(values) {
@@ -4046,14 +4130,14 @@ function is2DTranslate(value) {
 "use strict";
 
 __turbopack_context__.s({
-    "applyAxisDelta": (()=>applyAxisDelta),
-    "applyBoxDelta": (()=>applyBoxDelta),
-    "applyPointDelta": (()=>applyPointDelta),
-    "applyTreeDeltas": (()=>applyTreeDeltas),
-    "scalePoint": (()=>scalePoint),
-    "transformAxis": (()=>transformAxis),
-    "transformBox": (()=>transformBox),
-    "translateAxis": (()=>translateAxis)
+    "applyAxisDelta": ()=>applyAxisDelta,
+    "applyBoxDelta": ()=>applyBoxDelta,
+    "applyPointDelta": ()=>applyPointDelta,
+    "applyTreeDeltas": ()=>applyTreeDeltas,
+    "scalePoint": ()=>scalePoint,
+    "transformAxis": ()=>transformAxis,
+    "transformBox": ()=>transformBox,
+    "translateAxis": ()=>translateAxis
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$utils$2f$has$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/projection/utils/has-transform.mjs [app-client] (ecmascript)");
@@ -4076,13 +4160,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 }
 /**
  * Applies a translate/scale delta to an axis
- */ function applyAxisDelta(axis, translate = 0, scale = 1, originPoint, boxScale) {
+ */ function applyAxisDelta(axis) {
+    let translate = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : 0, scale = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : 1, originPoint = arguments.length > 3 ? arguments[3] : void 0, boxScale = arguments.length > 4 ? arguments[4] : void 0;
     axis.min = applyPointDelta(axis.min, translate, scale, originPoint, boxScale);
     axis.max = applyPointDelta(axis.max, translate, scale, originPoint, boxScale);
 }
 /**
  * Applies a translate/scale delta to a box
- */ function applyBoxDelta(box, { x, y }) {
+ */ function applyBoxDelta(box, param) {
+    let { x, y } = param;
     applyAxisDelta(box.x, x.translate, x.scale, x.originPoint);
     applyAxisDelta(box.y, y.translate, y.scale, y.originPoint);
 }
@@ -4093,7 +4179,8 @@ const TREE_SCALE_SNAP_MAX = 1.0000000000001;
  * in a tree upon our box before then calculating how to project it into our desired viewport-relative box
  *
  * This is the final nested loop within updateLayoutDelta for future refactoring
- */ function applyTreeDeltas(box, treeScale, treePath, isSharedTransition = false) {
+ */ function applyTreeDeltas(box, treeScale, treePath) {
+    let isSharedTransition = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : false;
     const treeLength = treePath.length;
     if (!treeLength) return;
     // Reset the treeScale
@@ -4145,7 +4232,8 @@ function translateAxis(axis, distance) {
  * Apply a transform to an axis from the latest resolved motion values.
  * This function basically acts as a bridge between a flat motion value map
  * and applyAxisDelta
- */ function transformAxis(axis, axisTranslate, axisScale, boxScale, axisOrigin = 0.5) {
+ */ function transformAxis(axis, axisTranslate, axisScale, boxScale) {
+    let axisOrigin = arguments.length > 4 && arguments[4] !== void 0 ? arguments[4] : 0.5;
     const originPoint = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mixNumber"])(axis.min, axis.max, axisOrigin);
     // Apply the axis delta to the final axis
     applyAxisDelta(axis, axisTranslate, axisScale, originPoint, boxScale);
@@ -4169,8 +4257,8 @@ function resolveAxisTranslate(value, axis) {
 "use strict";
 
 __turbopack_context__.s({
-    "measurePageBox": (()=>measurePageBox),
-    "measureViewportBox": (()=>measureViewportBox)
+    "measurePageBox": ()=>measurePageBox,
+    "measureViewportBox": ()=>measureViewportBox
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$conversion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/projection/geometry/conversion.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$delta$2d$apply$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/projection/geometry/delta-apply.mjs [app-client] (ecmascript)");
@@ -4195,8 +4283,8 @@ function measurePageBox(element, rootProjectionNode, transformPagePoint) {
 "use strict";
 
 __turbopack_context__.s({
-    "HTMLVisualElement": (()=>HTMLVisualElement),
-    "getComputedStyle": (()=>getComputedStyle)
+    "HTMLVisualElement": ()=>HTMLVisualElement,
+    "getComputedStyle": ()=>getComputedStyle
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/utils/is-css-variable.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-client] (ecmascript)");
@@ -4218,21 +4306,18 @@ function getComputedStyle(element) {
     return window.getComputedStyle(element);
 }
 class HTMLVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$DOMVisualElement$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DOMVisualElement"] {
-    constructor(){
-        super(...arguments);
-        this.type = "html";
-        this.renderInstance = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$render$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["renderHTML"];
-    }
     readValueFromInstance(instance, key) {
         if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["transformProps"].has(key)) {
-            return this.projection?.isProjecting ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defaultTransformValue"])(key) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["readTransformValue"])(instance, key);
+            var _this_projection;
+            return ((_this_projection = this.projection) === null || _this_projection === void 0 ? void 0 : _this_projection.isProjecting) ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["defaultTransformValue"])(key) : (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$parse$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["readTransformValue"])(instance, key);
         } else {
             const computedStyle = getComputedStyle(instance);
             const value = ((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$css$2d$variable$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isCSSVariableName"])(key) ? computedStyle.getPropertyValue(key) : computedStyle[key]) || 0;
             return typeof value === "string" ? value.trim() : value;
         }
     }
-    measureInstanceViewportBox(instance, { transformPagePoint }) {
+    measureInstanceViewportBox(instance, param) {
+        let { transformPagePoint } = param;
         return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$utils$2f$measure$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["measureViewportBox"])(instance, transformPagePoint);
     }
     build(renderState, latestValues, props) {
@@ -4240,6 +4325,11 @@ class HTMLVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$
     }
     scrapeMotionValuesFromProps(props, prevProps, visualElement) {
         return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["scrapeMotionValuesFromProps"])(props, prevProps, visualElement);
+    }
+    constructor(){
+        super(...arguments);
+        this.type = "html";
+        this.renderInstance = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$render$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["renderHTML"];
     }
 }
 ;
@@ -4249,7 +4339,7 @@ class HTMLVisualElement extends __TURBOPACK__imported__module__$5b$project$5d2f$
 "use strict";
 
 __turbopack_context__.s({
-    "scrapeHTMLMotionValuesFromProps": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["scrapeMotionValuesFromProps"])
+    "scrapeHTMLMotionValuesFromProps": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["scrapeMotionValuesFromProps"]
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$html$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/html/utils/scrape-motion-values.mjs [app-client] (ecmascript)");
 }),
@@ -4257,7 +4347,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 "use strict";
 
 __turbopack_context__.s({
-    "resolveMotionValue": (()=>resolveMotionValue)
+    "resolveMotionValue": ()=>resolveMotionValue
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-client] (ecmascript)");
 ;
@@ -4273,7 +4363,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 "use strict";
 
 __turbopack_context__.s({
-    "scrapeSVGMotionValuesFromProps": (()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["scrapeMotionValuesFromProps"])
+    "scrapeSVGMotionValuesFromProps": ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["scrapeMotionValuesFromProps"]
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$svg$2f$utils$2f$scrape$2d$motion$2d$values$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/svg/utils/scrape-motion-values.mjs [app-client] (ecmascript)");
 }),
@@ -4281,8 +4371,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 "use strict";
 
 __turbopack_context__.s({
-    "optimizedAppearDataAttribute": (()=>optimizedAppearDataAttribute),
-    "optimizedAppearDataId": (()=>optimizedAppearDataId)
+    "optimizedAppearDataAttribute": ()=>optimizedAppearDataAttribute,
+    "optimizedAppearDataId": ()=>optimizedAppearDataId
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$dom$2f$utils$2f$camel$2d$to$2d$dash$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/dom/utils/camel-to-dash.mjs [app-client] (ecmascript)");
 ;
@@ -4299,14 +4389,14 @@ const optimizedAppearDataAttribute = "data-" + (0, __TURBOPACK__imported__module
  * Features are plugins that can be mounted/unmounted to add behavior
  * like gestures, animations, or layout tracking.
  */ __turbopack_context__.s({
-    "Feature": (()=>Feature)
+    "Feature": ()=>Feature
 });
 class Feature {
+    update() {}
     constructor(node){
         this.isMounted = false;
         this.node = node;
     }
-    update() {}
 }
 ;
  //# sourceMappingURL=Feature.mjs.map
@@ -4315,7 +4405,7 @@ class Feature {
 "use strict";
 
 __turbopack_context__.s({
-    "resolveVariant": (()=>resolveVariant)
+    "resolveVariant": ()=>resolveVariant
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/resolve-variants.mjs [app-client] (ecmascript)");
 ;
@@ -4334,10 +4424,10 @@ function resolveVariant(visualElement, definition, custom) {
  * `parentTransition` (child keys win) and strip the `inherit` key.
  * Otherwise return `transition` unchanged.
  */ __turbopack_context__.s({
-    "resolveTransition": (()=>resolveTransition)
+    "resolveTransition": ()=>resolveTransition
 });
 function resolveTransition(transition, parentTransition) {
-    if (transition?.inherit && parentTransition) {
+    if ((transition === null || transition === void 0 ? void 0 : transition.inherit) && parentTransition) {
         const { inherit: _, ...rest } = transition;
         return {
             ...parentTransition,
@@ -4353,12 +4443,13 @@ function resolveTransition(transition, parentTransition) {
 "use strict";
 
 __turbopack_context__.s({
-    "getValueTransition": (()=>getValueTransition)
+    "getValueTransition": ()=>getValueTransition
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$resolve$2d$transition$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/utils/resolve-transition.mjs [app-client] (ecmascript)");
 ;
 function getValueTransition(transition, key) {
-    const valueTransition = transition?.[key] ?? transition?.["default"] ?? transition;
+    var _transition_key, _ref;
+    const valueTransition = (_ref = (_transition_key = transition === null || transition === void 0 ? void 0 : transition[key]) !== null && _transition_key !== void 0 ? _transition_key : transition === null || transition === void 0 ? void 0 : transition["default"]) !== null && _ref !== void 0 ? _ref : transition;
     if (valueTransition !== transition) {
         return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$resolve$2d$transition$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveTransition"])(valueTransition, transition);
     }
@@ -4371,7 +4462,7 @@ function getValueTransition(transition, key) {
 "use strict";
 
 __turbopack_context__.s({
-    "isKeyframesTarget": (()=>isKeyframesTarget)
+    "isKeyframesTarget": ()=>isKeyframesTarget
 });
 const isKeyframesTarget = (v)=>{
     return Array.isArray(v);
@@ -4383,7 +4474,7 @@ const isKeyframesTarget = (v)=>{
 "use strict";
 
 __turbopack_context__.s({
-    "setTarget": (()=>setTarget)
+    "setTarget": ()=>setTarget
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/resolve-dynamic-variants.mjs [app-client] (ecmascript)");
@@ -4424,7 +4515,7 @@ function setTarget(visualElement, definition) {
 "use strict";
 
 __turbopack_context__.s({
-    "isWillChangeMotionValue": (()=>isWillChangeMotionValue)
+    "isWillChangeMotionValue": ()=>isWillChangeMotionValue
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$is$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/utils/is-motion-value.mjs [app-client] (ecmascript)");
 ;
@@ -4438,7 +4529,7 @@ function isWillChangeMotionValue(value) {
 "use strict";
 
 __turbopack_context__.s({
-    "addValueToWillChange": (()=>addValueToWillChange)
+    "addValueToWillChange": ()=>addValueToWillChange
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/global-config.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$will$2d$change$2f$is$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/will-change/is.mjs [app-client] (ecmascript)");
@@ -4464,7 +4555,7 @@ function addValueToWillChange(visualElement, key) {
 "use strict";
 
 __turbopack_context__.s({
-    "getOptimisedAppearId": (()=>getOptimisedAppearId)
+    "getOptimisedAppearId": ()=>getOptimisedAppearId
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$optimized$2d$appear$2f$data$2d$id$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/optimized-appear/data-id.mjs [app-client] (ecmascript)");
 ;
@@ -4479,7 +4570,7 @@ function getOptimisedAppearId(visualElement) {
 
 // Adapted from https://gist.github.com/mjackson/5311256
 __turbopack_context__.s({
-    "hslaToRgba": (()=>hslaToRgba)
+    "hslaToRgba": ()=>hslaToRgba
 });
 function hueToRgb(p, q, t) {
     if (t < 0) t += 1;
@@ -4489,7 +4580,8 @@ function hueToRgb(p, q, t) {
     if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
     return p;
 }
-function hslaToRgba({ hue, saturation, lightness, alpha }) {
+function hslaToRgba(param) {
+    let { hue, saturation, lightness, alpha } = param;
     hue /= 360;
     saturation /= 100;
     lightness /= 100;
@@ -4519,7 +4611,7 @@ function hslaToRgba({ hue, saturation, lightness, alpha }) {
 "use strict";
 
 __turbopack_context__.s({
-    "mixImmediate": (()=>mixImmediate)
+    "mixImmediate": ()=>mixImmediate
 });
 function mixImmediate(a, b) {
     return (p)=>p > 0 ? b : a;
@@ -4531,8 +4623,8 @@ function mixImmediate(a, b) {
 "use strict";
 
 __turbopack_context__.s({
-    "mixColor": (()=>mixColor),
-    "mixLinearColor": (()=>mixLinearColor)
+    "mixColor": ()=>mixColor,
+    "mixLinearColor": ()=>mixLinearColor
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/errors.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hex$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/color/hex.mjs [app-client] (ecmascript)");
@@ -4564,7 +4656,7 @@ const colorTypes = [
 const getColorType = (v)=>colorTypes.find((type)=>type.test(v));
 function asRGBA(color) {
     const type = getColorType(color);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["warning"])(Boolean(type), `'${color}' is not an animatable color. Use the equivalent color code instead.`, "color-not-animatable");
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["warning"])(Boolean(type), "'".concat(color, "' is not an animatable color. Use the equivalent color code instead."), "color-not-animatable");
     if (!Boolean(type)) return false;
     let model = type.parse(color);
     if (type === __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$color$2f$hsla$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["hsla"]) {
@@ -4597,8 +4689,8 @@ const mixColor = (from, to)=>{
 "use strict";
 
 __turbopack_context__.s({
-    "invisibleValues": (()=>invisibleValues),
-    "mixVisibility": (()=>mixVisibility)
+    "invisibleValues": ()=>invisibleValues,
+    "mixVisibility": ()=>mixVisibility
 });
 const invisibleValues = new Set([
     "none",
@@ -4622,10 +4714,10 @@ const invisibleValues = new Set([
 "use strict";
 
 __turbopack_context__.s({
-    "getMixer": (()=>getMixer),
-    "mixArray": (()=>mixArray),
-    "mixComplex": (()=>mixComplex),
-    "mixObject": (()=>mixObject)
+    "getMixer": ()=>getMixer,
+    "mixArray": ()=>mixArray,
+    "mixComplex": ()=>mixComplex,
+    "mixObject": ()=>mixObject
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$pipe$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/pipe.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/errors.mjs [app-client] (ecmascript)");
@@ -4700,7 +4792,8 @@ function matchOrder(origin, target) {
     for(let i = 0; i < target.values.length; i++){
         const type = target.types[i];
         const originIndex = origin.indexes[type][pointers[type]];
-        const originValue = origin.values[originIndex] ?? 0;
+        var _origin_values_originIndex;
+        const originValue = (_origin_values_originIndex = origin.values[originIndex]) !== null && _origin_values_originIndex !== void 0 ? _origin_values_originIndex : 0;
         orderedOrigin[i] = originValue;
         pointers[type]++;
     }
@@ -4717,7 +4810,7 @@ const mixComplex = (origin, target)=>{
         }
         return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$pipe$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["pipe"])(mixArray(matchOrder(originStats, targetStats), targetStats.values), template);
     } else {
-        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["warning"])(true, `Complex values '${origin}' and '${target}' too different to mix. Ensure all colors are of the same type, and that each contains the same quantity of number and color values. Falling back to instant transition.`, "complex-values-different");
+        (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["warning"])(true, "Complex values '".concat(origin, "' and '").concat(target, "' too different to mix. Ensure all colors are of the same type, and that each contains the same quantity of number and color values. Falling back to instant transition."), "complex-values-different");
         return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$immediate$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mixImmediate"])(origin, target);
     }
 };
@@ -4728,7 +4821,7 @@ const mixComplex = (origin, target)=>{
 "use strict";
 
 __turbopack_context__.s({
-    "mix": (()=>mix)
+    "mix": ()=>mix
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$complex$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/mix/complex.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-client] (ecmascript)");
@@ -4748,16 +4841,22 @@ function mix(from, to, p) {
 "use strict";
 
 __turbopack_context__.s({
-    "frameloopDriver": (()=>frameloopDriver)
+    "frameloopDriver": ()=>frameloopDriver
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/frameloop/sync-time.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/frameloop/frame.mjs [app-client] (ecmascript)");
 ;
 ;
 const frameloopDriver = (update)=>{
-    const passTimestamp = ({ timestamp })=>update(timestamp);
+    const passTimestamp = (param)=>{
+        let { timestamp } = param;
+        return update(timestamp);
+    };
     return {
-        start: (keepAlive = true)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["frame"].update(passTimestamp, keepAlive),
+        start: function() {
+            let keepAlive = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : true;
+            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["frame"].update(passTimestamp, keepAlive);
+        },
         stop: ()=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cancelFrame"])(passTimestamp),
         /**
          * If we're processing this frame we can use the
@@ -4775,8 +4874,8 @@ const frameloopDriver = (update)=>{
  * Implement a practical max duration for keyframe generation
  * to prevent infinite loops
  */ __turbopack_context__.s({
-    "calcGeneratorDuration": (()=>calcGeneratorDuration),
-    "maxGeneratorDuration": (()=>maxGeneratorDuration)
+    "calcGeneratorDuration": ()=>calcGeneratorDuration,
+    "maxGeneratorDuration": ()=>maxGeneratorDuration
 });
 const maxGeneratorDuration = 20000;
 function calcGeneratorDuration(generator) {
@@ -4796,7 +4895,7 @@ function calcGeneratorDuration(generator) {
 "use strict";
 
 __turbopack_context__.s({
-    "createGeneratorEasing": (()=>createGeneratorEasing)
+    "createGeneratorEasing": ()=>createGeneratorEasing
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/time-conversion.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$calc$2d$duration$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/generators/utils/calc-duration.mjs [app-client] (ecmascript)");
@@ -4804,7 +4903,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 /**
  * Create a progress => progress easing function from a generator.
- */ function createGeneratorEasing(options, scale = 100, createGenerator) {
+ */ function createGeneratorEasing(options) {
+    let scale = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : 100, createGenerator = arguments.length > 2 ? arguments[2] : void 0;
     const generator = createGenerator({
         ...options,
         keyframes: [
@@ -4828,7 +4928,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 "use strict";
 
 __turbopack_context__.s({
-    "calcGeneratorVelocity": (()=>calcGeneratorVelocity)
+    "calcGeneratorVelocity": ()=>calcGeneratorVelocity
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$velocity$2d$per$2d$second$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/velocity-per-second.mjs [app-client] (ecmascript)");
 ;
@@ -4844,7 +4944,7 @@ function calcGeneratorVelocity(resolveValue, t, current) {
 "use strict";
 
 __turbopack_context__.s({
-    "springDefaults": (()=>springDefaults)
+    "springDefaults": ()=>springDefaults
 });
 const springDefaults = {
     // Default spring physics
@@ -4878,8 +4978,8 @@ const springDefaults = {
 "use strict";
 
 __turbopack_context__.s({
-    "calcAngularFreq": (()=>calcAngularFreq),
-    "findSpring": (()=>findSpring)
+    "calcAngularFreq": ()=>calcAngularFreq,
+    "findSpring": ()=>findSpring
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/errors.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/time-conversion.mjs [app-client] (ecmascript)");
@@ -4888,7 +4988,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 ;
 const safeMin = 0.001;
-function findSpring({ duration = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].duration, bounce = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].bounce, velocity = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].velocity, mass = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].mass }) {
+function findSpring(param) {
+    let { duration = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].duration, bounce = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].bounce, velocity = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].velocity, mass = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].mass } = param;
     let envelope;
     let derivative;
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["warning"])(duration <= (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["secondsToMilliseconds"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].maxDuration), "Spring duration must be 10 seconds or less", "spring-duration-limit");
@@ -4968,7 +5069,7 @@ function calcAngularFreq(undampedFreq, dampingRatio) {
 "use strict";
 
 __turbopack_context__.s({
-    "spring": (()=>spring)
+    "spring": ()=>spring
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/time-conversion.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/clamp.mjs [app-client] (ecmascript)");
@@ -5039,7 +5140,8 @@ function getSpringOptions(options) {
     }
     return springOptions;
 }
-function spring(optionsOrVisualDuration = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].visualDuration, bounce = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].bounce) {
+function spring() {
+    let optionsOrVisualDuration = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].visualDuration, bounce = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$defaults$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["springDefaults"].bounce;
     const options = typeof optionsOrVisualDuration !== "object" ? {
         visualDuration: optionsOrVisualDuration,
         keyframes: [
@@ -5141,13 +5243,14 @@ spring.applyToOptions = (options)=>{
 "use strict";
 
 __turbopack_context__.s({
-    "inertia": (()=>inertia)
+    "inertia": ()=>inertia
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$spring$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/generators/spring/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$velocity$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/generators/utils/velocity.mjs [app-client] (ecmascript)");
 ;
 ;
-function inertia({ keyframes, velocity = 0.0, power = 0.8, timeConstant = 325, bounceDamping = 10, bounceStiffness = 500, modifyTarget, min, max, restDelta = 0.5, restSpeed }) {
+function inertia(param) {
+    let { keyframes, velocity = 0.0, power = 0.8, timeConstant = 325, bounceDamping = 10, bounceStiffness = 500, modifyTarget, min, max, restDelta = 0.5, restSpeed } = param;
     const origin = keyframes[0];
     const state = {
         done: false,
@@ -5230,7 +5333,7 @@ function inertia({ keyframes, velocity = 0.0, power = 0.8, timeConstant = 325, b
 "use strict";
 
 __turbopack_context__.s({
-    "interpolate": (()=>interpolate)
+    "interpolate": ()=>interpolate
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/errors.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/clamp.mjs [app-client] (ecmascript)");
@@ -5273,7 +5376,8 @@ function createMixers(output, ease, customMixer) {
  * probably not needed to pregenerate mixer functions.
  *
  * @public
- */ function interpolate(input, output, { clamp: isClamp = true, ease, mixer } = {}) {
+ */ function interpolate(input, output) {
+    let { clamp: isClamp = true, ease, mixer } = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
     const inputLength = input.length;
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["invariant"])(inputLength === output.length, "Both input and output ranges must be the same length", "range-length");
     /**
@@ -5313,7 +5417,7 @@ function createMixers(output, ease, customMixer) {
 "use strict";
 
 __turbopack_context__.s({
-    "fillOffset": (()=>fillOffset)
+    "fillOffset": ()=>fillOffset
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$progress$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/progress.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-client] (ecmascript)");
@@ -5333,7 +5437,7 @@ function fillOffset(offset, remaining) {
 "use strict";
 
 __turbopack_context__.s({
-    "defaultOffset": (()=>defaultOffset)
+    "defaultOffset": ()=>defaultOffset
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$offsets$2f$fill$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/keyframes/offsets/fill.mjs [app-client] (ecmascript)");
 ;
@@ -5351,7 +5455,7 @@ function defaultOffset(arr) {
 "use strict";
 
 __turbopack_context__.s({
-    "convertOffsetToTimes": (()=>convertOffsetToTimes)
+    "convertOffsetToTimes": ()=>convertOffsetToTimes
 });
 function convertOffsetToTimes(offset, duration) {
     return offset.map((o)=>o * duration);
@@ -5363,8 +5467,8 @@ function convertOffsetToTimes(offset, duration) {
 "use strict";
 
 __turbopack_context__.s({
-    "defaultEasing": (()=>defaultEasing),
-    "keyframes": (()=>keyframes)
+    "defaultEasing": ()=>defaultEasing,
+    "keyframes": ()=>keyframes
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$ease$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/easing/ease.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$utils$2f$is$2d$easing$2d$array$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/easing/utils/is-easing-array.mjs [app-client] (ecmascript)");
@@ -5379,7 +5483,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 function defaultEasing(values, easing) {
     return values.map(()=>easing || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$ease$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["easeInOut"]).splice(0, values.length - 1);
 }
-function keyframes({ duration = 300, keyframes: keyframeValues, times, ease = "easeInOut" }) {
+function keyframes(param) {
+    let { duration = 300, keyframes: keyframeValues, times, ease = "easeInOut" } = param;
     /**
      * Easing functions can be externally defined as strings. Here we convert them
      * into actual functions.
@@ -5415,7 +5520,7 @@ function keyframes({ duration = 300, keyframes: keyframeValues, times, ease = "e
 "use strict";
 
 __turbopack_context__.s({
-    "replaceTransitionType": (()=>replaceTransitionType)
+    "replaceTransitionType": ()=>replaceTransitionType
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$inertia$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/generators/inertia.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$keyframes$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/generators/keyframes.mjs [app-client] (ecmascript)");
@@ -5442,10 +5547,10 @@ function replaceTransitionType(transition) {
 "use strict";
 
 __turbopack_context__.s({
-    "JSAnimation": (()=>JSAnimation),
-    "animateValue": (()=>animateValue)
+    "JSAnimation": ()=>JSAnimation,
+    "animateValue": ()=>animateValue
 });
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$4$2e$0_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.4.0_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$15$2e$4$2e$10_react$2d$dom$40$19$2e$2$2e$3_react$40$19$2e$2$2e$3_$5f$react$40$19$2e$2$2e$3$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/node_modules/.pnpm/next@15.4.10_react-dom@19.2.3_react@19.2.3__react@19.2.3/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/errors.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$pipe$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/pipe.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/clamp.mjs [app-client] (ecmascript)");
@@ -5473,39 +5578,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 const percentToProgress = (percent)=>percent / 100;
 class JSAnimation extends __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$WithPromise$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WithPromise"] {
-    constructor(options){
-        super();
-        this.state = "idle";
-        this.startTime = null;
-        this.isStopped = false;
-        /**
-         * The current time of the animation.
-         */ this.currentTime = 0;
-        /**
-         * The time at which the animation was paused.
-         */ this.holdTime = null;
-        /**
-         * Playback speed as a factor. 0 would be stopped, -1 reverse and 2 double speed.
-         */ this.playbackSpeed = 1;
-        /**
-         * This method is bound to the instance to fix a pattern where
-         * animation.stop is returned as a reference from a useEffect.
-         */ this.stop = ()=>{
-            const { motionValue } = this.options;
-            if (motionValue && motionValue.updatedAt !== __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now()) {
-                this.tick(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now());
-            }
-            this.isStopped = true;
-            if (this.state === "idle") return;
-            this.teardown();
-            this.options.onStop?.();
-        };
-        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$animation$2d$count$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["activeAnimations"].mainThread++;
-        this.options = options;
-        this.initAnimation();
-        this.play();
-        if (options.autoplay === false) this.pause();
-    }
     initAnimation() {
         const { options } = this;
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$replace$2d$transition$2d$type$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["replaceTransitionType"])(options);
@@ -5513,7 +5585,7 @@ class JSAnimation extends __TURBOPACK__imported__module__$5b$project$5d2f$node_m
         let { keyframes: keyframes$1 } = options;
         const generatorFactory = type || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$keyframes$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keyframes"];
         if (("TURBOPACK compile-time value", "development") !== "production" && generatorFactory !== __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$keyframes$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keyframes"]) {
-            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["invariant"])(keyframes$1.length <= 2, `Only two keyframes currently supported with spring and inertia animations. Trying to animate ${keyframes$1}`, "spring-two-frames");
+            (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["invariant"])(keyframes$1.length <= 2, "Only two keyframes currently supported with spring and inertia animations. Trying to animate ".concat(keyframes$1), "spring-two-frames");
         }
         if (generatorFactory !== __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$keyframes$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["keyframes"] && typeof keyframes$1[0] !== "number") {
             this.mixKeyframes = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$pipe$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["pipe"])(percentToProgress, (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mix"])(keyframes$1[0], keyframes$1[1]));
@@ -5566,7 +5638,8 @@ class JSAnimation extends __TURBOPACK__imported__module__$5b$project$5d2f$node_m
             this.currentTime = animationTime;
         }
     }
-    tick(timestamp, sample = false) {
+    tick(timestamp) {
+        let sample = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : false;
         const { generator, totalDuration, mixKeyframes, mirroredGenerator, resolvedDuration, calculatedDuration } = this;
         if (this.startTime === null) return generator.next(0);
         const { delay = 0, keyframes, repeat, repeatType, repeatDelay, type, onUpdate, finalKeyframe } = this.options;
@@ -5708,12 +5781,13 @@ class JSAnimation extends __TURBOPACK__imported__module__$5b$project$5d2f$node_m
         }
     }
     play() {
+        var _this_options_onPlay, _this_options;
         if (this.isStopped) return;
         const { driver = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$drivers$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["frameloopDriver"], startTime } = this.options;
         if (!this.driver) {
             this.driver = driver((timestamp)=>this.tick(timestamp));
         }
-        this.options.onPlay?.();
+        (_this_options_onPlay = (_this_options = this.options).onPlay) === null || _this_options_onPlay === void 0 ? void 0 : _this_options_onPlay.call(_this_options);
         const now = this.driver.now();
         if (this.state === "finished") {
             this.updateFinished();
@@ -5721,7 +5795,7 @@ class JSAnimation extends __TURBOPACK__imported__module__$5b$project$5d2f$node_m
         } else if (this.holdTime !== null) {
             this.startTime = now - this.holdTime;
         } else if (!this.startTime) {
-            this.startTime = startTime ?? now;
+            this.startTime = startTime !== null && startTime !== void 0 ? startTime : now;
         }
         if (this.state === "finished" && this.speed < 0) {
             this.startTime += this.calculatedDuration;
@@ -5746,17 +5820,19 @@ class JSAnimation extends __TURBOPACK__imported__module__$5b$project$5d2f$node_m
         this.holdTime = null;
     }
     finish() {
+        var _this_options_onComplete, _this_options;
         this.notifyFinished();
         this.teardown();
         this.state = "finished";
-        this.options.onComplete?.();
+        (_this_options_onComplete = (_this_options = this.options).onComplete) === null || _this_options_onComplete === void 0 ? void 0 : _this_options_onComplete.call(_this_options);
     }
     cancel() {
+        var _this_options_onCancel, _this_options;
         this.holdTime = null;
         this.startTime = 0;
         this.tick(0);
         this.teardown();
-        this.options.onCancel?.();
+        (_this_options_onCancel = (_this_options = this.options).onCancel) === null || _this_options_onCancel === void 0 ? void 0 : _this_options_onCancel.call(_this_options);
     }
     teardown() {
         this.state = "idle";
@@ -5774,13 +5850,48 @@ class JSAnimation extends __TURBOPACK__imported__module__$5b$project$5d2f$node_m
         return this.tick(sampleTime, true);
     }
     attachTimeline(timeline) {
+        var _this_driver;
         if (this.options.allowFlatten) {
             this.options.type = "keyframes";
             this.options.ease = "linear";
             this.initAnimation();
         }
-        this.driver?.stop();
+        (_this_driver = this.driver) === null || _this_driver === void 0 ? void 0 : _this_driver.stop();
         return timeline.observe(this);
+    }
+    constructor(options){
+        super();
+        this.state = "idle";
+        this.startTime = null;
+        this.isStopped = false;
+        /**
+         * The current time of the animation.
+         */ this.currentTime = 0;
+        /**
+         * The time at which the animation was paused.
+         */ this.holdTime = null;
+        /**
+         * Playback speed as a factor. 0 would be stopped, -1 reverse and 2 double speed.
+         */ this.playbackSpeed = 1;
+        /**
+         * This method is bound to the instance to fix a pattern where
+         * animation.stop is returned as a reference from a useEffect.
+         */ this.stop = ()=>{
+            var _this_options_onStop, _this_options;
+            const { motionValue } = this.options;
+            if (motionValue && motionValue.updatedAt !== __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now()) {
+                this.tick(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now());
+            }
+            this.isStopped = true;
+            if (this.state === "idle") return;
+            this.teardown();
+            (_this_options_onStop = (_this_options = this.options).onStop) === null || _this_options_onStop === void 0 ? void 0 : _this_options_onStop.call(_this_options);
+        };
+        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$animation$2d$count$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["activeAnimations"].mainThread++;
+        this.options = options;
+        this.initAnimation();
+        this.play();
+        if (options.autoplay === false) this.pause();
     }
 }
 // Legacy function support
@@ -5794,7 +5905,7 @@ function animateValue(options) {
 "use strict";
 
 __turbopack_context__.s({
-    "replaceStringEasing": (()=>replaceStringEasing)
+    "replaceStringEasing": ()=>replaceStringEasing
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$circ$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/easing/circ.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$easing$2f$back$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/easing/back.mjs [app-client] (ecmascript)");
@@ -5820,7 +5931,7 @@ function replaceStringEasing(transition) {
 "use strict";
 
 __turbopack_context__.s({
-    "NativeAnimationExtended": (()=>NativeAnimationExtended)
+    "NativeAnimationExtended": ()=>NativeAnimationExtended
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/clamp.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/frameloop/sync-time.mjs [app-client] (ecmascript)");
@@ -5842,29 +5953,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
  * keyframe quantity.
  */ const sampleDelta = 10; //ms
 class NativeAnimationExtended extends __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$NativeAnimation$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NativeAnimation"] {
-    constructor(options){
-        /**
-         * The base NativeAnimation function only supports a subset
-         * of Motion easings, and WAAPI also only supports some
-         * easing functions via string/cubic-bezier definitions.
-         *
-         * This function replaces those unsupported easing functions
-         * with a JS easing function. This will later get compiled
-         * to a linear() easing function.
-         */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$utils$2f$unsupported$2d$easing$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["replaceStringEasing"])(options);
-        /**
-         * Ensure we replace the transition type with a generator function
-         * before passing to WAAPI.
-         *
-         * TODO: Does this have a better home? It could be shared with
-         * JSAnimation.
-         */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$replace$2d$transition$2d$type$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["replaceTransitionType"])(options);
-        super(options);
-        if (options.startTime !== undefined) {
-            this.startTime = options.startTime;
-        }
-        this.options = options;
-    }
     /**
      * WAAPI doesn't natively have any interruption capabilities.
      *
@@ -5899,6 +5987,29 @@ class NativeAnimationExtended extends __TURBOPACK__imported__module__$5b$project
         motionValue.setWithVelocity(sampleAnimation.sample(Math.max(0, sampleTime - delta)).value, current, delta);
         sampleAnimation.stop();
     }
+    constructor(options){
+        /**
+         * The base NativeAnimation function only supports a subset
+         * of Motion easings, and WAAPI also only supports some
+         * easing functions via string/cubic-bezier definitions.
+         *
+         * This function replaces those unsupported easing functions
+         * with a JS easing function. This will later get compiled
+         * to a linear() easing function.
+         */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$utils$2f$unsupported$2d$easing$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["replaceStringEasing"])(options);
+        /**
+         * Ensure we replace the transition type with a generator function
+         * before passing to WAAPI.
+         *
+         * TODO: Does this have a better home? It could be shared with
+         * JSAnimation.
+         */ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$replace$2d$transition$2d$type$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["replaceTransitionType"])(options);
+        super(options);
+        if (options.startTime !== undefined) {
+            this.startTime = options.startTime;
+        }
+        this.options = options;
+    }
 }
 ;
  //# sourceMappingURL=NativeAnimationExtended.mjs.map
@@ -5907,7 +6018,7 @@ class NativeAnimationExtended extends __TURBOPACK__imported__module__$5b$project
 "use strict";
 
 __turbopack_context__.s({
-    "isAnimatable": (()=>isAnimatable)
+    "isAnimatable": ()=>isAnimatable
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$complex$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/complex/index.mjs [app-client] (ecmascript)");
 ;
@@ -5941,7 +6052,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 "use strict";
 
 __turbopack_context__.s({
-    "canAnimate": (()=>canAnimate)
+    "canAnimate": ()=>canAnimate
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/errors.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$generators$2f$utils$2f$is$2d$generator$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/generators/utils/is-generator.mjs [app-client] (ecmascript)");
@@ -5973,7 +6084,7 @@ function canAnimate(keyframes, name, type, velocity) {
     const targetKeyframe = keyframes[keyframes.length - 1];
     const isOriginAnimatable = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$animatable$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isAnimatable"])(originKeyframe, name);
     const isTargetAnimatable = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$is$2d$animatable$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isAnimatable"])(targetKeyframe, name);
-    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["warning"])(isOriginAnimatable === isTargetAnimatable, `You are trying to animate ${name} from "${originKeyframe}" to "${targetKeyframe}". "${isOriginAnimatable ? targetKeyframe : originKeyframe}" is not an animatable value.`, "value-not-animatable");
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$errors$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["warning"])(isOriginAnimatable === isTargetAnimatable, "You are trying to animate ".concat(name, ' from "').concat(originKeyframe, '" to "').concat(targetKeyframe, '". "').concat(isOriginAnimatable ? targetKeyframe : originKeyframe, '" is not an animatable value.'), "value-not-animatable");
     // Always skip if any of these are true
     if (!isOriginAnimatable || !isTargetAnimatable) {
         return false;
@@ -5987,7 +6098,7 @@ function canAnimate(keyframes, name, type, velocity) {
 "use strict";
 
 __turbopack_context__.s({
-    "makeAnimationInstant": (()=>makeAnimationInstant)
+    "makeAnimationInstant": ()=>makeAnimationInstant
 });
 function makeAnimationInstant(options) {
     options.duration = 0;
@@ -6000,7 +6111,7 @@ function makeAnimationInstant(options) {
 "use strict";
 
 __turbopack_context__.s({
-    "supportsBrowserAnimation": (()=>supportsBrowserAnimation)
+    "supportsBrowserAnimation": ()=>supportsBrowserAnimation
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$memo$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/memo.mjs [app-client] (ecmascript)");
 ;
@@ -6014,8 +6125,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ]);
 const supportsWaapi = /*@__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$memo$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["memo"])(()=>Object.hasOwnProperty.call(Element.prototype, "animate"));
 function supportsBrowserAnimation(options) {
+    var _motionValue_owner;
     const { motionValue, name, repeatDelay, repeatType, damping, type } = options;
-    const subject = motionValue?.owner?.current;
+    const subject = motionValue === null || motionValue === void 0 ? void 0 : (_motionValue_owner = motionValue.owner) === null || _motionValue_owner === void 0 ? void 0 : _motionValue_owner.current;
     /**
      * We use this check instead of isHTMLElement() because we explicitly
      * **don't** want elements in different timing contexts (i.e. popups)
@@ -6037,7 +6149,7 @@ function supportsBrowserAnimation(options) {
 "use strict";
 
 __turbopack_context__.s({
-    "AsyncMotionValueAnimation": (()=>AsyncMotionValueAnimation)
+    "AsyncMotionValueAnimation": ()=>AsyncMotionValueAnimation
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/global-config.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$noop$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/noop.mjs [app-client] (ecmascript)");
@@ -6069,35 +6181,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
  * between these two moments.
  */ const MAX_RESOLVE_DELAY = 40;
 class AsyncMotionValueAnimation extends __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$WithPromise$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["WithPromise"] {
-    constructor({ autoplay = true, delay = 0, type = "keyframes", repeat = 0, repeatDelay = 0, repeatType = "loop", keyframes, name, motionValue, element, ...options }){
-        super();
-        /**
-         * Bound to support return animation.stop pattern
-         */ this.stop = ()=>{
-            if (this._animation) {
-                this._animation.stop();
-                this.stopTimeline?.();
-            }
-            this.keyframeResolver?.cancel();
-        };
-        this.createdAt = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now();
-        const optionsWithDefaults = {
-            autoplay,
-            delay,
-            type,
-            repeat,
-            repeatDelay,
-            repeatType,
-            name,
-            motionValue,
-            element,
-            ...options
-        };
-        const KeyframeResolver$1 = element?.KeyframeResolver || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KeyframeResolver"];
-        this.keyframeResolver = new KeyframeResolver$1(keyframes, (resolvedKeyframes, finalKeyframe, forced)=>this.onKeyframesResolved(resolvedKeyframes, finalKeyframe, optionsWithDefaults, !forced), name, motionValue, element);
-        this.keyframeResolver?.scheduleResolve();
-    }
     onKeyframesResolved(keyframes, finalKeyframe, options, sync) {
+        var _resolvedOptions_motionValue_owner, _resolvedOptions_motionValue;
         this.keyframeResolver = undefined;
         const { name, type, velocity, delay, isHandoff, onUpdate } = options;
         this.resolvedAt = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now();
@@ -6106,7 +6191,7 @@ class AsyncMotionValueAnimation extends __TURBOPACK__imported__module__$5b$proje
          * then we should complete it immediately.
          */ if (!(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$can$2d$animate$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["canAnimate"])(keyframes, name, type, velocity)) {
             if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].instantAnimations || !delay) {
-                onUpdate?.((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$get$2d$final$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFinalKeyframe"])(keyframes, options, finalKeyframe));
+                onUpdate === null || onUpdate === void 0 ? void 0 : onUpdate((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$get$2d$final$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getFinalKeyframe"])(keyframes, options, finalKeyframe));
             }
             keyframes[0] = keyframes[keyframes.length - 1];
             (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$make$2d$animation$2d$instant$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["makeAnimationInstant"])(options);
@@ -6135,7 +6220,7 @@ class AsyncMotionValueAnimation extends __TURBOPACK__imported__module__$5b$proje
          * WAAPI. Therefore, this animation must be JS to ensure it runs "under" the
          * optimised animation.
          */ const useWaapi = !isHandoff && (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$waapi$2f$supports$2f$waapi$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supportsBrowserAnimation"])(resolvedOptions);
-        const element = resolvedOptions.motionValue?.owner?.current;
+        const element = (_resolvedOptions_motionValue = resolvedOptions.motionValue) === null || _resolvedOptions_motionValue === void 0 ? void 0 : (_resolvedOptions_motionValue_owner = _resolvedOptions_motionValue.owner) === null || _resolvedOptions_motionValue_owner === void 0 ? void 0 : _resolvedOptions_motionValue_owner.current;
         const animation = useWaapi ? new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$NativeAnimationExtended$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["NativeAnimationExtended"]({
             ...resolvedOptions,
             element
@@ -6161,7 +6246,8 @@ class AsyncMotionValueAnimation extends __TURBOPACK__imported__module__$5b$proje
     }
     get animation() {
         if (!this._animation) {
-            this.keyframeResolver?.resume();
+            var _this_keyframeResolver;
+            (_this_keyframeResolver = this.keyframeResolver) === null || _this_keyframeResolver === void 0 ? void 0 : _this_keyframeResolver.resume();
             (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["flushKeyframeResolvers"])();
         }
         return this._animation;
@@ -6208,10 +6294,42 @@ class AsyncMotionValueAnimation extends __TURBOPACK__imported__module__$5b$proje
         this.animation.complete();
     }
     cancel() {
+        var _this_keyframeResolver;
         if (this._animation) {
             this.animation.cancel();
         }
-        this.keyframeResolver?.cancel();
+        (_this_keyframeResolver = this.keyframeResolver) === null || _this_keyframeResolver === void 0 ? void 0 : _this_keyframeResolver.cancel();
+    }
+    constructor({ autoplay = true, delay = 0, type = "keyframes", repeat = 0, repeatDelay = 0, repeatType = "loop", keyframes, name, motionValue, element, ...options }){
+        var _this_keyframeResolver;
+        super();
+        /**
+         * Bound to support return animation.stop pattern
+         */ this.stop = ()=>{
+            var _this_keyframeResolver;
+            if (this._animation) {
+                var _this_stopTimeline, _this;
+                this._animation.stop();
+                (_this_stopTimeline = (_this = this).stopTimeline) === null || _this_stopTimeline === void 0 ? void 0 : _this_stopTimeline.call(_this);
+            }
+            (_this_keyframeResolver = this.keyframeResolver) === null || _this_keyframeResolver === void 0 ? void 0 : _this_keyframeResolver.cancel();
+        };
+        this.createdAt = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now();
+        const optionsWithDefaults = {
+            autoplay,
+            delay,
+            type,
+            repeat,
+            repeatDelay,
+            repeatType,
+            name,
+            motionValue,
+            element,
+            ...options
+        };
+        const KeyframeResolver$1 = (element === null || element === void 0 ? void 0 : element.KeyframeResolver) || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$keyframes$2f$KeyframesResolver$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["KeyframeResolver"];
+        this.keyframeResolver = new KeyframeResolver$1(keyframes, (resolvedKeyframes, finalKeyframe, forced)=>this.onKeyframesResolved(resolvedKeyframes, finalKeyframe, optionsWithDefaults, !forced), name, motionValue, element);
+        (_this_keyframeResolver = this.keyframeResolver) === null || _this_keyframeResolver === void 0 ? void 0 : _this_keyframeResolver.scheduleResolve();
     }
 }
 ;
@@ -6221,7 +6339,7 @@ class AsyncMotionValueAnimation extends __TURBOPACK__imported__module__$5b$proje
 "use strict";
 
 __turbopack_context__.s({
-    "getDefaultTransition": (()=>getDefaultTransition)
+    "getDefaultTransition": ()=>getDefaultTransition
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/keys-transform.mjs [app-client] (ecmascript)");
 ;
@@ -6254,7 +6372,8 @@ const keyframesTransition = {
     ],
     duration: 0.3
 };
-const getDefaultTransition = (valueKey, { keyframes })=>{
+const getDefaultTransition = (valueKey, param)=>{
+    let { keyframes } = param;
     if (keyframes.length > 2) {
         return keyframesTransition;
     } else if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["transformProps"].has(valueKey)) {
@@ -6269,10 +6388,11 @@ const getDefaultTransition = (valueKey, { keyframes })=>{
 "use strict";
 
 __turbopack_context__.s({
-    "getFinalKeyframe": (()=>getFinalKeyframe)
+    "getFinalKeyframe": ()=>getFinalKeyframe
 });
 const isNotNull = (value)=>value !== null;
-function getFinalKeyframe(keyframes, { repeat, repeatType = "loop" }, finalKeyframe) {
+function getFinalKeyframe(keyframes, param, finalKeyframe) {
+    let { repeat, repeatType = "loop" } = param;
     const resolvedKeyframes = keyframes.filter(isNotNull);
     const index = repeat && repeatType !== "loop" && repeat % 2 === 1 ? 0 : resolvedKeyframes.length - 1;
     return !index || finalKeyframe === undefined ? resolvedKeyframes[index] : finalKeyframe;
@@ -6288,9 +6408,10 @@ function getFinalKeyframe(keyframes, { repeat, repeatType = "loop" }, finalKeyfr
  * This filters out orchestration options and returns true
  * if any options are left.
  */ __turbopack_context__.s({
-    "isTransitionDefined": (()=>isTransitionDefined)
+    "isTransitionDefined": ()=>isTransitionDefined
 });
-function isTransitionDefined({ when, delay: _delay, delayChildren, staggerChildren, staggerDirection, repeat, repeatType, repeatDelay, from, elapsed, ...transition }) {
+function isTransitionDefined(param) {
+    let { when, delay: _delay, delayChildren, staggerChildren, staggerDirection, repeat, repeatType, repeatDelay, from, elapsed, ...transition } = param;
     return !!Object.keys(transition).length;
 }
 ;
@@ -6300,7 +6421,7 @@ function isTransitionDefined({ when, delay: _delay, delayChildren, staggerChildr
 "use strict";
 
 __turbopack_context__.s({
-    "animateMotionValue": (()=>animateMotionValue)
+    "animateMotionValue": ()=>animateMotionValue
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/time-conversion.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/global-config.mjs [app-client] (ecmascript)");
@@ -6321,7 +6442,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 ;
 ;
-const animateMotionValue = (name, value, target, transition = {}, element, isHandoff)=>(onComplete)=>{
+const animateMotionValue = function(name, value, target) {
+    let transition = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : {}, element = arguments.length > 4 ? arguments[4] : void 0, isHandoff = arguments.length > 5 ? arguments[5] : void 0;
+    return (onComplete)=>{
         const valueTransition = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$get$2d$value$2d$transition$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["getValueTransition"])(transition, name) || {};
         /**
      * Most transition values are currently completely overwritten by value-specific
@@ -6378,7 +6501,7 @@ const animateMotionValue = (name, value, target, transition = {}, element, isHan
                 shouldSkip = true;
             }
         }
-        if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].instantAnimations || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].skipAnimations || element?.shouldSkipAnimations) {
+        if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].instantAnimations || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$global$2d$config$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["MotionGlobalConfig"].skipAnimations || (element === null || element === void 0 ? void 0 : element.shouldSkipAnimations)) {
             shouldSkip = true;
             (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$make$2d$animation$2d$instant$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["makeAnimationInstant"])(options);
             options.delay = 0;
@@ -6403,6 +6526,7 @@ const animateMotionValue = (name, value, target, transition = {}, element, isHan
         }
         return valueTransition.isSync ? new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$JSAnimation$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["JSAnimation"](options) : new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$AsyncMotionValueAnimation$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AsyncMotionValueAnimation"](options);
     };
+};
 ;
  //# sourceMappingURL=motion-value.mjs.map
 }),
@@ -6410,7 +6534,7 @@ const animateMotionValue = (name, value, target, transition = {}, element, isHan
 "use strict";
 
 __turbopack_context__.s({
-    "animateTarget": (()=>animateTarget)
+    "animateTarget": ()=>animateTarget
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$get$2d$value$2d$transition$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/utils/get-value-transition.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$resolve$2d$transition$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/utils/resolve-transition.mjs [app-client] (ecmascript)");
@@ -6433,21 +6557,24 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
  * just by checking whether the key was listed in protectedKeys, but this
  * posed problems if an animation was triggered by afterChildren and protectedKeys
  * had been set to true in the meantime.
- */ function shouldBlockAnimation({ protectedKeys, needsAnimating }, key) {
+ */ function shouldBlockAnimation(param, key) {
+    let { protectedKeys, needsAnimating } = param;
     const shouldBlock = protectedKeys.hasOwnProperty(key) && needsAnimating[key] !== true;
     needsAnimating[key] = false;
     return shouldBlock;
 }
-function animateTarget(visualElement, targetAndTransition, { delay = 0, transitionOverride, type } = {}) {
+function animateTarget(visualElement, targetAndTransition) {
+    let { delay = 0, transitionOverride, type } = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
     let { transition, transitionEnd, ...target } = targetAndTransition;
     const defaultTransition = visualElement.getDefaultTransition();
     transition = transition ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$resolve$2d$transition$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveTransition"])(transition, defaultTransition) : defaultTransition;
-    const reduceMotion = transition?.reduceMotion;
+    const reduceMotion = transition === null || transition === void 0 ? void 0 : transition.reduceMotion;
     if (transitionOverride) transition = transitionOverride;
     const animations = [];
     const animationTypeState = type && visualElement.animationState && visualElement.animationState.getState()[type];
     for(const key in target){
-        const value = visualElement.getValue(key, visualElement.latestValues[key] ?? null);
+        var _visualElement_latestValues_key;
+        const value = visualElement.getValue(key, (_visualElement_latestValues_key = visualElement.latestValues[key]) !== null && _visualElement_latestValues_key !== void 0 ? _visualElement_latestValues_key : null);
         const valueTarget = target[key];
         if (valueTarget === undefined || animationTypeState && shouldBlockAnimation(animationTypeState, key)) {
             continue;
@@ -6477,7 +6604,7 @@ function animateTarget(visualElement, targetAndTransition, { delay = 0, transiti
             }
         }
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$will$2d$change$2f$add$2d$will$2d$change$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["addValueToWillChange"])(visualElement, key);
-        const shouldReduceMotion = reduceMotion ?? visualElement.shouldReduceMotion;
+        const shouldReduceMotion = reduceMotion !== null && reduceMotion !== void 0 ? reduceMotion : visualElement.shouldReduceMotion;
         value.start((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$interfaces$2f$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["animateMotionValue"])(key, value, valueTarget, shouldReduceMotion && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$keys$2d$position$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["positionalKeys"].has(key) ? {
             type: false
         } : valueTransition, visualElement, isHandoff));
@@ -6505,9 +6632,10 @@ function animateTarget(visualElement, targetAndTransition, { delay = 0, transiti
 "use strict";
 
 __turbopack_context__.s({
-    "calcChildStagger": (()=>calcChildStagger)
+    "calcChildStagger": ()=>calcChildStagger
 });
-function calcChildStagger(children, child, delayChildren, staggerChildren = 0, staggerDirection = 1) {
+function calcChildStagger(children, child, delayChildren) {
+    let staggerChildren = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : 0, staggerDirection = arguments.length > 4 && arguments[4] !== void 0 ? arguments[4] : 1;
     const index = Array.from(children).sort((a, b)=>a.sortNodePosition(b)).indexOf(child);
     const numChildren = children.size;
     const maxStaggerDuration = (numChildren - 1) * staggerChildren;
@@ -6521,7 +6649,7 @@ function calcChildStagger(children, child, delayChildren, staggerChildren = 0, s
 "use strict";
 
 __turbopack_context__.s({
-    "animateVariant": (()=>animateVariant)
+    "animateVariant": ()=>animateVariant
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/resolve-dynamic-variants.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$calc$2d$child$2d$stagger$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/utils/calc-child-stagger.mjs [app-client] (ecmascript)");
@@ -6529,8 +6657,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 ;
 ;
-function animateVariant(visualElement, variant, options = {}) {
-    const resolved = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveVariant"])(visualElement, variant, options.type === "exit" ? visualElement.presenceContext?.custom : undefined);
+function animateVariant(visualElement, variant) {
+    let options = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
+    var _visualElement_presenceContext;
+    const resolved = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveVariant"])(visualElement, variant, options.type === "exit" ? (_visualElement_presenceContext = visualElement.presenceContext) === null || _visualElement_presenceContext === void 0 ? void 0 : _visualElement_presenceContext.custom : undefined);
     let { transition = visualElement.getDefaultTransition() || {} } = resolved || {};
     if (options.transitionOverride) {
         transition = options.transitionOverride;
@@ -6542,7 +6672,8 @@ function animateVariant(visualElement, variant, options = {}) {
     /**
      * If we have children, create a callback that runs all their animations.
      * Otherwise, we resolve a Promise immediately for a composable no-op.
-     */ const getChildAnimations = visualElement.variantChildren && visualElement.variantChildren.size ? (forwardDelay = 0)=>{
+     */ const getChildAnimations = visualElement.variantChildren && visualElement.variantChildren.size ? function() {
+        let forwardDelay = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : 0;
         const { delayChildren = 0, staggerChildren, staggerDirection } = transition;
         return animateChildren(visualElement, variant, forwardDelay, delayChildren, staggerChildren, staggerDirection, options);
     } : ()=>Promise.resolve();
@@ -6566,7 +6697,8 @@ function animateVariant(visualElement, variant, options = {}) {
         ]);
     }
 }
-function animateChildren(visualElement, variant, delay = 0, delayChildren = 0, staggerChildren = 0, staggerDirection = 1, options) {
+function animateChildren(visualElement, variant) {
+    let delay = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : 0, delayChildren = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : 0, staggerChildren = arguments.length > 4 && arguments[4] !== void 0 ? arguments[4] : 0, staggerDirection = arguments.length > 5 && arguments[5] !== void 0 ? arguments[5] : 1, options = arguments.length > 6 ? arguments[6] : void 0;
     const animations = [];
     for (const child of visualElement.variantChildren){
         child.notify("AnimationStart", variant);
@@ -6584,7 +6716,7 @@ function animateChildren(visualElement, variant, delay = 0, delayChildren = 0, s
 "use strict";
 
 __turbopack_context__.s({
-    "animateVisualElement": (()=>animateVisualElement)
+    "animateVisualElement": ()=>animateVisualElement
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/resolve-dynamic-variants.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2d$target$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/interfaces/visual-element-target.mjs [app-client] (ecmascript)");
@@ -6592,7 +6724,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 ;
 ;
-function animateVisualElement(visualElement, definition, options = {}) {
+function animateVisualElement(visualElement, definition) {
+    let options = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
     visualElement.notify("AnimationStart", definition);
     let animation;
     if (Array.isArray(definition)) {
@@ -6615,7 +6748,7 @@ function animateVisualElement(visualElement, definition, options = {}) {
 "use strict";
 
 __turbopack_context__.s({
-    "getVariantContext": (()=>getVariantContext)
+    "getVariantContext": ()=>getVariantContext
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$is$2d$variant$2d$label$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/is-variant-label.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$variant$2d$props$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/render/utils/variant-props.mjs [app-client] (ecmascript)");
@@ -6651,7 +6784,7 @@ const numVariantProps = __TURBOPACK__imported__module__$5b$project$5d2f$node_mod
 "use strict";
 
 __turbopack_context__.s({
-    "shallowCompare": (()=>shallowCompare)
+    "shallowCompare": ()=>shallowCompare
 });
 function shallowCompare(next, prev) {
     if (!Array.isArray(prev)) return false;
@@ -6669,8 +6802,8 @@ function shallowCompare(next, prev) {
 "use strict";
 
 __turbopack_context__.s({
-    "checkVariantsDidChange": (()=>checkVariantsDidChange),
-    "createAnimationState": (()=>createAnimationState)
+    "checkVariantsDidChange": ()=>checkVariantsDidChange,
+    "createAnimationState": ()=>createAnimationState
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/interfaces/visual-element.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$utils$2f$calc$2d$child$2d$stagger$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/utils/calc-child-stagger.mjs [app-client] (ecmascript)");
@@ -6696,7 +6829,10 @@ const reversePriorityOrder = [
 const numAnimationTypes = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$variant$2d$props$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["variantPriorityOrder"].length;
 function createAnimateFunction(visualElement) {
     return (animations)=>{
-        return Promise.all(animations.map(({ animation, options })=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["animateVisualElement"])(visualElement, animation, options)));
+        return Promise.all(animations.map((param)=>{
+            let { animation, options } = param;
+            return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$interfaces$2f$visual$2d$element$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["animateVisualElement"])(visualElement, animation, options);
+        }));
     };
 }
 function createAnimationState(visualElement) {
@@ -6714,7 +6850,8 @@ function createAnimationState(visualElement) {
      * This function will be used to reduce the animation definitions for
      * each active animation type into an object of resolved values for it.
      */ const buildResolvedTypeValues = (type)=>(acc, definition)=>{
-            const resolved = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveVariant"])(visualElement, definition, type === "exit" ? visualElement.presenceContext?.custom : undefined);
+            var _visualElement_presenceContext;
+            const resolved = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$render$2f$utils$2f$resolve$2d$dynamic$2d$variants$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveVariant"])(visualElement, definition, type === "exit" ? (_visualElement_presenceContext = visualElement.presenceContext) === null || _visualElement_presenceContext === void 0 ? void 0 : _visualElement_presenceContext.custom : undefined);
             if (resolved) {
                 const { transition, transitionEnd, ...target } = resolved;
                 acc = {
@@ -6948,7 +7085,7 @@ function createAnimationState(visualElement) {
                 const motionValue = visualElement.getValue(key);
                 if (motionValue) motionValue.liveStyle = true;
                 // @ts-expect-error - @mattgperry to figure if we should do something here
-                fallbackAnimation[key] = fallbackTarget ?? null;
+                fallbackAnimation[key] = fallbackTarget !== null && fallbackTarget !== void 0 ? fallbackTarget : null;
             });
             animations.push({
                 animation: fallbackAnimation
@@ -6965,10 +7102,14 @@ function createAnimationState(visualElement) {
     /**
      * Change whether a certain animation type is active.
      */ function setActive(type, isActive) {
+        var // Propagate active change to children
+        _visualElement_variantChildren;
         // If the active state hasn't changed, we can safely do nothing here
         if (state[type].isActive === isActive) return Promise.resolve();
-        // Propagate active change to children
-        visualElement.variantChildren?.forEach((child)=>child.animationState?.setActive(type, isActive));
+        (_visualElement_variantChildren = visualElement.variantChildren) === null || _visualElement_variantChildren === void 0 ? void 0 : _visualElement_variantChildren.forEach((child)=>{
+            var _child_animationState;
+            return (_child_animationState = child.animationState) === null || _child_animationState === void 0 ? void 0 : _child_animationState.setActive(type, isActive);
+        });
         state[type].isActive = isActive;
         const animations = animateChanges(type);
         for(const key in state){
@@ -6995,7 +7136,8 @@ function checkVariantsDidChange(prev, next) {
     }
     return false;
 }
-function createTypeState(isActive = false) {
+function createTypeState() {
+    let isActive = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : false;
     return {
         isActive,
         protectedKeys: {},
@@ -7021,7 +7163,7 @@ function createState() {
 "use strict";
 
 __turbopack_context__.s({
-    "eachAxis": (()=>eachAxis)
+    "eachAxis": ()=>eachAxis
 });
 function eachAxis(callback) {
     return [
@@ -7036,11 +7178,12 @@ function eachAxis(callback) {
 "use strict";
 
 __turbopack_context__.s({
-    "addDomEvent": (()=>addDomEvent)
+    "addDomEvent": ()=>addDomEvent
 });
-function addDomEvent(target, eventName, handler, options = {
-    passive: true
-}) {
+function addDomEvent(target, eventName, handler) {
+    let options = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : {
+        passive: true
+    };
     target.addEventListener(eventName, handler, options);
     return ()=>target.removeEventListener(eventName, handler);
 }
@@ -7051,8 +7194,8 @@ function addDomEvent(target, eventName, handler, options = {
 "use strict";
 
 __turbopack_context__.s({
-    "isDragActive": (()=>isDragActive),
-    "isDragging": (()=>isDragging)
+    "isDragActive": ()=>isDragActive,
+    "isDragging": ()=>isDragging
 });
 const isDragging = {
     x: false,
@@ -7068,7 +7211,7 @@ function isDragActive() {
 "use strict";
 
 __turbopack_context__.s({
-    "setDragLock": (()=>setDragLock)
+    "setDragLock": ()=>setDragLock
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$drag$2f$state$2f$is$2d$active$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/gestures/drag/state/is-active.mjs [app-client] (ecmascript)");
 ;
@@ -7100,14 +7243,14 @@ function setDragLock(axis) {
 "use strict";
 
 __turbopack_context__.s({
-    "calcAxisDelta": (()=>calcAxisDelta),
-    "calcBoxDelta": (()=>calcBoxDelta),
-    "calcLength": (()=>calcLength),
-    "calcRelativeAxis": (()=>calcRelativeAxis),
-    "calcRelativeAxisPosition": (()=>calcRelativeAxisPosition),
-    "calcRelativeBox": (()=>calcRelativeBox),
-    "calcRelativePosition": (()=>calcRelativePosition),
-    "isNear": (()=>isNear)
+    "calcAxisDelta": ()=>calcAxisDelta,
+    "calcBoxDelta": ()=>calcBoxDelta,
+    "calcLength": ()=>calcLength,
+    "calcRelativeAxis": ()=>calcRelativeAxis,
+    "calcRelativeAxisPosition": ()=>calcRelativeAxisPosition,
+    "calcRelativeBox": ()=>calcRelativeBox,
+    "calcRelativePosition": ()=>calcRelativePosition,
+    "isNear": ()=>isNear
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-client] (ecmascript)");
 ;
@@ -7123,7 +7266,8 @@ function calcLength(axis) {
 function isNear(value, target, maxDistance) {
     return Math.abs(value - target) <= maxDistance;
 }
-function calcAxisDelta(delta, source, target, origin = 0.5) {
+function calcAxisDelta(delta, source, target) {
+    let origin = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : 0.5;
     delta.origin = origin;
     delta.originPoint = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mixNumber"])(source.min, source.max, delta.origin);
     delta.scale = calcLength(target) / calcLength(source);
@@ -7162,7 +7306,7 @@ function calcRelativePosition(target, layout, parent) {
 "use strict";
 
 __turbopack_context__.s({
-    "isSVGElement": (()=>isSVGElement)
+    "isSVGElement": ()=>isSVGElement
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$object$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/is-object.mjs [app-client] (ecmascript)");
 ;
@@ -7179,7 +7323,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 "use strict";
 
 __turbopack_context__.s({
-    "resolveElements": (()=>resolveElements)
+    "resolveElements": ()=>resolveElements
 });
 function resolveElements(elementOrSelector, scope, selectorCache) {
     if (elementOrSelector == null) {
@@ -7194,7 +7338,8 @@ function resolveElements(elementOrSelector, scope, selectorCache) {
         if (scope) {
             root = scope.current;
         }
-        const elements = selectorCache?.[elementOrSelector] ?? root.querySelectorAll(elementOrSelector);
+        var _selectorCache_elementOrSelector;
+        const elements = (_selectorCache_elementOrSelector = selectorCache === null || selectorCache === void 0 ? void 0 : selectorCache[elementOrSelector]) !== null && _selectorCache_elementOrSelector !== void 0 ? _selectorCache_elementOrSelector : root.querySelectorAll(elementOrSelector);
         return elements ? Array.from(elements) : [];
     }
     return Array.from(elementOrSelector).filter((element)=>element != null);
@@ -7206,7 +7351,7 @@ function resolveElements(elementOrSelector, scope, selectorCache) {
 "use strict";
 
 __turbopack_context__.s({
-    "resizeElement": (()=>resizeElement)
+    "resizeElement": ()=>resizeElement
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$is$2d$svg$2d$element$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/is-svg-element.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$resolve$2d$elements$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/resolve-elements.mjs [app-client] (ecmascript)");
@@ -7225,8 +7370,10 @@ const getSize = (borderBoxAxis, svgAxis, htmlAxis)=>(target, borderBoxSize)=>{
     };
 const getWidth = /*@__PURE__*/ getSize("inline", "width", "offsetWidth");
 const getHeight = /*@__PURE__*/ getSize("block", "height", "offsetHeight");
-function notifyTarget({ target, borderBoxSize }) {
-    resizeHandlers.get(target)?.forEach((handler)=>{
+function notifyTarget(param) {
+    let { target, borderBoxSize } = param;
+    var _resizeHandlers_get;
+    (_resizeHandlers_get = resizeHandlers.get(target)) === null || _resizeHandlers_get === void 0 ? void 0 : _resizeHandlers_get.forEach((handler)=>{
         handler(target, {
             get width () {
                 return getWidth(target, borderBoxSize);
@@ -7254,14 +7401,14 @@ function resizeElement(target, handler) {
             resizeHandlers.set(element, elementHandlers);
         }
         elementHandlers.add(handler);
-        observer?.observe(element);
+        observer === null || observer === void 0 ? void 0 : observer.observe(element);
     });
     return ()=>{
         elements.forEach((element)=>{
             const elementHandlers = resizeHandlers.get(element);
-            elementHandlers?.delete(handler);
-            if (!elementHandlers?.size) {
-                observer?.unobserve(element);
+            elementHandlers === null || elementHandlers === void 0 ? void 0 : elementHandlers.delete(handler);
+            if (!(elementHandlers === null || elementHandlers === void 0 ? void 0 : elementHandlers.size)) {
+                observer === null || observer === void 0 ? void 0 : observer.unobserve(element);
             }
         });
     };
@@ -7273,7 +7420,7 @@ function resizeElement(target, handler) {
 "use strict";
 
 __turbopack_context__.s({
-    "resizeWindow": (()=>resizeWindow)
+    "resizeWindow": ()=>resizeWindow
 });
 const windowCallbacks = new Set();
 let windowResizeHandler;
@@ -7309,7 +7456,7 @@ function resizeWindow(callback) {
 "use strict";
 
 __turbopack_context__.s({
-    "resize": (()=>resize)
+    "resize": ()=>resize
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$resize$2f$handle$2d$element$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/resize/handle-element.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$resize$2f$handle$2d$window$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/resize/handle-window.mjs [app-client] (ecmascript)");
@@ -7325,8 +7472,8 @@ function resize(a, b) {
 "use strict";
 
 __turbopack_context__.s({
-    "isElementKeyboardAccessible": (()=>isElementKeyboardAccessible),
-    "isElementTextInput": (()=>isElementTextInput)
+    "isElementKeyboardAccessible": ()=>isElementKeyboardAccessible,
+    "isElementTextInput": ()=>isElementTextInput
 });
 const keyboardAccessibleElements = new Set([
     "BUTTON",
@@ -7366,7 +7513,7 @@ const textInputElements = new Set([
 "use strict";
 
 __turbopack_context__.s({
-    "isPrimaryPointer": (()=>isPrimaryPointer)
+    "isPrimaryPointer": ()=>isPrimaryPointer
 });
 const isPrimaryPointer = (event)=>{
     if (event.pointerType === "mouse") {
@@ -7393,7 +7540,7 @@ const isPrimaryPointer = (event)=>{
  * persist through server requests. If we need instanced states we
  * could lazy-init via root.
  */ __turbopack_context__.s({
-    "globalProjectionState": (()=>globalProjectionState)
+    "globalProjectionState": ()=>globalProjectionState
 });
 const globalProjectionState = {
     /**
@@ -7412,7 +7559,7 @@ const globalProjectionState = {
 "use strict";
 
 __turbopack_context__.s({
-    "animateSingleValue": (()=>animateSingleValue)
+    "animateSingleValue": ()=>animateSingleValue
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$animation$2f$interfaces$2f$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/animation/interfaces/motion-value.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/index.mjs [app-client] (ecmascript)");
@@ -7432,8 +7579,8 @@ function animateSingleValue(value, keyframes, options) {
 "use strict";
 
 __turbopack_context__.s({
-    "delay": (()=>delay),
-    "delayInSeconds": (()=>delayInSeconds)
+    "delay": ()=>delay,
+    "delayInSeconds": ()=>delayInSeconds
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/frameloop/sync-time.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$time$2d$conversion$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/time-conversion.mjs [app-client] (ecmascript)");
@@ -7445,7 +7592,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
  * Timeout defined in ms
  */ function delay(callback, timeout) {
     const start = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$sync$2d$time$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["time"].now();
-    const checkElapsed = ({ timestamp })=>{
+    const checkElapsed = (param)=>{
+        let { timestamp } = param;
         const elapsed = timestamp - start;
         if (elapsed >= timeout) {
             (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cancelFrame"])(checkElapsed);
@@ -7465,7 +7613,7 @@ function delayInSeconds(callback, timeout) {
 "use strict";
 
 __turbopack_context__.s({
-    "isSVGSVGElement": (()=>isSVGSVGElement)
+    "isSVGSVGElement": ()=>isSVGSVGElement
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$is$2d$svg$2d$element$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/is-svg-element.mjs [app-client] (ecmascript)");
 ;
@@ -7482,7 +7630,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 "use strict";
 
 __turbopack_context__.s({
-    "mixValues": (()=>mixValues)
+    "mixValues": ()=>mixValues
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/numbers/units.mjs [app-client] (ecmascript)");
@@ -7503,15 +7651,18 @@ const asNumber = (value)=>typeof value === "string" ? parseFloat(value) : value;
 const isPx = (value)=>typeof value === "number" || __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["px"].test(value);
 function mixValues(target, follow, lead, progress, shouldCrossfadeOpacity, isOnlyMember) {
     if (shouldCrossfadeOpacity) {
-        target.opacity = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mixNumber"])(0, lead.opacity ?? 1, easeCrossfadeIn(progress));
-        target.opacityExit = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mixNumber"])(follow.opacity ?? 1, 0, easeCrossfadeOut(progress));
+        var _lead_opacity;
+        target.opacity = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mixNumber"])(0, (_lead_opacity = lead.opacity) !== null && _lead_opacity !== void 0 ? _lead_opacity : 1, easeCrossfadeIn(progress));
+        var _follow_opacity;
+        target.opacityExit = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mixNumber"])((_follow_opacity = follow.opacity) !== null && _follow_opacity !== void 0 ? _follow_opacity : 1, 0, easeCrossfadeOut(progress));
     } else if (isOnlyMember) {
-        target.opacity = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mixNumber"])(follow.opacity ?? 1, lead.opacity ?? 1, progress);
+        var _follow_opacity1, _lead_opacity1;
+        target.opacity = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mixNumber"])((_follow_opacity1 = follow.opacity) !== null && _follow_opacity1 !== void 0 ? _follow_opacity1 : 1, (_lead_opacity1 = lead.opacity) !== null && _lead_opacity1 !== void 0 ? _lead_opacity1 : 1, progress);
     }
     /**
      * Mix border radius
      */ for(let i = 0; i < numBorders; i++){
-        const borderLabel = `border${borders[i]}Radius`;
+        const borderLabel = "border".concat(borders[i], "Radius");
         let followRadius = getRadius(follow, borderLabel);
         let leadRadius = getRadius(lead, borderLabel);
         if (followRadius === undefined && leadRadius === undefined) continue;
@@ -7557,9 +7708,9 @@ function compress(min, max, easing) {
  *
  * This is a mutative operation.
  */ __turbopack_context__.s({
-    "copyAxisDeltaInto": (()=>copyAxisDeltaInto),
-    "copyAxisInto": (()=>copyAxisInto),
-    "copyBoxInto": (()=>copyBoxInto)
+    "copyAxisDeltaInto": ()=>copyAxisDeltaInto,
+    "copyAxisInto": ()=>copyAxisInto,
+    "copyBoxInto": ()=>copyBoxInto
 });
 function copyAxisInto(axis, originAxis) {
     axis.min = originAxis.min;
@@ -7590,10 +7741,10 @@ function copyAxisInto(axis, originAxis) {
 "use strict";
 
 __turbopack_context__.s({
-    "removeAxisDelta": (()=>removeAxisDelta),
-    "removeAxisTransforms": (()=>removeAxisTransforms),
-    "removeBoxTransforms": (()=>removeBoxTransforms),
-    "removePointDelta": (()=>removePointDelta)
+    "removeAxisDelta": ()=>removeAxisDelta,
+    "removeAxisTransforms": ()=>removeAxisTransforms,
+    "removeBoxTransforms": ()=>removeBoxTransforms,
+    "removePointDelta": ()=>removePointDelta
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/mix/number.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/value/types/numbers/units.mjs [app-client] (ecmascript)");
@@ -7613,7 +7764,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 }
 /**
  * Remove a delta from an axis. This is essentially the steps of applyAxisDelta in reverse
- */ function removeAxisDelta(axis, translate = 0, scale = 1, origin = 0.5, boxScale, originAxis = axis, sourceAxis = axis) {
+ */ function removeAxisDelta(axis) {
+    let translate = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : 0, scale = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : 1, origin = arguments.length > 3 && arguments[3] !== void 0 ? arguments[3] : 0.5, boxScale = arguments.length > 4 ? arguments[4] : void 0, originAxis = arguments.length > 5 && arguments[5] !== void 0 ? arguments[5] : axis, sourceAxis = arguments.length > 6 && arguments[6] !== void 0 ? arguments[6] : axis;
     if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$types$2f$numbers$2f$units$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["percent"].test(translate)) {
         translate = parseFloat(translate);
         const relativeProgress = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$mix$2f$number$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["mixNumber"])(sourceAxis.min, sourceAxis.max, translate / 100);
@@ -7628,7 +7780,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 /**
  * Remove a transforms from an axis. This is essentially the steps of applyAxisTransforms in reverse
  * and acts as a bridge between motion values and removeAxisDelta
- */ function removeAxisTransforms(axis, transforms, [key, scaleKey, originKey], origin, sourceAxis) {
+ */ function removeAxisTransforms(axis, transforms, param, origin, sourceAxis) {
+    let [key, scaleKey, originKey] = param;
     removeAxisDelta(axis, transforms[key], transforms[scaleKey], transforms[originKey], transforms.scale, origin, sourceAxis);
 }
 /**
@@ -7657,13 +7810,13 @@ const yKeys = [
 "use strict";
 
 __turbopack_context__.s({
-    "aspectRatio": (()=>aspectRatio),
-    "axisDeltaEquals": (()=>axisDeltaEquals),
-    "axisEquals": (()=>axisEquals),
-    "axisEqualsRounded": (()=>axisEqualsRounded),
-    "boxEquals": (()=>boxEquals),
-    "boxEqualsRounded": (()=>boxEqualsRounded),
-    "isDeltaZero": (()=>isDeltaZero)
+    "aspectRatio": ()=>aspectRatio,
+    "axisDeltaEquals": ()=>axisDeltaEquals,
+    "axisEquals": ()=>axisEquals,
+    "axisEqualsRounded": ()=>axisEqualsRounded,
+    "boxEquals": ()=>boxEquals,
+    "boxEqualsRounded": ()=>boxEqualsRounded,
+    "isDeltaZero": ()=>isDeltaZero
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$delta$2d$calc$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/projection/geometry/delta-calc.mjs [app-client] (ecmascript)");
 ;
@@ -7698,14 +7851,11 @@ function axisDeltaEquals(a, b) {
 "use strict";
 
 __turbopack_context__.s({
-    "NodeStack": (()=>NodeStack)
+    "NodeStack": ()=>NodeStack
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$array$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/array.mjs [app-client] (ecmascript)");
 ;
 class NodeStack {
-    constructor(){
-        this.members = [];
-    }
     add(node) {
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$array$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["addUniqueItem"])(this.members, node);
         for(let i = this.members.length - 1; i >= 0; i--){
@@ -7729,8 +7879,9 @@ class NodeStack {
     }
     relegate(node) {
         for(let i = this.members.indexOf(node) - 1; i >= 0; i--){
+            var _member_instance;
             const member = this.members[i];
-            if (member.isPresent !== false && member.instance?.isConnected !== false) {
+            if (member.isPresent !== false && ((_member_instance = member.instance) === null || _member_instance === void 0 ? void 0 : _member_instance.isConnected) !== false) {
                 this.promote(member);
                 return true;
             }
@@ -7749,28 +7900,34 @@ class NodeStack {
             const { layoutDependency: prevDep } = prevLead.options;
             const { layoutDependency: nextDep } = node.options;
             if (prevDep === undefined || prevDep !== nextDep) {
+                var _node_root;
                 node.resumeFrom = prevLead;
                 if (preserveFollowOpacity) prevLead.preserveOpacity = true;
                 if (prevLead.snapshot) {
                     node.snapshot = prevLead.snapshot;
                     node.snapshot.latestValues = prevLead.animationValues || prevLead.latestValues;
                 }
-                if (node.root?.isUpdating) node.isLayoutDirty = true;
+                if ((_node_root = node.root) === null || _node_root === void 0 ? void 0 : _node_root.isUpdating) node.isLayoutDirty = true;
             }
             if (node.options.crossfade === false) prevLead.hide();
         }
     }
     exitAnimationComplete() {
         this.members.forEach((member)=>{
-            member.options.onExitComplete?.();
-            member.resumingFrom?.options.onExitComplete?.();
+            var _member_options_onExitComplete, _member_options, _member_resumingFrom_options_onExitComplete, _member_resumingFrom, _member_resumingFrom_options;
+            (_member_options_onExitComplete = (_member_options = member.options).onExitComplete) === null || _member_options_onExitComplete === void 0 ? void 0 : _member_options_onExitComplete.call(_member_options);
+            (_member_resumingFrom = member.resumingFrom) === null || _member_resumingFrom === void 0 ? void 0 : (_member_resumingFrom_options_onExitComplete = (_member_resumingFrom_options = _member_resumingFrom.options).onExitComplete) === null || _member_resumingFrom_options_onExitComplete === void 0 ? void 0 : _member_resumingFrom_options_onExitComplete.call(_member_resumingFrom_options);
         });
     }
     scheduleRender() {
         this.members.forEach((member)=>member.instance && member.scheduleRender(false));
     }
     removeLeadSnapshot() {
-        if (this.lead?.snapshot) this.lead.snapshot = undefined;
+        var _this_lead;
+        if ((_this_lead = this.lead) === null || _this_lead === void 0 ? void 0 : _this_lead.snapshot) this.lead.snapshot = undefined;
+    }
+    constructor(){
+        this.members = [];
     }
 }
 ;
@@ -7780,7 +7937,7 @@ class NodeStack {
 "use strict";
 
 __turbopack_context__.s({
-    "buildProjectionTransform": (()=>buildProjectionTransform)
+    "buildProjectionTransform": ()=>buildProjectionTransform
 });
 function buildProjectionTransform(delta, treeScale, latestTransform) {
     let transform = "";
@@ -7791,24 +7948,24 @@ function buildProjectionTransform(delta, treeScale, latestTransform) {
      * to move an element 100 pixels, we actually need to move it 200 in within that scaled space.
      */ const xTranslate = delta.x.translate / treeScale.x;
     const yTranslate = delta.y.translate / treeScale.y;
-    const zTranslate = latestTransform?.z || 0;
+    const zTranslate = (latestTransform === null || latestTransform === void 0 ? void 0 : latestTransform.z) || 0;
     if (xTranslate || yTranslate || zTranslate) {
-        transform = `translate3d(${xTranslate}px, ${yTranslate}px, ${zTranslate}px) `;
+        transform = "translate3d(".concat(xTranslate, "px, ").concat(yTranslate, "px, ").concat(zTranslate, "px) ");
     }
     /**
      * Apply scale correction for the tree transform.
      * This will apply scale to the screen-orientated axes.
      */ if (treeScale.x !== 1 || treeScale.y !== 1) {
-        transform += `scale(${1 / treeScale.x}, ${1 / treeScale.y}) `;
+        transform += "scale(".concat(1 / treeScale.x, ", ").concat(1 / treeScale.y, ") ");
     }
     if (latestTransform) {
         const { transformPerspective, rotate, rotateX, rotateY, skewX, skewY } = latestTransform;
-        if (transformPerspective) transform = `perspective(${transformPerspective}px) ${transform}`;
-        if (rotate) transform += `rotate(${rotate}deg) `;
-        if (rotateX) transform += `rotateX(${rotateX}deg) `;
-        if (rotateY) transform += `rotateY(${rotateY}deg) `;
-        if (skewX) transform += `skewX(${skewX}deg) `;
-        if (skewY) transform += `skewY(${skewY}deg) `;
+        if (transformPerspective) transform = "perspective(".concat(transformPerspective, "px) ").concat(transform);
+        if (rotate) transform += "rotate(".concat(rotate, "deg) ");
+        if (rotateX) transform += "rotateX(".concat(rotateX, "deg) ");
+        if (rotateY) transform += "rotateY(".concat(rotateY, "deg) ");
+        if (skewX) transform += "skewX(".concat(skewX, "deg) ");
+        if (skewY) transform += "skewY(".concat(skewY, "deg) ");
     }
     /**
      * Apply scale to match the size of the element to the size we want it.
@@ -7816,7 +7973,7 @@ function buildProjectionTransform(delta, treeScale, latestTransform) {
      */ const elementScaleX = delta.x.scale * treeScale.x;
     const elementScaleY = delta.y.scale * treeScale.y;
     if (elementScaleX !== 1 || elementScaleY !== 1) {
-        transform += `scale(${elementScaleX}, ${elementScaleY})`;
+        transform += "scale(".concat(elementScaleX, ", ").concat(elementScaleY, ")");
     }
     return transform || "none";
 }
@@ -7827,7 +7984,7 @@ function buildProjectionTransform(delta, treeScale, latestTransform) {
 "use strict";
 
 __turbopack_context__.s({
-    "compareByDepth": (()=>compareByDepth)
+    "compareByDepth": ()=>compareByDepth
 });
 const compareByDepth = (a, b)=>a.depth - b.depth;
 ;
@@ -7837,17 +7994,13 @@ const compareByDepth = (a, b)=>a.depth - b.depth;
 "use strict";
 
 __turbopack_context__.s({
-    "FlatTree": (()=>FlatTree)
+    "FlatTree": ()=>FlatTree
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$array$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/array.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$utils$2f$compare$2d$by$2d$depth$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/projection/utils/compare-by-depth.mjs [app-client] (ecmascript)");
 ;
 ;
 class FlatTree {
-    constructor(){
-        this.children = [];
-        this.isDirty = false;
-    }
     add(child) {
         (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$array$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["addUniqueItem"])(this.children, child);
         this.isDirty = true;
@@ -7861,6 +8014,10 @@ class FlatTree {
         this.isDirty = false;
         this.children.forEach(callback);
     }
+    constructor(){
+        this.children = [];
+        this.isDirty = false;
+    }
 }
 ;
  //# sourceMappingURL=flat-tree.mjs.map
@@ -7869,12 +8026,12 @@ class FlatTree {
 "use strict";
 
 __turbopack_context__.s({
-    "cleanDirtyNodes": (()=>cleanDirtyNodes),
-    "createProjectionNode": (()=>createProjectionNode),
-    "mixAxis": (()=>mixAxis),
-    "mixAxisDelta": (()=>mixAxisDelta),
-    "mixBox": (()=>mixBox),
-    "propagateDirtyNodes": (()=>propagateDirtyNodes)
+    "cleanDirtyNodes": ()=>cleanDirtyNodes,
+    "createProjectionNode": ()=>createProjectionNode,
+    "mixAxis": ()=>mixAxis,
+    "mixAxisDelta": ()=>mixAxisDelta,
+    "mixBox": ()=>mixBox,
+    "propagateDirtyNodes": ()=>propagateDirtyNodes
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$subscription$2d$manager$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/subscription-manager.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$clamp$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/clamp.mjs [app-client] (ecmascript)");
@@ -7978,151 +8135,19 @@ function cancelTreeOptimisedTransformAnimations(projectionNode) {
         cancelTreeOptimisedTransformAnimations(parent);
     }
 }
-function createProjectionNode({ attachResizeListener, defaultParent, measureScroll, checkIsScrollRoot, resetTransform }) {
+function createProjectionNode(param) {
+    let { attachResizeListener, defaultParent, measureScroll, checkIsScrollRoot, resetTransform } = param;
     return class ProjectionNode {
-        constructor(latestValues = {}, parent = defaultParent?.()){
-            /**
-             * A unique ID generated for every projection node.
-             */ this.id = id++;
-            /**
-             * An id that represents a unique session instigated by startUpdate.
-             */ this.animationId = 0;
-            this.animationCommitId = 0;
-            /**
-             * A Set containing all this component's children. This is used to iterate
-             * through the children.
-             *
-             * TODO: This could be faster to iterate as a flat array stored on the root node.
-             */ this.children = new Set();
-            /**
-             * Options for the node. We use this to configure what kind of layout animations
-             * we should perform (if any).
-             */ this.options = {};
-            /**
-             * We use this to detect when its safe to shut down part of a projection tree.
-             * We have to keep projecting children for scale correction and relative projection
-             * until all their parents stop performing layout animations.
-             */ this.isTreeAnimating = false;
-            this.isAnimationBlocked = false;
-            /**
-             * Flag to true if we think this layout has been changed. We can't always know this,
-             * currently we set it to true every time a component renders, or if it has a layoutDependency
-             * if that has changed between renders. Additionally, components can be grouped by LayoutGroup
-             * and if one node is dirtied, they all are.
-             */ this.isLayoutDirty = false;
-            /**
-             * Flag to true if we think the projection calculations for this node needs
-             * recalculating as a result of an updated transform or layout animation.
-             */ this.isProjectionDirty = false;
-            /**
-             * Flag to true if the layout *or* transform has changed. This then gets propagated
-             * throughout the projection tree, forcing any element below to recalculate on the next frame.
-             */ this.isSharedProjectionDirty = false;
-            /**
-             * Flag transform dirty. This gets propagated throughout the whole tree but is only
-             * respected by shared nodes.
-             */ this.isTransformDirty = false;
-            /**
-             * Block layout updates for instant layout transitions throughout the tree.
-             */ this.updateManuallyBlocked = false;
-            this.updateBlockedByResize = false;
-            /**
-             * Set to true between the start of the first `willUpdate` call and the end of the `didUpdate`
-             * call.
-             */ this.isUpdating = false;
-            /**
-             * If this is an SVG element we currently disable projection transforms
-             */ this.isSVG = false;
-            /**
-             * Flag to true (during promotion) if a node doing an instant layout transition needs to reset
-             * its projection styles.
-             */ this.needsReset = false;
-            /**
-             * Flags whether this node should have its transform reset prior to measuring.
-             */ this.shouldResetTransform = false;
-            /**
-             * Store whether this node has been checked for optimised appear animations. As
-             * effects fire bottom-up, and we want to look up the tree for appear animations,
-             * this makes sure we only check each path once, stopping at nodes that
-             * have already been checked.
-             */ this.hasCheckedOptimisedAppear = false;
-            /**
-             * An object representing the calculated contextual/accumulated/tree scale.
-             * This will be used to scale calculcated projection transforms, as these are
-             * calculated in screen-space but need to be scaled for elements to layoutly
-             * make it to their calculated destinations.
-             *
-             * TODO: Lazy-init
-             */ this.treeScale = {
-                x: 1,
-                y: 1
-            };
-            /**
-             *
-             */ this.eventHandlers = new Map();
-            this.hasTreeAnimated = false;
-            this.layoutVersion = 0;
-            // Note: Currently only running on root node
-            this.updateScheduled = false;
-            this.scheduleUpdate = ()=>this.update();
-            this.projectionUpdateScheduled = false;
-            this.checkUpdateFailed = ()=>{
-                if (this.isUpdating) {
-                    this.isUpdating = false;
-                    this.clearAllSnapshots();
-                }
-            };
-            /**
-             * This is a multi-step process as shared nodes might be of different depths. Nodes
-             * are sorted by depth order, so we need to resolve the entire tree before moving to
-             * the next step.
-             */ this.updateProjection = ()=>{
-                this.projectionUpdateScheduled = false;
-                /**
-                 * Reset debug counts. Manually resetting rather than creating a new
-                 * object each frame.
-                 */ if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["statsBuffer"].value) {
-                    metrics.nodes = metrics.calculatedTargetDeltas = metrics.calculatedProjections = 0;
-                }
-                this.nodes.forEach(propagateDirtyNodes);
-                this.nodes.forEach(resolveTargetDelta);
-                this.nodes.forEach(calcProjection);
-                this.nodes.forEach(cleanDirtyNodes);
-                if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["statsBuffer"].addProjectionMetrics) {
-                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["statsBuffer"].addProjectionMetrics(metrics);
-                }
-            };
-            /**
-             * Frame calculations
-             */ this.resolvedRelativeTargetAt = 0.0;
-            this.linkedParentVersion = 0;
-            this.hasProjected = false;
-            this.isVisible = true;
-            this.animationProgress = 0;
-            /**
-             * Shared layout
-             */ // TODO Only running on root node
-            this.sharedNodes = new Map();
-            this.latestValues = latestValues;
-            this.root = parent ? parent.root || parent : this;
-            this.path = parent ? [
-                ...parent.path,
-                parent
-            ] : [];
-            this.parent = parent;
-            this.depth = parent ? parent.depth + 1 : 0;
-            for(let i = 0; i < this.path.length; i++){
-                this.path[i].shouldResetTransform = true;
-            }
-            if (this.root === this) this.nodes = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$utils$2f$flat$2d$tree$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FlatTree"]();
-        }
         addEventListener(name, handler) {
             if (!this.eventHandlers.has(name)) {
                 this.eventHandlers.set(name, new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$subscription$2d$manager$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SubscriptionManager"]());
             }
             return this.eventHandlers.get(name).add(handler);
         }
-        notifyListeners(name, ...args) {
+        notifyListeners(name) {
+            for(var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++){
+                args[_key - 1] = arguments[_key];
+            }
             const subscriptionManager = this.eventHandlers.get(name);
             subscriptionManager && subscriptionManager.notify(...args);
         }
@@ -8170,7 +8195,8 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             }
             // Only register the handler if it requires layout animation
             if (this.options.animate !== false && visualElement && (layoutId || layout)) {
-                this.addEventListener("didUpdate", ({ delta, hasLayoutChanged, hasRelativeLayoutChanged, layout: newLayout })=>{
+                this.addEventListener("didUpdate", (param)=>{
+                    let { delta, hasLayoutChanged, hasRelativeLayoutChanged, layout: newLayout } = param;
                     if (this.isTreeAnimationBlocked()) {
                         this.target = undefined;
                         this.relativeTarget = undefined;
@@ -8262,7 +8288,8 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             const { visualElement } = this.options;
             return visualElement && visualElement.getProps().transformTemplate;
         }
-        willUpdate(shouldNotifyListeners = true) {
+        willUpdate() {
+            let shouldNotifyListeners = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : true;
             this.root.hasTreeAnimated = true;
             if (this.root.isUpdateBlocked()) {
                 this.options.onExitComplete && this.options.onExitComplete();
@@ -8415,7 +8442,8 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             const { visualElement } = this.options;
             visualElement && visualElement.notify("LayoutMeasure", this.layout.layoutBox, prevLayout ? prevLayout.layoutBox : undefined);
         }
-        updateScroll(phase = "measure") {
+        updateScroll() {
+            let phase = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : "measure";
             let needsMeasurement = Boolean(this.options.layoutScroll && this.instance);
             if (this.scroll && this.scroll.animationId === this.root.animationId && this.scroll.phase === phase) {
                 needsMeasurement = false;
@@ -8444,7 +8472,8 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
                 this.scheduleRender();
             }
         }
-        measure(removeTransform = true) {
+        measure() {
+            let removeTransform = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : true;
             const pageBox = this.measurePageBox();
             let layoutBox = this.removeElementScroll(pageBox);
             /**
@@ -8464,10 +8493,11 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             };
         }
         measurePageBox() {
+            var _this_scroll;
             const { visualElement } = this.options;
             if (!visualElement) return (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$models$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createBox"])();
             const box = visualElement.measureViewportBox();
-            const wasInScrollRoot = this.scroll?.wasRoot || this.path.some(checkNodeWasScrollRoot);
+            const wasInScrollRoot = ((_this_scroll = this.scroll) === null || _this_scroll === void 0 ? void 0 : _this_scroll.wasRoot) || this.path.some(checkNodeWasScrollRoot);
             if (!wasInScrollRoot) {
                 // Remove viewport scroll to give page-relative coordinates
                 const { scroll } = this.root;
@@ -8479,9 +8509,10 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             return box;
         }
         removeElementScroll(box) {
+            var _this_scroll;
             const boxWithoutScroll = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$models$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createBox"])();
             (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$copy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["copyBoxInto"])(boxWithoutScroll, box);
-            if (this.scroll?.wasRoot) {
+            if ((_this_scroll = this.scroll) === null || _this_scroll === void 0 ? void 0 : _this_scroll.wasRoot) {
                 return boxWithoutScroll;
             }
             /**
@@ -8503,7 +8534,8 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             }
             return boxWithoutScroll;
         }
-        applyTransform(box, transformOnly = false) {
+        applyTransform(box) {
+            let transformOnly = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : false;
             const withTransforms = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$models$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createBox"])();
             (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$copy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["copyBoxInto"])(withTransforms, box);
             for(let i = 0; i < this.path.length; i++){
@@ -8572,7 +8604,9 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
                 this.relativeParent.resolveTargetDelta(true);
             }
         }
-        resolveTargetDelta(forceRecalculation = false) {
+        resolveTargetDelta() {
+            let forceRecalculation = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : false;
+            var _this_parent;
             /**
              * Once the dirty status of nodes has been spread through the tree, we also
              * need to check if we have a shared node of a different depth that has itself
@@ -8585,7 +8619,7 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             /**
              * We don't use transform for this step of processing so we don't
              * need to check whether any nodes have changed transform.
-             */ const canSkip = !(forceRecalculation || isShared && this.isSharedProjectionDirty || this.isProjectionDirty || this.parent?.isProjectionDirty || this.attemptToResolveRelativeTarget || this.root.updateBlockedByResize);
+             */ const canSkip = !(forceRecalculation || isShared && this.isSharedProjectionDirty || this.isProjectionDirty || ((_this_parent = this.parent) === null || _this_parent === void 0 ? void 0 : _this_parent.isProjectionDirty) || this.attemptToResolveRelativeTarget || this.root.updateBlockedByResize);
             if (canSkip) return;
             const { layout, layoutId } = this.options;
             /**
@@ -8679,13 +8713,14 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             this.relativeParent = this.relativeTarget = undefined;
         }
         calcProjection() {
+            var _this_parent;
             const lead = this.getLead();
             const isShared = Boolean(this.resumingFrom) || this !== lead;
             let canSkip = true;
             /**
              * If this is a normal layout animation and neither this node nor its nearest projecting
              * is dirty then we can't skip.
-             */ if (this.isProjectionDirty || this.parent?.isProjectionDirty) {
+             */ if (this.isProjectionDirty || ((_this_parent = this.parent) === null || _this_parent === void 0 ? void 0 : _this_parent.isProjectionDirty)) {
                 canSkip = false;
             }
             /**
@@ -8775,8 +8810,10 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             this.isVisible = true;
         // TODO: Schedule render
         }
-        scheduleRender(notifyAll = true) {
-            this.options.visualElement?.scheduleRender();
+        scheduleRender() {
+            let notifyAll = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : true;
+            var _this_options_visualElement;
+            (_this_options_visualElement = this.options.visualElement) === null || _this_options_visualElement === void 0 ? void 0 : _this_options_visualElement.scheduleRender();
             if (notifyAll) {
                 const stack = this.getStack();
                 stack && stack.scheduleRender();
@@ -8790,7 +8827,8 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             this.projectionDelta = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$models$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createDelta"])();
             this.projectionDeltaWithTransform = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$models$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createDelta"])();
         }
-        setAnimationOrigin(delta, hasOnlyRelativeTargetChanged = false) {
+        setAnimationOrigin(delta) {
+            let hasOnlyRelativeTargetChanged = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : false;
             const snapshot = this.snapshot;
             const snapshotLatestValues = snapshot ? snapshot.latestValues : {};
             const mixedValues = {
@@ -8838,9 +8876,10 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             this.mixTargetDelta(this.options.layoutRoot ? 1000 : 0);
         }
         startAnimation(options) {
+            var _this_currentAnimation, _this_resumingFrom_currentAnimation, _this_resumingFrom;
             this.notifyListeners("animationStart");
-            this.currentAnimation?.stop();
-            this.resumingFrom?.currentAnimation?.stop();
+            (_this_currentAnimation = this.currentAnimation) === null || _this_currentAnimation === void 0 ? void 0 : _this_currentAnimation.stop();
+            (_this_resumingFrom = this.resumingFrom) === null || _this_resumingFrom === void 0 ? void 0 : (_this_resumingFrom_currentAnimation = _this_resumingFrom.currentAnimation) === null || _this_resumingFrom_currentAnimation === void 0 ? void 0 : _this_resumingFrom_currentAnimation.stop();
             if (this.pendingAnimation) {
                 (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$frameloop$2f$frame$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cancelFrame"])(this.pendingAnimation);
                 this.pendingAnimation = undefined;
@@ -8944,18 +8983,21 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             return stack ? stack.lead === this : true;
         }
         getLead() {
+            var _this_getStack;
             const { layoutId } = this.options;
-            return layoutId ? this.getStack()?.lead || this : this;
+            return layoutId ? ((_this_getStack = this.getStack()) === null || _this_getStack === void 0 ? void 0 : _this_getStack.lead) || this : this;
         }
         getPrevLead() {
+            var _this_getStack;
             const { layoutId } = this.options;
-            return layoutId ? this.getStack()?.prevLead : undefined;
+            return layoutId ? (_this_getStack = this.getStack()) === null || _this_getStack === void 0 ? void 0 : _this_getStack.prevLead : undefined;
         }
         getStack() {
             const { layoutId } = this.options;
             if (layoutId) return this.root.sharedNodes.get(layoutId);
         }
-        promote({ needsReset, transition, preserveFollowOpacity } = {}) {
+        promote() {
+            let { needsReset, transition, preserveFollowOpacity } = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : {};
             const stack = this.getStack();
             if (stack) stack.promote(this, preserveFollowOpacity);
             if (needsReset) {
@@ -8994,8 +9036,8 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             }
             // Check the skew and rotate value of all axes and reset to 0
             for(let i = 0; i < transformAxes.length; i++){
-                resetDistortingTransform(`rotate${transformAxes[i]}`, visualElement, resetValues, this.animationValues);
-                resetDistortingTransform(`skew${transformAxes[i]}`, visualElement, resetValues, this.animationValues);
+                resetDistortingTransform("rotate".concat(transformAxes[i]), visualElement, resetValues, this.animationValues);
+                resetDistortingTransform("skew".concat(transformAxes[i]), visualElement, resetValues, this.animationValues);
             }
             // Force a render of this element to apply the transform with all skews and rotations
             // set to 0.
@@ -9022,7 +9064,7 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
                 this.needsReset = false;
                 targetStyle.visibility = "";
                 targetStyle.opacity = "";
-                targetStyle.pointerEvents = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$resolve$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveMotionValue"])(styleProp?.pointerEvents) || "";
+                targetStyle.pointerEvents = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$resolve$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveMotionValue"])(styleProp === null || styleProp === void 0 ? void 0 : styleProp.pointerEvents) || "";
                 targetStyle.transform = transformTemplate ? transformTemplate(this.latestValues, "") : "none";
                 return;
             }
@@ -9030,7 +9072,7 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             if (!this.projectionDelta || !this.layout || !lead.target) {
                 if (this.options.layoutId) {
                     targetStyle.opacity = this.latestValues.opacity !== undefined ? this.latestValues.opacity : 1;
-                    targetStyle.pointerEvents = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$resolve$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveMotionValue"])(styleProp?.pointerEvents) || "";
+                    targetStyle.pointerEvents = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$resolve$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveMotionValue"])(styleProp === null || styleProp === void 0 ? void 0 : styleProp.pointerEvents) || "";
                 }
                 if (this.hasProjected && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$utils$2f$has$2d$transform$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["hasTransform"])(this.latestValues)) {
                     targetStyle.transform = transformTemplate ? transformTemplate({}, "") : "none";
@@ -9047,12 +9089,13 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
             }
             targetStyle.transform = transform;
             const { x, y } = this.projectionDelta;
-            targetStyle.transformOrigin = `${x.origin * 100}% ${y.origin * 100}% 0`;
+            targetStyle.transformOrigin = "".concat(x.origin * 100, "% ").concat(y.origin * 100, "% 0");
             if (lead.animationValues) {
+                var _valuesToRender_opacity, _ref;
                 /**
                  * If the lead component is animating, assign this either the entering/leaving
                  * opacity
-                 */ targetStyle.opacity = lead === this ? valuesToRender.opacity ?? this.latestValues.opacity ?? 1 : this.preserveOpacity ? this.latestValues.opacity : valuesToRender.opacityExit;
+                 */ targetStyle.opacity = lead === this ? (_ref = (_valuesToRender_opacity = valuesToRender.opacity) !== null && _valuesToRender_opacity !== void 0 ? _valuesToRender_opacity : this.latestValues.opacity) !== null && _ref !== void 0 ? _ref : 1 : this.preserveOpacity ? this.latestValues.opacity : valuesToRender.opacityExit;
             } else {
                 /**
                  * Or we're not animating at all, set the lead component to its layout
@@ -9091,7 +9134,7 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
              * that if a follow component covers a lead component it doesn't block
              * pointer events on the lead.
              */ if (this.options.layoutId) {
-                targetStyle.pointerEvents = lead === this ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$resolve$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveMotionValue"])(styleProp?.pointerEvents) || "" : "none";
+                targetStyle.pointerEvents = lead === this ? (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$value$2f$utils$2f$resolve$2d$motion$2d$value$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["resolveMotionValue"])(styleProp === null || styleProp === void 0 ? void 0 : styleProp.pointerEvents) || "" : "none";
             }
         }
         clearSnapshot() {
@@ -9099,9 +9142,148 @@ function createProjectionNode({ attachResizeListener, defaultParent, measureScro
         }
         // Only run on root
         resetTree() {
-            this.root.nodes.forEach((node)=>node.currentAnimation?.stop());
+            this.root.nodes.forEach((node)=>{
+                var _node_currentAnimation;
+                return (_node_currentAnimation = node.currentAnimation) === null || _node_currentAnimation === void 0 ? void 0 : _node_currentAnimation.stop();
+            });
             this.root.nodes.forEach(clearMeasurements);
             this.root.sharedNodes.clear();
+        }
+        constructor(latestValues = {}, parent = defaultParent === null || defaultParent === void 0 ? void 0 : defaultParent()){
+            /**
+             * A unique ID generated for every projection node.
+             */ this.id = id++;
+            /**
+             * An id that represents a unique session instigated by startUpdate.
+             */ this.animationId = 0;
+            this.animationCommitId = 0;
+            /**
+             * A Set containing all this component's children. This is used to iterate
+             * through the children.
+             *
+             * TODO: This could be faster to iterate as a flat array stored on the root node.
+             */ this.children = new Set();
+            /**
+             * Options for the node. We use this to configure what kind of layout animations
+             * we should perform (if any).
+             */ this.options = {};
+            /**
+             * We use this to detect when its safe to shut down part of a projection tree.
+             * We have to keep projecting children for scale correction and relative projection
+             * until all their parents stop performing layout animations.
+             */ this.isTreeAnimating = false;
+            this.isAnimationBlocked = false;
+            /**
+             * Flag to true if we think this layout has been changed. We can't always know this,
+             * currently we set it to true every time a component renders, or if it has a layoutDependency
+             * if that has changed between renders. Additionally, components can be grouped by LayoutGroup
+             * and if one node is dirtied, they all are.
+             */ this.isLayoutDirty = false;
+            /**
+             * Flag to true if we think the projection calculations for this node needs
+             * recalculating as a result of an updated transform or layout animation.
+             */ this.isProjectionDirty = false;
+            /**
+             * Flag to true if the layout *or* transform has changed. This then gets propagated
+             * throughout the projection tree, forcing any element below to recalculate on the next frame.
+             */ this.isSharedProjectionDirty = false;
+            /**
+             * Flag transform dirty. This gets propagated throughout the whole tree but is only
+             * respected by shared nodes.
+             */ this.isTransformDirty = false;
+            /**
+             * Block layout updates for instant layout transitions throughout the tree.
+             */ this.updateManuallyBlocked = false;
+            this.updateBlockedByResize = false;
+            /**
+             * Set to true between the start of the first `willUpdate` call and the end of the `didUpdate`
+             * call.
+             */ this.isUpdating = false;
+            /**
+             * If this is an SVG element we currently disable projection transforms
+             */ this.isSVG = false;
+            /**
+             * Flag to true (during promotion) if a node doing an instant layout transition needs to reset
+             * its projection styles.
+             */ this.needsReset = false;
+            /**
+             * Flags whether this node should have its transform reset prior to measuring.
+             */ this.shouldResetTransform = false;
+            /**
+             * Store whether this node has been checked for optimised appear animations. As
+             * effects fire bottom-up, and we want to look up the tree for appear animations,
+             * this makes sure we only check each path once, stopping at nodes that
+             * have already been checked.
+             */ this.hasCheckedOptimisedAppear = false;
+            /**
+             * An object representing the calculated contextual/accumulated/tree scale.
+             * This will be used to scale calculcated projection transforms, as these are
+             * calculated in screen-space but need to be scaled for elements to layoutly
+             * make it to their calculated destinations.
+             *
+             * TODO: Lazy-init
+             */ this.treeScale = {
+                x: 1,
+                y: 1
+            };
+            /**
+             *
+             */ this.eventHandlers = new Map();
+            this.hasTreeAnimated = false;
+            this.layoutVersion = 0;
+            // Note: Currently only running on root node
+            this.updateScheduled = false;
+            this.scheduleUpdate = ()=>this.update();
+            this.projectionUpdateScheduled = false;
+            this.checkUpdateFailed = ()=>{
+                if (this.isUpdating) {
+                    this.isUpdating = false;
+                    this.clearAllSnapshots();
+                }
+            };
+            /**
+             * This is a multi-step process as shared nodes might be of different depths. Nodes
+             * are sorted by depth order, so we need to resolve the entire tree before moving to
+             * the next step.
+             */ this.updateProjection = ()=>{
+                this.projectionUpdateScheduled = false;
+                /**
+                 * Reset debug counts. Manually resetting rather than creating a new
+                 * object each frame.
+                 */ if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["statsBuffer"].value) {
+                    metrics.nodes = metrics.calculatedTargetDeltas = metrics.calculatedProjections = 0;
+                }
+                this.nodes.forEach(propagateDirtyNodes);
+                this.nodes.forEach(resolveTargetDelta);
+                this.nodes.forEach(calcProjection);
+                this.nodes.forEach(cleanDirtyNodes);
+                if (__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["statsBuffer"].addProjectionMetrics) {
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$stats$2f$buffer$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["statsBuffer"].addProjectionMetrics(metrics);
+                }
+            };
+            /**
+             * Frame calculations
+             */ this.resolvedRelativeTargetAt = 0.0;
+            this.linkedParentVersion = 0;
+            this.hasProjected = false;
+            this.isVisible = true;
+            this.animationProgress = 0;
+            /**
+             * Shared layout
+             */ // TODO Only running on root node
+            this.sharedNodes = new Map();
+            this.latestValues = latestValues;
+            this.root = parent ? parent.root || parent : this;
+            this.path = parent ? [
+                ...parent.path,
+                parent
+            ] : [];
+            this.parent = parent;
+            this.depth = parent ? parent.depth + 1 : 0;
+            for(let i = 0; i < this.path.length; i++){
+                this.path[i].shouldResetTransform = true;
+            }
+            if (this.root === this) this.nodes = new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$utils$2f$flat$2d$tree$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["FlatTree"]();
         }
     };
 }
@@ -9109,7 +9291,8 @@ function updateLayout(node) {
     node.updateLayout();
 }
 function notifyLayoutUpdate(node) {
-    const snapshot = node.resumeFrom?.snapshot || node.snapshot;
+    var _node_resumeFrom;
+    const snapshot = ((_node_resumeFrom = node.resumeFrom) === null || _node_resumeFrom === void 0 ? void 0 : _node_resumeFrom.snapshot) || node.snapshot;
     if (node.isLead() && node.layout && snapshot && node.hasListeners("didUpdate")) {
         const { layoutBox: layout, measuredBox: measuredLayout } = node.layout;
         const { animationType } = node.options;
@@ -9290,7 +9473,8 @@ function shouldAnimatePositionOnly(animationType, snapshot, layout) {
     return animationType === "position" || animationType === "preserve-aspect" && !(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$delta$2d$calc$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["isNear"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$utils$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["aspectRatio"])(snapshot), (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$geometry$2f$utils$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["aspectRatio"])(layout), 0.2);
 }
 function checkNodeWasScrollRoot(node) {
-    return node !== node.root && node.scroll?.wasRoot;
+    var _node_scroll;
+    return node !== node.root && ((_node_scroll = node.scroll) === null || _node_scroll === void 0 ? void 0 : _node_scroll.wasRoot);
 }
 ;
  //# sourceMappingURL=create-projection-node.mjs.map
@@ -9299,7 +9483,7 @@ function checkNodeWasScrollRoot(node) {
 "use strict";
 
 __turbopack_context__.s({
-    "DocumentProjectionNode": (()=>DocumentProjectionNode)
+    "DocumentProjectionNode": ()=>DocumentProjectionNode
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$events$2f$add$2d$dom$2d$event$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/events/add-dom-event.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$node$2f$create$2d$projection$2d$node$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/projection/node/create-projection-node.mjs [app-client] (ecmascript)");
@@ -9307,10 +9491,13 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
 ;
 const DocumentProjectionNode = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$node$2f$create$2d$projection$2d$node$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["createProjectionNode"])({
     attachResizeListener: (ref, notify)=>(0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$events$2f$add$2d$dom$2d$event$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["addDomEvent"])(ref, "resize", notify),
-    measureScroll: ()=>({
-            x: document.documentElement.scrollLeft || document.body?.scrollLeft || 0,
-            y: document.documentElement.scrollTop || document.body?.scrollTop || 0
-        }),
+    measureScroll: ()=>{
+        var _document_body, _document_body1;
+        return {
+            x: document.documentElement.scrollLeft || ((_document_body = document.body) === null || _document_body === void 0 ? void 0 : _document_body.scrollLeft) || 0,
+            y: document.documentElement.scrollTop || ((_document_body1 = document.body) === null || _document_body1 === void 0 ? void 0 : _document_body1.scrollTop) || 0
+        };
+    },
     checkIsScrollRoot: ()=>true
 });
 ;
@@ -9320,8 +9507,8 @@ const DocumentProjectionNode = (0, __TURBOPACK__imported__module__$5b$project$5d
 "use strict";
 
 __turbopack_context__.s({
-    "HTMLProjectionNode": (()=>HTMLProjectionNode),
-    "rootProjectionNode": (()=>rootProjectionNode)
+    "HTMLProjectionNode": ()=>HTMLProjectionNode,
+    "rootProjectionNode": ()=>rootProjectionNode
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$node$2f$create$2d$projection$2d$node$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/projection/node/create-projection-node.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$projection$2f$node$2f$DocumentProjectionNode$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/projection/node/DocumentProjectionNode.mjs [app-client] (ecmascript)");
@@ -9358,7 +9545,7 @@ const HTMLProjectionNode = (0, __TURBOPACK__imported__module__$5b$project$5d2f$n
 "use strict";
 
 __turbopack_context__.s({
-    "setupGesture": (()=>setupGesture)
+    "setupGesture": ()=>setupGesture
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$resolve$2d$elements$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/resolve-elements.mjs [app-client] (ecmascript)");
 ;
@@ -9384,7 +9571,7 @@ function setupGesture(elementOrSelector, options) {
 "use strict";
 
 __turbopack_context__.s({
-    "hover": (()=>hover)
+    "hover": ()=>hover
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$drag$2f$state$2f$is$2d$active$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/gestures/drag/state/is-active.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$setup$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/gestures/utils/setup.mjs [app-client] (ecmascript)");
@@ -9399,7 +9586,8 @@ function isValidHover(event) {
  * with drag gestures, and automatically removes the "pointerennd" event listener when the hover ends.
  *
  * @public
- */ function hover(elementOrSelector, onHoverStart, options = {}) {
+ */ function hover(elementOrSelector, onHoverStart) {
+    let options = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
     const [elements, eventOptions, cancel] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$setup$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["setupGesture"])(elementOrSelector, options);
     elements.forEach((element)=>{
         let isPressed = false;
@@ -9457,7 +9645,7 @@ function isValidHover(event) {
 "use strict";
 
 __turbopack_context__.s({
-    "isHTMLElement": (()=>isHTMLElement)
+    "isHTMLElement": ()=>isHTMLElement
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$utils$40$12$2e$29$2e$2$2f$node_modules$2f$motion$2d$utils$2f$dist$2f$es$2f$is$2d$object$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-utils@12.29.2/node_modules/motion-utils/dist/es/is-object.mjs [app-client] (ecmascript)");
 ;
@@ -9480,7 +9668,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$mo
  * @param parent - Element to find
  * @param child - Element to test against parent
  */ __turbopack_context__.s({
-    "isNodeOrChild": (()=>isNodeOrChild)
+    "isNodeOrChild": ()=>isNodeOrChild
 });
 const isNodeOrChild = (parent, child)=>{
     if (!child) {
@@ -9498,7 +9686,7 @@ const isNodeOrChild = (parent, child)=>{
 "use strict";
 
 __turbopack_context__.s({
-    "isPressing": (()=>isPressing)
+    "isPressing": ()=>isPressing
 });
 const isPressing = new WeakSet();
 ;
@@ -9508,7 +9696,7 @@ const isPressing = new WeakSet();
 "use strict";
 
 __turbopack_context__.s({
-    "enableKeyboardPress": (()=>enableKeyboardPress)
+    "enableKeyboardPress": ()=>enableKeyboardPress
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$press$2f$utils$2f$state$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/gestures/press/utils/state.mjs [app-client] (ecmascript)");
 ;
@@ -9551,7 +9739,7 @@ const enableKeyboardPress = (focusEvent, eventOptions)=>{
 "use strict";
 
 __turbopack_context__.s({
-    "press": (()=>press)
+    "press": ()=>press
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$utils$2f$is$2d$html$2d$element$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/utils/is-html-element.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$drag$2f$state$2f$is$2d$active$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/motion-dom@12.35.1/node_modules/motion-dom/dist/es/gestures/drag/state/is-active.mjs [app-client] (ecmascript)");
@@ -9594,7 +9782,8 @@ const claimedPointerDownEvents = new WeakSet();
  * make an element focusable by default.
  *
  * @public
- */ function press(targetOrSelector, onPressStart, options = {}) {
+ */ function press(targetOrSelector, onPressStart) {
+    let options = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : {};
     const [targets, eventOptions, cancelEvents] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$motion$2d$dom$40$12$2e$35$2e$1$2f$node_modules$2f$motion$2d$dom$2f$dist$2f$es$2f$gestures$2f$utils$2f$setup$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["setupGesture"])(targetOrSelector, options);
     const startPress = (startEvent)=>{
         const target = startEvent.currentTarget;

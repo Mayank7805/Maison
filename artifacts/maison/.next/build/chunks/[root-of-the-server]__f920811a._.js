@@ -1,6 +1,6 @@
 module.exports = {
 
-"[externals]/path [external] (path, cjs)": (function(__turbopack_context__) {
+"[externals]/path [external] (path, cjs)": ((__turbopack_context__) => {
 
 var { m: module, e: exports } = __turbopack_context__;
 {
@@ -8,7 +8,7 @@ const mod = __turbopack_context__.x("path", () => require("path"));
 
 module.exports = mod;
 }}),
-"[externals]/url [external] (url, cjs)": (function(__turbopack_context__) {
+"[externals]/url [external] (url, cjs)": ((__turbopack_context__) => {
 
 var { m: module, e: exports } = __turbopack_context__;
 {
@@ -16,7 +16,7 @@ const mod = __turbopack_context__.x("url", () => require("url"));
 
 module.exports = mod;
 }}),
-"[externals]/fs [external] (fs, cjs)": (function(__turbopack_context__) {
+"[externals]/fs [external] (fs, cjs)": ((__turbopack_context__) => {
 
 var { m: module, e: exports } = __turbopack_context__;
 {
@@ -28,7 +28,7 @@ module.exports = mod;
 "use strict";
 
 __turbopack_context__.s({
-    "default": (()=>__TURBOPACK__default__export__)
+    "default": ()=>__TURBOPACK__default__export__
 });
 const __TURBOPACK__default__export__ = {
     plugins: {
@@ -43,9 +43,9 @@ const __TURBOPACK__default__export__ = {
 /**
  * Shared utilities for our 2 transform implementations.
  */ __turbopack_context__.s({
-    "fromPath": (()=>fromPath),
-    "getReadEnvVariables": (()=>getReadEnvVariables),
-    "toPath": (()=>toPath)
+    "fromPath": ()=>fromPath,
+    "getReadEnvVariables": ()=>getReadEnvVariables,
+    "toPath": ()=>toPath
 });
 var __TURBOPACK__imported__module__$5b$externals$5d2f$path__$5b$external$5d$__$28$path$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/path [external] (path, cjs)");
 ;
@@ -86,8 +86,8 @@ function getReadEnvVariables() {
 "use strict";
 
 __turbopack_context__.s({
-    "default": (()=>transform),
-    "init": (()=>init)
+    "default": ()=>transform,
+    "init": ()=>init
 });
 // @ts-ignore
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$postcss$40$8$2e$5$2e$8$2f$node_modules$2f$postcss$2f$lib$2f$postcss$2e$mjs__$5b$postcss$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/postcss@8.5.8/node_modules/postcss/lib/postcss.mjs [postcss] (ecmascript)");

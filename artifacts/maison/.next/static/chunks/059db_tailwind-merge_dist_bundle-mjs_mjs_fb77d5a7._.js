@@ -6,14 +6,14 @@
 /**
  * Concatenates two arrays faster than the array spread operator.
  */ __turbopack_context__.s({
-    "createTailwindMerge": (()=>createTailwindMerge),
-    "extendTailwindMerge": (()=>extendTailwindMerge),
-    "fromTheme": (()=>fromTheme),
-    "getDefaultConfig": (()=>getDefaultConfig),
-    "mergeConfigs": (()=>mergeConfigs),
-    "twJoin": (()=>twJoin),
-    "twMerge": (()=>twMerge),
-    "validators": (()=>validators)
+    "createTailwindMerge": ()=>createTailwindMerge,
+    "extendTailwindMerge": ()=>extendTailwindMerge,
+    "fromTheme": ()=>fromTheme,
+    "getDefaultConfig": ()=>getDefaultConfig,
+    "mergeConfigs": ()=>mergeConfigs,
+    "twJoin": ()=>twJoin,
+    "twMerge": ()=>twMerge,
+    "validators": ()=>validators
 });
 const concatArrays = (array1, array2)=>{
     // Pre-allocate for better V8 optimization
@@ -32,11 +32,14 @@ const createClassValidatorObject = (classGroupId, validator)=>({
         validator
     });
 // Factory ensures consistent ClassPartObject shape
-const createClassPartObject = (nextPart = new Map(), validators = null, classGroupId)=>({
+const createClassPartObject = function() {
+    let nextPart = arguments.length > 0 && arguments[0] !== void 0 ? arguments[0] : new Map(), validators = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : null, classGroupId = arguments.length > 2 ? arguments[2] : void 0;
+    return {
         nextPart,
         validators,
         classGroupId
-    });
+    };
+};
 const CLASS_PART_SEPARATOR = '-';
 const EMPTY_CONFLICTS = [];
 // I use two dots here because one dot is used as prefix for class groups in plugins
@@ -407,7 +410,10 @@ const mergeClassList = (classList, configUtils)=>{
  * - TypeScript types from https://github.com/lukeed/clsx/blob/v1.2.1/clsx.d.ts
  *
  * Original code has MIT license: Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
- */ const twJoin = (...classLists)=>{
+ */ const twJoin = function() {
+    for(var _len = arguments.length, classLists = new Array(_len), _key = 0; _key < _len; _key++){
+        classLists[_key] = arguments[_key];
+    }
     let index = 0;
     let argument;
     let resolvedValue;
@@ -439,7 +445,10 @@ const toValue = (mix)=>{
     }
     return string;
 };
-const createTailwindMerge = (createConfigFirst, ...createConfigRest)=>{
+const createTailwindMerge = function(createConfigFirst) {
+    for(var _len = arguments.length, createConfigRest = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++){
+        createConfigRest[_key - 1] = arguments[_key];
+    }
     let configUtils;
     let cacheGet;
     let cacheSet;
@@ -462,7 +471,12 @@ const createTailwindMerge = (createConfigFirst, ...createConfigRest)=>{
         return result;
     };
     functionToCall = initTailwindMerge;
-    return (...args)=>functionToCall(twJoin(...args));
+    return function() {
+        for(var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++){
+            args[_key] = arguments[_key];
+        }
+        return functionToCall(twJoin(...args));
+    };
 };
 const fallbackThemeArr = [];
 const fromTheme = (key)=>{
@@ -521,7 +535,8 @@ const getIsArbitraryValue = (value, testLabel, testValue)=>{
     }
     return false;
 };
-const getIsArbitraryVariable = (value, testLabel, shouldMatchNoLabel = false)=>{
+const getIsArbitraryVariable = function(value, testLabel) {
+    let shouldMatchNoLabel = arguments.length > 2 && arguments[2] !== void 0 ? arguments[2] : false;
     const result = arbitraryVariableRegex.exec(value);
     if (result) {
         if (result[1]) {
@@ -4847,7 +4862,8 @@ const getDefaultConfig = ()=>{
 /**
  * @param baseConfig Config where other config will be merged into. This object will be mutated.
  * @param configExtension Partial config to merge into the `baseConfig`.
- */ const mergeConfigs = (baseConfig, { cacheSize, prefix, experimentalParseClassName, extend = {}, override = {} })=>{
+ */ const mergeConfigs = (baseConfig, param)=>{
+    let { cacheSize, prefix, experimentalParseClassName, extend = {}, override = {} } = param;
     overrideProperty(baseConfig, 'cacheSize', cacheSize);
     overrideProperty(baseConfig, 'prefix', prefix);
     overrideProperty(baseConfig, 'experimentalParseClassName', experimentalParseClassName);
@@ -4888,7 +4904,12 @@ const mergeArrayProperties = (baseObject, mergeObject, key)=>{
         baseObject[key] = baseObject[key] ? baseObject[key].concat(mergeValue) : mergeValue;
     }
 };
-const extendTailwindMerge = (configExtension, ...createConfig)=>typeof configExtension === 'function' ? createTailwindMerge(getDefaultConfig, configExtension, ...createConfig) : createTailwindMerge(()=>mergeConfigs(getDefaultConfig(), configExtension), ...createConfig);
+const extendTailwindMerge = function(configExtension) {
+    for(var _len = arguments.length, createConfig = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++){
+        createConfig[_key - 1] = arguments[_key];
+    }
+    return typeof configExtension === 'function' ? createTailwindMerge(getDefaultConfig, configExtension, ...createConfig) : createTailwindMerge(()=>mergeConfigs(getDefaultConfig(), configExtension), ...createConfig);
+};
 const twMerge = /*#__PURE__*/ createTailwindMerge(getDefaultConfig);
 ;
  //# sourceMappingURL=bundle-mjs.mjs.map

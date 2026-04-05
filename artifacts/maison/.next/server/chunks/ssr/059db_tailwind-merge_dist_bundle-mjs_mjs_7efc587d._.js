@@ -6,14 +6,14 @@ module.exports = {
 /**
  * Concatenates two arrays faster than the array spread operator.
  */ __turbopack_context__.s({
-    "createTailwindMerge": (()=>createTailwindMerge),
-    "extendTailwindMerge": (()=>extendTailwindMerge),
-    "fromTheme": (()=>fromTheme),
-    "getDefaultConfig": (()=>getDefaultConfig),
-    "mergeConfigs": (()=>mergeConfigs),
-    "twJoin": (()=>twJoin),
-    "twMerge": (()=>twMerge),
-    "validators": (()=>validators)
+    "createTailwindMerge": ()=>createTailwindMerge,
+    "extendTailwindMerge": ()=>extendTailwindMerge,
+    "fromTheme": ()=>fromTheme,
+    "getDefaultConfig": ()=>getDefaultConfig,
+    "mergeConfigs": ()=>mergeConfigs,
+    "twJoin": ()=>twJoin,
+    "twMerge": ()=>twMerge,
+    "validators": ()=>validators
 });
 const concatArrays = (array1, array2)=>{
     // Pre-allocate for better V8 optimization

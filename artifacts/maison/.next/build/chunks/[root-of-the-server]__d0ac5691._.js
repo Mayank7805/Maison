@@ -1,13 +1,13 @@
 module.exports = {
 
-"[turbopack-node]/globals.ts [postcss] (ecmascript)": (function(__turbopack_context__) {
+"[turbopack-node]/globals.ts [postcss] (ecmascript)": ((__turbopack_context__) => {
 
 var { m: module, e: exports } = __turbopack_context__;
 {
 // @ts-ignore
 process.turbopack = {};
 }}),
-"[externals]/node:net [external] (node:net, cjs)": (function(__turbopack_context__) {
+"[externals]/node:net [external] (node:net, cjs)": ((__turbopack_context__) => {
 
 var { m: module, e: exports } = __turbopack_context__;
 {
@@ -15,7 +15,7 @@ const mod = __turbopack_context__.x("node:net", () => require("node:net"));
 
 module.exports = mod;
 }}),
-"[externals]/node:stream [external] (node:stream, cjs)": (function(__turbopack_context__) {
+"[externals]/node:stream [external] (node:stream, cjs)": ((__turbopack_context__) => {
 
 var { m: module, e: exports } = __turbopack_context__;
 {
@@ -27,7 +27,7 @@ module.exports = mod;
 "use strict";
 
 __turbopack_context__.s({
-    "parse": (()=>parse)
+    "parse": ()=>parse
 });
 if (typeof __nccwpck_require__ !== "undefined") __nccwpck_require__.ab = ("TURBOPACK compile-time value", "/ROOT/compiled/stacktrace-parser") + "/";
 var n = "<unknown>";
@@ -138,8 +138,8 @@ function parseNode(e) {
 // https://github.com/vercel/next.js/blob/e657741b9908cf0044aaef959c0c4defb19ed6d8/packages/next/src/lib/is-error.ts
 // https://github.com/vercel/next.js/blob/e657741b9908cf0044aaef959c0c4defb19ed6d8/packages/next/src/shared/lib/is-plain-object.ts
 __turbopack_context__.s({
-    "default": (()=>isError),
-    "getProperError": (()=>getProperError)
+    "default": ()=>isError,
+    "getProperError": ()=>getProperError
 });
 function isError(err) {
     return typeof err === 'object' && err !== null && 'name' in err && 'message' in err;
@@ -183,8 +183,8 @@ function isPlainObject(value) {
 "use strict";
 
 __turbopack_context__.s({
-    "IPC": (()=>IPC),
-    "structuredError": (()=>structuredError)
+    "IPC": ()=>IPC,
+    "structuredError": ()=>structuredError
 });
 var __TURBOPACK__imported__module__$5b$externals$5d2f$node$3a$net__$5b$external$5d$__$28$node$3a$net$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/node:net [external] (node:net, cjs)");
 var __TURBOPACK__imported__module__$5b$externals$5d2f$node$3a$stream__$5b$external$5d$__$28$node$3a$stream$2c$__cjs$29$__ = __turbopack_context__.i("[externals]/node:stream [external] (node:stream, cjs)");
@@ -391,7 +391,7 @@ improveConsole('assert', 'stderr', true);
 "use strict";
 
 __turbopack_context__.s({
-    "run": (()=>run)
+    "run": ()=>run
 });
 var __TURBOPACK__imported__module__$5b$turbopack$2d$node$5d2f$ipc$2f$index$2e$ts__$5b$postcss$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[turbopack-node]/ipc/index.ts [postcss] (ecmascript)");
 ;

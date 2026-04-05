@@ -8,9 +8,9 @@ module.exports = {
 /// <reference path="../../runtime/base/dev-protocol.d.ts" />
 /// <reference path="../../runtime/base/dev-extensions.ts" />
 __turbopack_context__.s({
-    "connect": (()=>connect),
-    "setHooks": (()=>setHooks),
-    "subscribeToUpdate": (()=>subscribeToUpdate)
+    "connect": ()=>connect,
+    "setHooks": ()=>setHooks,
+    "subscribeToUpdate": ()=>subscribeToUpdate
 });
 function connect({ addMessageListener, sendMessage, onUpdateError = console.error }) {
     addMessageListener((msg)=>{
