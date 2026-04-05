@@ -1,14 +1,13 @@
 {
   "pages": {
     "/api/auth/[...nextauth]/route": [
-      "static/chunks/35551_next_dist_compiled_react-dom_39d985._.js",
-      "static/chunks/35551_next_dist_compiled_341584._.js",
-      "static/chunks/35551_next_dist_client_2d9abe._.js",
-      "static/chunks/35551_next_dist_783e2b._.js",
-      "static/chunks/eae63_@swc_helpers_cjs_e27e0a._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_583ce2._.js",
-      "static/chunks/[project]_artifacts_maison_e69f0d._.js",
-      "static/chunks/[project]_artifacts_maison_49fe7d._.js"
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_ebbec174._.js",
+      "static/chunks/e3f18_next_dist_compiled_10eeff33._.js",
+      "static/chunks/e3f18_next_dist_client_cce889c4._.js",
+      "static/chunks/e3f18_next_dist_88532d21._.js",
+      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
+      "static/chunks/artifacts_maison_e69f0d32._.js",
+      "static/chunks/artifacts_maison_1dc25417._.js"
     ]
   }
 }

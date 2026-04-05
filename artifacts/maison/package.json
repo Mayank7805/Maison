@@ -53,7 +53,7 @@
     "immer": "^10.1.1",
     "input-otp": "^1.4.2",
     "lucide-react": "catalog:",
-    "next": "15.1.7",
+    "next": "15.4.0",
     "next-auth": "beta",
     "next-themes": "^0.4.6",
     "prisma": "^6.2.1",

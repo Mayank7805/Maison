@@ -1,26 +1,25 @@
 {
   "pages": {
     "/page": [
-      "static/chunks/[root of the server]__68f105._.css",
-      "static/chunks/08b5e__pnpm_0314c9._.js",
-      "static/chunks/src_c0c4d1._.js",
-      "static/chunks/src_app_layout_tsx_6905c2._.js",
-      "static/chunks/src_1b1f40._.js",
-      "static/chunks/0c6eb_tailwind-merge_dist_bundle-mjs_mjs_fb77d5._.js",
-      "static/chunks/8b6df_framer-motion_dist_es_c67cd6._.js",
-      "static/chunks/5c284_motion-dom_dist_es_9a6768._.js",
-      "static/chunks/08b5e__pnpm_f3c467._.js",
-      "static/chunks/src_app_not-found_tsx_82a031._.js",
-      "static/chunks/src_2f5f77._.js",
-      "static/chunks/src_app_page_tsx_82a031._.js",
-      "static/chunks/35551_next_dist_compiled_react-dom_39d985._.js",
-      "static/chunks/35551_next_dist_compiled_341584._.js",
-      "static/chunks/35551_next_dist_client_2d9abe._.js",
-      "static/chunks/35551_next_dist_783e2b._.js",
-      "static/chunks/eae63_@swc_helpers_cjs_e27e0a._.js",
-      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_583ce2._.js",
-      "static/chunks/[project]_artifacts_maison_e69f0d._.js",
-      "static/chunks/[project]_artifacts_maison_49fe7d._.js"
+      "static/chunks/[root-of-the-server]__68f1058c._.css",
+      "static/chunks/node_modules__pnpm_0880c853._.js",
+      "static/chunks/artifacts_maison_src_38708824._.js",
+      "static/chunks/artifacts_maison_src_app_layout_tsx_9335488d._.js",
+      "static/chunks/artifacts_maison_src_21705e81._.js",
+      "static/chunks/c5bb2_motion-dom_dist_es_fab1ab29._.js",
+      "static/chunks/92024_framer-motion_dist_es_41a12710._.js",
+      "static/chunks/059db_tailwind-merge_dist_bundle-mjs_mjs_fb77d5a7._.js",
+      "static/chunks/node_modules__pnpm_b1086734._.js",
+      "static/chunks/artifacts_maison_src_app_not-found_tsx_367b6fbf._.js",
+      "static/chunks/artifacts_maison_src_bdd320ca._.js",
+      "static/chunks/artifacts_maison_src_app_page_tsx_367b6fbf._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_ebbec174._.js",
+      "static/chunks/e3f18_next_dist_compiled_10eeff33._.js",
+      "static/chunks/e3f18_next_dist_client_cce889c4._.js",
+      "static/chunks/e3f18_next_dist_88532d21._.js",
+      "static/chunks/61dca_@swc_helpers_cjs_e27e0aca._.js",
+      "static/chunks/artifacts_maison_e69f0d32._.js",
+      "static/chunks/artifacts_maison_1dc25417._.js"
     ]
   }
 }
