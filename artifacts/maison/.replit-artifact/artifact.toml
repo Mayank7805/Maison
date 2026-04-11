@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "MAISON — Luxury Fashion"
+version = "1.0.0"
+id = "artifacts/maison"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+localPort = 25354
+name = "web"
+paths = ["/"]
+
+[services.development]
+run = "pnpm --filter @workspace/maison run dev"
+
+[services.env]
+PORT = "25354"
+BASE_PATH = "/"
+
+[services.production]
+build = ["pnpm", "--filter", "@workspace/maison", "run", "build"]
+publicDir = "artifacts/maison/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"

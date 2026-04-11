@@ -1,0 +1,13 @@
+{
+  "pages": {},
+  "app": {
+    "[project]/artifacts/maison/src/app/page": [
+      "static/media/e07ee8bc1e1bbd2e-s.p.38bf9709.woff2",
+      "static/media/584d3c07c9bf78c8-s.p.70bc9660.woff2",
+      "static/media/3365e13b43001fa0-s.p.204fe9ec.woff2",
+      "static/media/b8bcd9c5cf11560c-s.p.e562386e.woff2"
+    ]
+  },
+  "appUsingSizeAdjust": true,
+  "pagesUsingSizeAdjust": false
+}

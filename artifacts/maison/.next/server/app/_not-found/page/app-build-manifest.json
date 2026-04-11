@@ -1,0 +1,25 @@
+{
+  "pages": {
+    "/_not-found/page": [
+      "static/chunks/[root-of-the-server]__68f1058c._.css",
+      "static/chunks/node_modules__pnpm_aa718fe9._.js",
+      "static/chunks/artifacts_maison_src_38708824._.js",
+      "static/chunks/artifacts_maison_src_app_layout_tsx_406bb60f._.js",
+      "static/chunks/artifacts_maison_src_21705e81._.js",
+      "static/chunks/c5bb2_motion-dom_dist_es_fab1ab29._.js",
+      "static/chunks/92024_framer-motion_dist_es_41a12710._.js",
+      "static/chunks/059db_tailwind-merge_dist_bundle-mjs_mjs_fb77d5a7._.js",
+      "static/chunks/node_modules__pnpm_0230a472._.js",
+      "static/chunks/artifacts_maison_src_app_not-found_tsx_41104b01._.js",
+      "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_e78a9123._.js",
+      "static/chunks/fa51f_next_dist_compiled_react-dom_31171374._.js",
+      "static/chunks/fa51f_next_dist_compiled_next-devtools_index_7d1fafbf.js",
+      "static/chunks/fa51f_next_dist_compiled_6102c1de._.js",
+      "static/chunks/fa51f_next_dist_client_021499c9._.js",
+      "static/chunks/fa51f_next_dist_eb70a7b8._.js",
+      "static/chunks/61dca_@swc_helpers_cjs_28edb73c._.js",
+      "static/chunks/artifacts_maison_e69f0d32._.js",
+      "static/chunks/artifacts_maison_0175d9c7._.js"
+    ]
+  }
+}

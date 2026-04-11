@@ -1,0 +1,17 @@
+packages:
+  "framer-motion": "Page transitions and micro-interactions for luxury editorial feel"
+  "recharts": "Admin dashboard charts"
+  "zustand": "Client state management for cart drawer and guest ID"
+  "@stripe/react-stripe-js": "Stripe Elements for checkout"
+  "@stripe/stripe-js": "Stripe JS SDK"
+  "lucide-react": "Icons"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility for merging tailwind classes safely"
+images:
+  - path: "artifacts/maison/public/images/logo.png"
+    description: "Minimalist high-end fashion logo that says MAISON, brutally simple black typography on transparent background"
+    aspect_ratio: "1:1"
+notes:
+  - Using @workspace/api-client-react for all data hooks
+  - Zustand used for persistent guestId and UI state (cart drawer)
+  - Stripe requires VITE_STRIPE_PUBLIC_KEY in environment
